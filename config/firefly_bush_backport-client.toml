@@ -1,0 +1,45 @@
+
+#Settings for the firefly bush.
+[bush]
+	#Range: 0.0 ~ 1.0
+	bushFireflyChancePerTick = 0.7
+	#Range: 0.0 ~ 1.7976931348623157E308
+	bushFireflyHorizontalRange = 10.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	bushFireflyVerticalRange = 5.0
+	#Range: 0 ~ 15
+	bushFireflySpawnMaxBrightnessLevel = 13
+	#Range: > 0
+	bushFireflyAmbientSoundChanceOneIn = 30
+
+	#Extra settings for the firefly bush.
+	[bush.extra]
+		bushExtraAlwaysPlayAmbientSound = false
+		bushExtraAlwaysSpawnParticles = false
+
+#Settings for the firefly particle.
+[particle]
+	#Range: 0.0 ~ 1.0
+	particleFadeOutLightTime = 0.3
+	#Range: 0.0 ~ 1.0
+	particleFadeInLightTime = 0.1
+	#Range: 0.0 ~ 1.0
+	particleFadeOutAlphaTime = 0.5
+	#Range: 0.0 ~ 1.0
+	particleFadeInAlphaTime = 0.3
+	#Range: > 0
+	particleMinLifetime = 36
+	#Range: > 0
+	particleMaxLifetime = 180
+
+	#Extra settings for the firefly particle.
+	[particle.extra]
+		#Range: 0.0 ~ 1.7976931348623157E308
+		particleExtraFriction = 0.96
+		#Range: 0.0 ~ 1.7976931348623157E308
+		particleExtraScale = 0.75
+		#Range: 0.0 ~ 255.0
+		particleExtraBrightness = 255.0
+		#List of color hex values and their weight. Format: '<color_hex>,<weight>'
+		particleExtraColors = ["#ffffff,1"]
+

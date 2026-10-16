@@ -1,0 +1,67 @@
+{
+    "components": [
+        {
+            "type": "patchouli:item",
+            "item": "#input9",
+            "framed": "true",
+            "x": 50,
+            "y": 60
+        },
+        {
+            "type": "patchouli:item",
+            "item": "#input1",
+            "framed": "true",
+            "x": 50,
+            "y": 18
+        },
+        {
+            "type": "patchouli:item",
+            "item": "#input2",
+            "framed": "true",
+            "x": 80,
+            "y": 30
+        },
+        {
+            "type": "patchouli:item",
+            "item": "#input3",
+            "framed": "true",
+            "x": 92,
+            "y": 60
+        },
+        {
+            "type": "patchouli:item",
+            "item": "#input4",
+            "framed": "true",
+            "x": 80,
+            "y": 90
+        },
+        {
+            "type": "patchouli:item",
+            "item": "#input5",
+            "framed": "true",
+            "x": 50,
+            "y": 102
+        },
+        {
+            "type": "patchouli:item",
+            "item": "#input6",
+            "framed": "true",
+            "x": 20,
+            "y": 90
+        },
+        {
+            "type": "patchouli:item",
+            "item": "#input7",
+            "framed": "true",
+            "x": 8,
+            "y": 60
+        },
+        {
+            "type": "patchouli:item",
+            "item": "#input8",
+            "framed": "true",
+            "x": 20,
+            "y": 30
+        }
+    ]
+}

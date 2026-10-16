@@ -1,0 +1,1276 @@
+{
+	autofocus_id: "42E9291D3E994A0F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_3"
+	group: ""
+	icon: "kubejs:vector_operator_nuclear"
+	id: "5B9242AE7DC77549"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["57972A3714FCB9BE"]
+			id: "42E9291D3E994A0F"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "664465FA9A7A6952"
+				item: "kubejs:vector_operator_fluix"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "regions_unexplored:silver_birch_sapling"
+			id: "7F8A84E6792D57C5"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:silver_forest"
+				id: "0B120370B39C12EE"
+				title: "Enter dimension 18: &lThe Silver Forest"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 18: &lThe Silver Forest"
+			x: 15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "kubejs:coin_bag_gold"
+			id: "695F411874E4905F"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:endless_hoard"
+				id: "7FD52FBA54C94376"
+				title: "Enter dimension 7: &lThe Coin Continuum"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 7: &lThe Coin Continuum"
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "alexscaves:waste_drum"
+			id: "724BF4D8D1DA930D"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:toxic_caves"
+				id: "59C3943501FCD420"
+				title: "Enter dimension 5: &lThe Fission Fields"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 5: &lThe Fission Fields"
+			x: -14.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"79CA283CB3EAD8A8"
+				"10B4D789801FA7A3"
+			]
+			description: [
+				"The Nuclear Furnace can be contructed with eight nuclear Furnace Components."
+				""
+				"If it is fueled with Uranium Rods it can turn:"
+				""
+				"&lo&r Empty Vector Operators into Nuclear Vector Operators"
+				""
+				"&lo&r Empty Shells into Fissile Cores"
+				""
+				"In this process the nuclear furnace will accumulate nuclear waste."
+				"You can remove this by providing it with Metal Barrels."
+				""
+				"&lIf you let the internal waste resevour fill up to the maximum limit the furnace will destroy itself and everything around it in a nuclear meltdown.&r"
+			]
+			icon: "alexscaves:fissile_core"
+			id: "59B914C684A5EE4C"
+			rewards: [
+				{
+					id: "345C62CB8A5F49E8"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "4C934F03CC2B77E0"
+					item: "alexscaves:uranium_rod"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&o3.6 Roentgen"
+			tasks: [
+				{
+					count: 8L
+					id: "1FAB7335BE99CD36"
+					item: "alexscaves:nuclear_furnace_component"
+					type: "item"
+				}
+				{
+					id: "2B2CC9B105DF2614"
+					item: "alexscaves:metal_barrel"
+					type: "item"
+				}
+				{
+					id: "35C9DFBDE40C7C09"
+					item: "alexscaves:uranium_rod"
+					type: "item"
+				}
+			]
+			title: "Constructing a Nuclear Furnace"
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["07D4A4DCB638CC93"]
+			description: ["Using the Thermionic Fabricator you can now create new Empty Vector Operators."]
+			icon: "kubejs:vector_operator_empty"
+			id: "3EFB28B57ACCA844"
+			tasks: [
+				{
+					id: "48030730B7DE8719"
+					item: "kubejs:vector_operator_empty"
+					type: "item"
+				}
+				{
+					id: "5D4B0F03237F7E1B"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F8A84E6792D57C5"]
+			icon: "botania:apothecary_livingrock"
+			id: "6840D094E91491E5"
+			rewards: [{
+				id: "0852677A948F7B5A"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					count: 6L
+					id: "083087B1C13FBD7F"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					id: "698B33240FBB699C"
+					item: "botania:apothecary_livingrock"
+					type: "item"
+				}
+			]
+			title: "Petal Apothecary"
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "windswept:icicles"
+			id: "1D855C82AF9E2087"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:snowstorm"
+				id: "04015132771AEC69"
+				title: "Enter dimension 12: &lThe Frostbloom Storm"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 12: &lThe Frostbloom Storm"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["724BF4D8D1DA930D"]
+			description: [
+				"You will need to difuse a nuclear bomb to obtain the Fission Core within."
+				""
+				"First use a Crowbar to pry the top off of the bomb."
+				""
+				"Then use Wire Cutters to cut one of the wires."
+				"Left-clicking will cut the red wire."
+				"Right-clicking will cut the green wire."
+				""
+				"One wire will difuse the bomb; the other will rig the device to explode within 10 seconds."
+				""
+				"The correct wire, unfortunately, is always fully random..."
+			]
+			icon: "alexscaves:nuclear_bomb"
+			id: "79CA283CB3EAD8A8"
+			rewards: [
+				{
+					id: "661F15A1B35DAD4B"
+					item: "alexscaves:music_disc_fusion"
+					type: "item"
+				}
+				{
+					id: "6BD41469B3D2381A"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+			]
+			subtitle: "&oNow I am Become Death"
+			tasks: [
+				{
+					id: "34C9DB7C87F14F4F"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6FCBE98C6F842032"
+					item: "kubejs:crowbar"
+					type: "item"
+				}
+				{
+					id: "58786FCCDEA404B1"
+					item: "alexscaves:fissile_core"
+					type: "item"
+				}
+			]
+			title: "Defusing a Nuclear Bomb"
+			x: -14.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"79CA283CB3EAD8A8"
+				"07D4A4DCB638CC93"
+			]
+			description: ["The ME Controller will dramatically improve the number of channels you can have in your ME System."]
+			id: "1F81CCC1F7562C57"
+			rewards: [{
+				id: "269D3C4BEC9195C7"
+				item: {
+					Count: 1
+					id: "untagged_mobs:hyper_confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oI got this from a Chance Cube"
+			tasks: [{
+				id: "1600D6054496DF25"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7F8A84E6792D57C5"]
+			description: [
+				"The Silver Forest has endless silver oceans."
+				""
+				"If you right-click a filled bucket on a smeltery drain, it will fill the smeltery up with that liquid."
+				""
+				"Alternatively, you can pump any liquid into a smeltery drain as well."
+			]
+			icon: "thermal:silver_ingot"
+			id: "706CFA622308E0A2"
+			rewards: [{
+				id: "1A809C216AF7CE82"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "&oPools of Silver"
+			tasks: [
+				{
+					id: "093FBC994DD37473"
+					item: "tconstruct:molten_silver_bucket"
+					type: "item"
+				}
+				{
+					id: "76E259ACA37BC3E5"
+					item: "thermal:silver_ingot"
+					type: "item"
+				}
+			]
+			title: "Endless Silver"
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["706CFA622308E0A2"]
+			id: "7EBA57DECDEF83EB"
+			rewards: [{
+				id: "4D4C1441985683CA"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "501ECD301D8A2CB5"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"1ACBFD0A2732FA5C"
+				"3811EE766D2CF5C5"
+				"0C64583682770587"
+			]
+			description: ["The Thermionic Fabricator can make Electron tubes using power and a supply of sand. It will need some time to heat up the sand into molten glass before it starts crafting."]
+			icon: "forestry:fabricator"
+			id: "07D4A4DCB638CC93"
+			rewards: [{
+				id: "1CCC1603D3D576AD"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oTher-mi-o-nic"
+			tasks: [
+				{
+					id: "6831EA1AA0E107B2"
+					item: "forestry:fabricator"
+					type: "item"
+				}
+				{
+					id: "389432AC8675D955"
+					item: "forestry:electron_tube_emerald"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1DF9F6C26950EFBC"
+				"5A3080407E21CCC2"
+				"07D4A4DCB638CC93"
+				"1D39E9C67C28C53A"
+				"1AA2701817C05F20"
+			]
+			description: ["The Osmium Compressor allows you to infuse materials with Osmium."]
+			id: "71A95CEBD6B55B80"
+			rewards: [{
+				id: "0608C5EF36783723"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "65C5F8954DB7906A"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6840D094E91491E5"
+				"1D855C82AF9E2087"
+			]
+			description: [
+				"Any flower can be turned into Mystical Petals of its color. The rare Snowdrop in The Frostbloom Storm gives the white petals needed for a Pure Daisy."
+				""
+				"The Pure Daisy can turn Deepslate into Brilliant Deepslate."
+			]
+			icon: "botania:pure_daisy"
+			id: "1AA2701817C05F20"
+			rewards: [
+				{
+					id: "0F2F4D4E8C57F923"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					id: "73C140AC7DDC4CBD"
+					item: "windswept:music_disc_snow"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "&oWedding Bouquet"
+			tasks: [
+				{
+					id: "41C42E79C601E47D"
+					item: "windswept:snowdrop"
+					type: "item"
+				}
+				{
+					id: "06591822A7676FE3"
+					item: "botania:pure_daisy"
+					type: "item"
+				}
+				{
+					id: "1C49C4466272DD92"
+					item: "minecraft:deepslate"
+					type: "item"
+				}
+				{
+					id: "3F871601014D4804"
+					item: "malum:cluster_of_brilliance"
+					type: "item"
+				}
+			]
+			title: "Pure Daisy"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["724BF4D8D1DA930D"]
+			icon: "alexscaves:sulfur_dust"
+			id: "0B89BA14A34F6DC3"
+			subtitle: "&oTaste the Flames of Sulfuron!"
+			tasks: [{
+				id: "382C5C84F7648F0A"
+				item: "alexscaves:sulfur_dust"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7EBA57DECDEF83EB"
+				"56A2089DBDAAEA29"
+			]
+			description: ["Uranium Rods will be needed to fuel the Nuclear Furnace."]
+			id: "10B4D789801FA7A3"
+			rewards: [{
+				id: "5E3B69185D39EE9E"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "40B0EEE5B0CD31B8"
+				item: "alexscaves:uranium_rod"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7EBA57DECDEF83EB"]
+			description: ["The Hazmat Suit will not only protect you from radiation but will also allow the wearer to smim in acid."]
+			icon: {
+				Count: 1
+				id: "alexscaves:hazmat_mask"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "62FCB4D691D5A46A"
+			subtitle: "&oSay my name"
+			tasks: [
+				{
+					id: "04A6FC17E1086F8B"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F504FED57156124"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F2C8483512D7137"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "036E2DB0EDFB734B"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Hazmat Suit"
+			x: 2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1D855C82AF9E2087"]
+			description: ["Osmium can found in the ground of this dimension between the Shiverstone."]
+			icon: "mekanism:ingot_osmium"
+			id: "1DF9F6C26950EFBC"
+			rewards: [{
+				id: "79896C00F0580DD3"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A00E02938D08E99"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["695F411874E4905F"]
+			description: ["Blocks of Emerald can be found in the Coin Continuum and broken down into Emeralds."]
+			icon: "minecraft:emerald"
+			id: "1ACBFD0A2732FA5C"
+			rewards: [{
+				id: "1E8FEA51B835A431"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oBreaking News!"
+			tasks: [
+				{
+					id: "5B8A02A45FC0D682"
+					item: "minecraft:emerald_block"
+					type: "item"
+				}
+				{
+					id: "255F22571A224D44"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["59B914C684A5EE4C"]
+			description: ["You can Shift-right-click a Uranium Rod in you inventory to fully recharge an empty Raygun."]
+			id: "40111918A62390D4"
+			rewards: [{
+				id: "07283CC098CF728C"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oNo Portal Fluid Needed"
+			tasks: [{
+				id: "1EDE38ACE6BB5584"
+				item: "alexscaves:raygun"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["724BF4D8D1DA930D"]
+			description: ["Right-clicking empty bottles on Toxic Geothermal vents will fill them with Radon Gas."]
+			icon: "alexscaves:radon_bottle"
+			id: "3811EE766D2CF5C5"
+			rewards: [{
+				id: "3EC2F4B5760066FF"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "&o&oThis Place is Still Better than Bilewater"
+			tasks: [
+				{
+					id: "475FC54BA27348E2"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "17D50B9F82CBF767"
+					item: "alexscaves:radon_bottle"
+					type: "item"
+				}
+			]
+			title: "Collecting Radon"
+			x: -13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["59B914C684A5EE4C"]
+			description: ["Using the Nuclear Furnace Fissile Cores are now renewable."]
+			icon: "kubejs:empty_shell"
+			id: "66D36B4E2249E0C2"
+			rewards: [
+				{
+					id: "598EAB63E1A8EADD"
+					item: "immersiveengineering:screwdriver"
+					type: "item"
+				}
+				{
+					id: "6CE2B5CF70F51DBE"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+			]
+			subtitle: "&oBeryllium Shell"
+			tasks: [
+				{
+					id: "586EDB2CDF9520BF"
+					item: "kubejs:empty_shell"
+					type: "item"
+				}
+				{
+					id: "42F50D9B537537E1"
+					item: "alexscaves:fissile_core"
+					type: "item"
+				}
+			]
+			title: "Creating more Cores"
+			x: 1.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "windswept:pinecone"
+			id: "0F12939AF08CC493"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:pine_forrest"
+				id: "62B70AA399403623"
+				title: "Enter dimension 8: &lTimber Lakes"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 8: &lTimber Lakes"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["59B914C684A5EE4C"]
+			id: "692627354D53875B"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2E4A4440730A0929"
+				item: "kubejs:vector_operator_nuclear"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["59B914C684A5EE4C"]
+			description: [
+				"A steam engine placed above an active nuclear furnace will be automatically heated to &lthe maximum heat level&r. "
+				""
+				"You can keep cycling goop through the furnace to keep it active. This will practically create the equivalent of a nuclear reactor."
+			]
+			id: "7FE20D4DE2E912CB"
+			tasks: [
+				{
+					id: "6277E9C6DB299EE5"
+					item: "create_alex_power:soul_goop"
+					type: "item"
+				}
+				{
+					id: "7ED340CAAE43179F"
+					item: "alexscaves:toxic_paste"
+					type: "item"
+				}
+			]
+			title: "The Goop Cycle"
+			x: 2.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["07D4A4DCB638CC93"]
+			description: ["Right-clicking a Recall Tube will teleport the user to the inside of the Hexahedron, even when the Hexahedron is in a different dimension."]
+			id: "50553C4CCED700E3"
+			rewards: [{
+				id: "189A00A8DAF2A461"
+				item: {
+					Count: 1
+					id: "untagged_mobs:nonnac_ittefnoc_repyh"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "&oFast Travel"
+			tasks: [{
+				id: "32EC34EFB522CF75"
+				item: "kubejs:portal_lantern"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1AA2701817C05F20"
+				"71A95CEBD6B55B80"
+			]
+			description: ["The Enrichment Chamber allows you to refine Uranium Shards into Yellow Cake Uranium."]
+			id: "56A2089DBDAAEA29"
+			rewards: [{
+				id: "10C8293B5CD27674"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oWe're Rich!"
+			tasks: [{
+				id: "3AF2854D7E028E52"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0F12939AF08CC493"]
+			description: [
+				"The entire Timber Lakes consists of Asurine blow the surface. "
+				""
+				"If you can quarry and pulverize this mineral you can produce endless Zinc Ingots."
+			]
+			icon: "create:zinc_ingot"
+			id: "0C64583682770587"
+			rewards: [{
+				id: "6EA2685337AF817D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "&oLet that Zinc in"
+			tasks: [
+				{
+					id: "1C09FDFDFBCF2250"
+					item: "create:asurine"
+					type: "item"
+				}
+				{
+					id: "0310308A3066A724"
+					item: "create:raw_zinc"
+					type: "item"
+				}
+				{
+					id: "128C4C2F598093BA"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+			]
+			title: "Zinc Quarry"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0F12939AF08CC493"]
+			description: [
+				"Using the shrine in Timber Lakes you can rewind the time of certain blocks."
+				""
+				"The conversions are as follows:"
+				""
+				"&lo&r Block of Iron -> Block of Shiny Ingot"
+				""
+				"&lo&r Empty Vector Operator -> Old Vector"
+				""
+				"&lo&r Block of Emerald -> The Time Stone"
+			]
+			icon: "supplementaries:clock_block"
+			id: "1D39E9C67C28C53A"
+			rewards: [{
+				id: "3F9669A1FDF056B7"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "&oTimey Wimey"
+			tasks: [
+				{
+					id: "1C3B924AC31266AA"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					id: "721206B1D3336480"
+					item: "kubejs:block_shiny_ingot"
+					type: "item"
+				}
+			]
+			title: "Rewinding Time"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7F8A84E6792D57C5"]
+			description: [
+				"Livingrock boulders can be found naturally in this dimension."
+				""
+				"Stone generators in this dimension will also generate Livingrock."
+			]
+			icon: "botania:livingrock"
+			id: "22556B2096D509A1"
+			shape: "octagon"
+			tasks: [
+				{
+					id: "68CA5A80862B6052"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					id: "09442B32ADB2D16E"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			x: 16.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["724BF4D8D1DA930D"]
+			description: [
+				"You can generate infinite Uranium by crushing Radrock."
+				""
+				"Any stone generator located in the Fission Fields will generate Radrock instead of Cobblestone."
+			]
+			id: "4B1F78DCF2E2C538"
+			shape: "octagon"
+			subtitle: "&oKovarex Enrichment Process "
+			tasks: [{
+				id: "355C0FC8AA39627A"
+				item: "alexscaves:uranium_shard"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D855C82AF9E2087"]
+			description: [
+				"Shiverstone can be crushed or pulverized for Osmium Nuggets."
+				""
+				"Stone generators located in the frostbloom storm will generate Shiverstone instead of regular Cobblestone."
+			]
+			id: "1AD73B0A7B843C82"
+			shape: "octagon"
+			tasks: [{
+				id: "6C0AEED162DE58CD"
+				item: "mekanism:nugget_osmium"
+				type: "item"
+			}]
+			title: "Osmium Mining"
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1F81CCC1F7562C57"]
+			description: [
+				"&lThe Interdimensional Transceiver is a crucial block when it comes to setting up interdimensional automation.&r"
+				""
+				"&lStep 1&r"
+				"Start by placing the first Transceiver inside your main base; make sure it's hooked up to a powered ME System and click on \"Mode\" to make it a sender."
+				""
+				"{image:kubejs:textures/questbook/book_images/transceiver_step1.png width:84 height:67 align:center}"
+				""
+				"&lStep 2&r"
+				"Next, make a new channel by clicking \"Add\" and give it any name. Click on it in the list to select it."
+				""
+				"{image:kubejs:textures/questbook/book_images/transceiver_step2.png width:84 height:67 align:center}"
+				""
+				"&lStep 3&r"
+				"Now that the sender is set up, you can place an infinite number of Transceivers anywhere and hook them all up to the same sending Transceiver by clicking the channel you made in the list."
+			]
+			icon: "aewireless:wireless_transceiver"
+			id: "1303271D201C87A7"
+			rewards: [
+				{
+					id: "7929EA9BE1F30513"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "414D40CE1D5FEB23"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.5d
+			subtitle: "&oThinking Out of the Box"
+			tasks: [{
+				count: 2L
+				id: "71B49964272A7AEA"
+				item: { Count: 2, id: "aewireless:wireless_transceiver" }
+				type: "item"
+			}]
+			title: "Interdimensional Transceiver"
+			x: -4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["695F411874E4905F"]
+			description: ["The somewhat rare Diamond lamps can be crushed into Diamonds."]
+			icon: "minecraft:diamond"
+			id: "66858347C4FDB6F3"
+			rewards: [{
+				id: "21B581457ED7CC6A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oShine Bright"
+			tasks: [
+				{
+					id: "6E95067E0B646577"
+					item: "caverns_and_chasms:diamond_lamp"
+					type: "item"
+				}
+				{
+					id: "5426F18453E19260"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Hoarding Diamonds"
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["695F411874E4905F"]
+			description: ["You can obtain infinite gold by melting gold coins. Any stone generator in The Coin Continiuum will generate gold coins instead."]
+			icon: "minecraft:gold_ingot"
+			id: "1421E91BC9378574"
+			rewards: [{
+				id: "421966D3068F7B04"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "&oKing under the Mountain"
+			tasks: [
+				{
+					id: "72D9F2A3C755E19C"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					id: "687B9D6B1671C20A"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			title: "Renewable Gold"
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1D39E9C67C28C53A"
+				"1ACBFD0A2732FA5C"
+			]
+			description: ["You can speed up machines using the stored time inside The Timestone."]
+			icon: {
+				Count: 1
+				id: "tiab:time_in_a_bottle"
+				tag: { }
+			}
+			id: "6BD9302EF68EEE51"
+			rewards: [{
+				id: "701F7171FF28EE30"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oI Have Come to Bargain"
+			tasks: [
+				{
+					id: "355D98976D5F681B"
+					item: "minecraft:emerald_block"
+					type: "item"
+				}
+				{
+					id: "3F31076FBE27CDA2"
+					item: {
+						Count: 1
+						id: "tiab:time_in_a_bottle"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Obtaining a Timestone"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1D39E9C67C28C53A"]
+			description: ["You can create new Old Vectors by placing empty Vector Operators on the pedestal and pressing the button to rewind time."]
+			icon: "kubejs:vector_operator_basic"
+			id: "0721C1EEAD957574"
+			rewards: [{
+				count: 4
+				id: "0346D852453998D8"
+				item: "kubejs:vector_operator_basic"
+				type: "item"
+			}]
+			subtitle: "&oIts Rewind Time"
+			tasks: [
+				{
+					id: "5DFDEE42453CDB0B"
+					item: "kubejs:vector_operator_empty"
+					type: "item"
+				}
+				{
+					id: "728503A433375FD9"
+					item: "kubejs:vector_operator_basic"
+					type: "item"
+				}
+				{
+					id: "3383F1DBF8B0854A"
+					title: "Time has been Folded"
+					type: "checkmark"
+				}
+			]
+			title: "Timewarping Vectors"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["695F411874E4905F"]
+			icon: "minecraft:lapis_lazuli"
+			id: "30518F83070B2B5C"
+			rewards: [{
+				id: "77EB0DDA83CBE933"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "&oThats Lapis"
+			tasks: [
+				{
+					id: "6211FC6F1094E6DA"
+					item: "minecraft:lapis_block"
+					type: "item"
+				}
+				{
+					id: "6336E1D3051E3AF8"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"57972A3714FCB9BE"
+				"724BF4D8D1DA930D"
+			]
+			description: [
+				"You can now store your power in the ME System. "
+				""
+				"This is convenient now, but it becomes crucial later on when your ME System goes interdimensional."
+			]
+			icon: "appflux:energy_processor"
+			id: "032F81B9942E156B"
+			rewards: [{
+				id: "7929DF9833C2934B"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oPlease Download Additional RAM"
+			tasks: [
+				{
+					id: "5676E466FA439A96"
+					item: "appflux:charged_redstone"
+					type: "item"
+				}
+				{
+					id: "733CB58DBE47FF28"
+					item: "appflux:energy_processor"
+					type: "item"
+				}
+				{
+					id: "5940AB0E40D63F6E"
+					item: "appflux:flux_accessor"
+					type: "item"
+				}
+				{
+					id: "0AE59702A6FFE5DD"
+					item: {
+						Count: 1
+						id: "appflux:fe_1k_cell"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "681C223C5FC5ED56"
+					item: "appflux:induction_card"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Upload your Power"
+			x: -15.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["10B4D789801FA7A3"]
+			description: [
+				"You can make a Dynamo that runs on Uranium Fuel Rods."
+				""
+				"One Uranium Rod will burn for "
+				"30 minutes and will output a steady "
+				"500 RF/t as long as the Dynamo can output its power."
+			]
+			icon: {
+				Count: 1
+				id: "thermal:dynamo_lapidary"
+				tag: {
+					BlockEntityTag: {
+						Energy: 0
+						EnergyMax: 50000
+						EnergyRecv: 0
+						EnergySend: 400
+						RSControl: {
+							RSMode: 0b
+							RSThreshold: 0b
+						}
+					}
+				}
+			}
+			id: "4944F4A26FE8C3EB"
+			rewards: [{
+				id: "043BC8EE60A25B9D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "0A5249081EDD9814"
+					item: {
+						Count: 1
+						id: "thermal:dynamo_lapidary"
+						tag: {
+							BlockEntityTag: {
+								Energy: 0
+								EnergyMax: 50000
+								EnergyRecv: 0
+								EnergySend: 400
+								RSControl: {
+									RSMode: 0b
+									RSThreshold: 0b
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "598CA2C6F7A277CA"
+					item: "alexscaves:uranium_rod"
+					type: "item"
+				}
+			]
+			title: "Nuclear Power"
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1D855C82AF9E2087"]
+			description: [
+				"Frozen Flesh can be smelted into Leather. With the Cattails in dimension 2 you will be able to make string. "
+				""
+				"This will allow you to make Backpacks."
+			]
+			icon: {
+				Count: 1
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					inventorySlots: 27
+					upgradeSlots: 1
+				}
+			}
+			id: "20827613C878D74D"
+			rewards: [
+				{
+					id: "0BE64D537AC6C20D"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					id: "44E1484CCFC6FA7F"
+					item: "biomesoplenty:music_disc_wanderer"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "41DBEE94A835871E"
+					item: "windswept:frozen_flesh"
+					type: "item"
+				}
+				{
+					id: "3BC94D742116BD57"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "0BA0EEA08E3E15BB"
+					item: {
+						Count: 1
+						id: "sophisticatedbackpacks:backpack"
+						tag: {
+							inventorySlots: 27
+							upgradeSlots: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Pack your Bags"
+			x: 7.0d
+			y: 1.0d
+		}
+	]
+	title: "Chapter 3"
+}

@@ -1,0 +1,9 @@
+# Default config file that will be copied to world\serverconfig\ftbchunks-world.snbt if it doesn't exist!
+# Server-tuned overrides for Cube Warper multiplayer
+
+{
+	force_load_mode: "always"
+	max_force_loaded_chunks: 30
+	hard_team_force_limit: 50
+	fake_players: "allow"
+}

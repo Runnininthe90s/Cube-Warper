@@ -1,0 +1,25 @@
+{
+    "name": "Corrupting a Vector",
+    "icon": "kubejs:vector_operator_eye",
+    "category": "patchouli:ritual",
+    "sortnum": 4,
+    "pages": [
+	    {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:vector_operator_eye",
+			"title": "Corrupting a Vector",
+			"text": "This ritual will corrupt a Vector Operator by trapping a Crimson Eye inside of it. $(br2)The applications for this are unexplored..."
+		},
+		{
+			"type": "patchouli:ritual",
+			"input1": "kubejs:crimson_eye",
+			"input2": "kubejs:supercomputer",
+			"input3": "kubejs:supercomputer",
+			"input4": "kubejs:supercomputer",
+			"input5": "alexscaves:forsaken_idol",
+			"input6": "alexscaves:forsaken_idol",
+			"input7": "kubejs:modular_reactor",
+			"input8": "kubejs:modular_reactor",
+			"input9": "kubejs:vector_operator_empty"
+		}
+]}

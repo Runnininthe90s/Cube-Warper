@@ -1,0 +1,25 @@
+{
+    "name": "Recapturing Consciousness",
+    "icon": "kubejs:recaptured_consciousness",
+    "category": "patchouli:ritual",
+    "sortnum": 1,
+    "pages": [
+	    {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:recaptured_consciousness",
+			"title": "Recapturing Consciousness",
+			"text": "The Crimson Eyes seem to be bound to the ancient pillars in some way. $(br2)With this ritual it is possible to reverse engineer this system by trapping it inside our own Consciousness Container."
+		},
+		{
+			"type": "patchouli:ritual",
+			"input1": "kubejs:crimson_eye",
+			"input2": "kubejs:computer",
+			"input3": "kubejs:computer",
+			"input4": "kubejs:computer",
+			"input5": "kubejs:computer",
+			"input6": "kubejs:vector_operator_lightning",
+			"input7": "kubejs:vector_operator_lightning",
+			"input8": "kubejs:vector_operator_lightning",
+			"input9": "kubejs:recaptured_consciousness_empty"
+		}
+]}

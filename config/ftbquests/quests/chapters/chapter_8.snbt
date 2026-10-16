@@ -1,0 +1,1159 @@
+{
+	autofocus_id: "41B4789AEFFCC579"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_8"
+	group: ""
+	icon: "kubejs:vector_operator_eye"
+	id: "0C934DDE7CA3ABDC"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["33166A16A7F37C34"]
+			description: ["Warp Flux can be used to warp some materials into others."]
+			id: "76E7F42F53A92906"
+			tasks: [{
+				id: "57846CBA872E6F50"
+				item: "malum:warp_flux"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 27.0d
+		}
+		{
+			dependencies: [
+				"2315D62DBA22EFC8"
+				"7391519637010467"
+			]
+			description: [
+				"Pure Darkness is an important crafing ingredient."
+				""
+				"Read the Conducting Rituals book on how to preform this ritual."
+			]
+			id: "5A06D773028BC9D2"
+			rewards: [{
+				id: "291679463EBB2379"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "7624568EB72F7BC4"
+				item: "alexscaves:pure_darkness"
+				type: "item"
+			}]
+			title: "Ritual of Darkness"
+			x: 0.0d
+			y: 31.0d
+		}
+		{
+			dependencies: [
+				"33166A16A7F37C34"
+				"405827CC19935F88"
+			]
+			id: "4F8D72BB37D8D92E"
+			subtitle: "&o404"
+			tasks: [{
+				id: "5D6AE5CB651B016A"
+				item: "kubejs:error_cube"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["23B11C5E9631918A"]
+			description: [
+				"Some items thrown into Weeping Wells located in the Lavender Fields can get transformed. The conversion takes a few seconds."
+				""
+				"It is recommended you automate this process."
+			]
+			icon: "malum:void_depot"
+			id: "33166A16A7F37C34"
+			rewards: [{
+				id: "1C71EB769B9F77FB"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "&oTo Odin, from Odin"
+			tasks: [{
+				id: "0F8BCFE391ECFEB3"
+				item: "incision:vile_fang"
+				type: "item"
+			}]
+			title: "The Weeping Well"
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			icon: "kubejs:vector_operator_lightning"
+			id: "41B4789AEFFCC579"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "5C430078F6E3E4F7"
+				item: "kubejs:vector_operator_lightning"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3AF072EAB2673491"]
+			description: [
+				"The outer shell of the Eye Pillars can be broken with two Eye Breakers to reveal the Crimson Eye within."
+				""
+				"Simply place one on either side of the eye and Right-click one of the breakers."
+				""
+				"{image:kubejs:textures/questbook/book_images/eye_breaker.png width:192 height:108 align:center}"
+			]
+			icon: "kubejs:crimson_eye"
+			id: "39199FC922CE2D82"
+			rewards: [{
+				id: "527D22B86325611D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "&oI See You"
+			tasks: [
+				{
+					count: 2L
+					id: "0E3AFBCDC5E16159"
+					item: { Count: 2, id: "kubejs:eye_breaker" }
+					type: "item"
+				}
+				{
+					id: "0D6E8A0FE30A4979"
+					item: "kubejs:crimson_eye"
+					type: "item"
+				}
+			]
+			title: "Breaking Out the Crimson Eyes"
+			x: -8.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"3F6624FB96478C8D"
+				"41B4789AEFFCC579"
+			]
+			icon: "incision:carrion_eye"
+			id: "394A9F2BBF941C4E"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:carrion_485"
+				id: "20F4487AFE6033BF"
+				title: "Enter dimension 64: &lCarrion-485"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 64: &lCarrion-485"
+			x: -8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["394A9F2BBF941C4E"]
+			description: [
+				"An Eyeball Yolk can be obtained by breaking a Carrion Eye."
+				""
+				"The peeking Circuit is used in a lot of late game machines and further components. Make sure to automate it and its parts."
+			]
+			icon: "kubejs:peeking_circuit"
+			id: "3AF072EAB2673491"
+			rewards: [{
+				id: "746293DA17693B9B"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oStart to worry when your Electronics start to look back"
+			tasks: [
+				{
+					id: "15615205C693B24F"
+					item: "incision:congealed_acid"
+					type: "item"
+				}
+				{
+					id: "3C0C5FECB743B0B6"
+					item: "kubejs:peeking_circuit"
+					type: "item"
+				}
+			]
+			title: "Peeking Circuits"
+			x: -8.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"33166A16A7F37C34"
+				"00F0B2F7923BBDAD"
+			]
+			description: ["Dark Steel is needed for multiple recipes on the tech side of this chapter."]
+			icon: "enderio:dark_steel_ingot"
+			id: "3B641BF9DC84200A"
+			tasks: [
+				{
+					id: "07EB1B414816C3D1"
+					item: "enderio:end_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "36029A72F6B1D559"
+					item: "enderio:dark_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "Dark Steel"
+			x: 11.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"690B3942936F5A31"
+				"2E44834F6BA2F4C0"
+				"390F0E7876ACC11A"
+			]
+			id: "1AF7C1440988909B"
+			rewards: [{
+				id: "24B93D84B61BE905"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "256DC095BA57A2DE"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
+			x: -20.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"6792284C323C3684"
+				"06170C731F74C2A1"
+			]
+			description: [
+				"When a Void Soul Knight in the Forsaken Planes is hit with a Burrowing Arrow, a piece of its armor will be chipped off."
+				""
+				"The Forsaken Slag can be picked up and used to make Forsaken Bronze or Soularium."
+			]
+			icon: "darkerdepths:forsaken_bronze_scrap"
+			id: "690B3942936F5A31"
+			rewards: [{
+				id: "3CA59DCBA2F162B1"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "689C363E4ABEE8D3"
+					item: "alexscaves:burrowing_arrow"
+					type: "item"
+				}
+				{
+					id: "153FDB4F149F249F"
+					item: "darkerdepths:forsaken_bronze_scrap"
+					type: "item"
+				}
+			]
+			title: "Obtaining Forsaken Bronze"
+			x: -20.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"043C4D3D34A0BD56"
+				"39CD55C645EF2F8E"
+				"4D120E3BFAD52367"
+			]
+			description: [
+				"Using the Ritual Circle, you can bind a Crimson Eye inside a Vector Operator. Where this will bring you is unknown."
+				""
+				"There is only one way to find out..."
+			]
+			icon: "kubejs:vector_operator_eye"
+			id: "2EDCB3D5FE954B4A"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "&oDivided by Zero"
+			tasks: [{
+				id: "4D244C426E1CD9E1"
+				item: "kubejs:vector_operator_eye"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 51.0d
+		}
+		{
+			dependencies: [
+				"3F6624FB96478C8D"
+				"41B4789AEFFCC579"
+			]
+			icon: "darkerdepths:duskrock"
+			id: "6792284C323C3684"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:forsaken_planes"
+				id: "05F1BA3DDDA17DA2"
+				title: "Enter dimension 17: &lThe Forsaken Planes"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 17: &lThe Forsaken Planes"
+			x: -20.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"3F6624FB96478C8D"
+				"41B4789AEFFCC579"
+			]
+			icon: "endergetic:poismoss"
+			id: "23B11C5E9631918A"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:lavender_fields"
+				id: "4AD0ECB8CDF661CD"
+				title: "Enter dimension 96: &lLavender Fields"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 96: &lLavender Fields"
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"6A45F3EB58F78D23"
+				"39199FC922CE2D82"
+			]
+			id: "52154BA08802DE96"
+			rewards: [{
+				id: "145C07848AD9E894"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oI'm sorry Dave, I'm Afraid I can't do that"
+			tasks: [{
+				id: "268131570DAFD474"
+				item: "kubejs:seeking_circuit"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["41B4789AEFFCC579"]
+			icon: "regions_unexplored:alpha_grass_block"
+			id: "657795D12BDBF335"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:alpha_islands"
+				id: "7A36E4B346C12ABE"
+				title: "Enter dimension 128: &lAlpha-201"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 128: &lAlpha-201"
+			x: 20.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1AF7C1440988909B"]
+			id: "68B57D14C1EDA272"
+			rewards: [{
+				id: "1A36456E47DA5BCA"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32B216A61B14335E"
+				item: "enderio:ensouled_chassis"
+				type: "item"
+			}]
+			x: -20.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["3AF072EAB2673491"]
+			description: ["The Alloy Smelter will allow you to make Reinforced Alloy and Solarium."]
+			id: "2E44834F6BA2F4C0"
+			rewards: [{
+				id: "5B5B4CCFC5F895A6"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "6CAFA7C04C994AEF"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["68B57D14C1EDA272"]
+			description: ["To make Techno Optics you will need to make the Slice'N'Splice"]
+			id: "6A45F3EB58F78D23"
+			rewards: [{
+				id: "6A2CE2C97060C6F6"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "433B26E60E2A7062"
+				item: "enderio:slice_and_splice"
+				type: "item"
+			}]
+			x: -20.0d
+			y: 25.0d
+		}
+		{
+			dependencies: [
+				"39199FC922CE2D82"
+				"33166A16A7F37C34"
+				"41DD32EB5E41B666"
+			]
+			description: [
+				"In order to start conducting rituals, you will need to create a Desolate Dagger."
+				""
+				"After that Read the book on how to use the ritual circle carefully."
+			]
+			icon: {
+				Count: 1
+				id: "alexscaves:desolate_dagger"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7391519637010467"
+			rewards: [
+				{
+					id: "43DE37CEF90DC3CC"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "627B94BD56B2DD55"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 3.0d
+			subtitle: "&oWe are Friends. Welcome. Sit and Rest."
+			tasks: [
+				{
+					id: "22535DA06CBFEE40"
+					item: {
+						Count: 1
+						id: "alexscaves:desolate_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B6CB3C93EFA2D9F"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "patchouli:ritual_circle"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Ritual Circle"
+			x: 0.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["657795D12BDBF335"]
+			description: [
+				"Alpha Particles can be made in the Combiner from the Alpha flowers found in this dimension."
+				""
+				"Note that both the Alpha Rose and the Alpha Dandelion can be produced in the Phytogenic Insolator."
+			]
+			icon: "kubejs:alpha_particles"
+			id: "181F1947B08FFF44"
+			rewards: [{
+				id: "34F5F73984A38A33"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "197EA9119F577E7E"
+					item: "regions_unexplored:alpha_dandelion"
+					type: "item"
+				}
+				{
+					id: "32D72ACDC89D4D56"
+					item: "regions_unexplored:alpha_rose"
+					type: "item"
+				}
+				{
+					id: "0069F5FC92028287"
+					item: "kubejs:alpha_particles"
+					type: "item"
+				}
+			]
+			title: "Alpha Particles"
+			x: 22.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["657795D12BDBF335"]
+			description: ["The Default Cube can be made from Alpha Clay."]
+			icon: "untagged_mobs:default_cube"
+			id: "405827CC19935F88"
+			rewards: [{
+				id: "78D03A6A57104EE2"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "37659951BCBDDF9E"
+					item: "untagged_mobs:alpha_clay_ball"
+					type: "item"
+				}
+				{
+					id: "36FC55F70C3DE382"
+					item: "untagged_mobs:default_cube"
+					type: "item"
+				}
+			]
+			title: "Default Cube"
+			x: 20.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["66E80DDD90727B7A"]
+			description: [
+				"When The Missing Core is placed down and Right-clicked with Alpha Particles it will currupt the local environment into Missing blocks that can be harvested for Missing Items."
+				""
+				"Missing Items can be sacrificed to the Weeping Well for Nullpoint items."
+			]
+			icon: "untagged_mobs:null_item"
+			id: "2315D62DBA22EFC8"
+			rewards: [{
+				id: "052D1DB3B469A538"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oWhat?"
+			tasks: [
+				{
+					id: "3D6AC56D3EEF1397"
+					item: "untagged_mobs:skybox_missing"
+					type: "item"
+				}
+				{
+					id: "4CFBD0D9F929E0F9"
+					item: "kubejs:alpha_particles"
+					type: "item"
+				}
+				{
+					id: "55EF849F926CBC94"
+					item: "untagged_mobs:item_missing"
+					type: "item"
+				}
+				{
+					id: "1AEE65EE89B82E12"
+					item: "untagged_mobs:null_item"
+					type: "item"
+				}
+			]
+			title: "Duplicate that what is Missing"
+			x: 2.0d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"7391519637010467"
+				"736B7720A9B289FC"
+			]
+			description: [
+				"Defeating the Non-Players will make them drop The Missing Core."
+				""
+				"Read the Conducting Rituals book on how to preform this ritual."
+			]
+			icon: "untagged_mobs:item_missing"
+			id: "66E80DDD90727B7A"
+			rewards: [{
+				id: "54FA64539978A995"
+				item: {
+					Count: 1
+					id: "untagged_mobs:nonnac_ittefnoc_repyh"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "&oWho?"
+			tasks: [
+				{
+					id: "1447BCC5A1A47C31"
+					item: "enderio:ensouled_chassis"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6FC8D4E6AEFFE2E0"
+					item: "untagged_mobs:nothing"
+					type: "item"
+				}
+				{
+					id: "688F7D65619CEBDE"
+					item: "untagged_mobs:skybox_missing"
+					type: "item"
+				}
+			]
+			title: "Ritual of the Missing"
+			x: 4.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["748EE2D19B13F8BA"]
+			id: "77E7F56B8C872D13"
+			rewards: [{
+				id: "51C7BB0148EAA998"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "09C79E17E00AEEC0"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"7391519637010467"
+				"52154BA08802DE96"
+				"773644DBBADB3907"
+			]
+			description: [
+				"You can recapture the eyes for your own machines."
+				""
+				"Read the Conducting Rituals book on how to preform this ritual."
+			]
+			id: "7508558D7BE9594A"
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "&oAgh Burzum-ishi Krimpatul"
+			tasks: [
+				{
+					id: "537829B0E9575606"
+					item: "kubejs:recaptured_consciousness_empty"
+					type: "item"
+				}
+				{
+					id: "10199F1B0BE90D0D"
+					item: "kubejs:recaptured_consciousness"
+					type: "item"
+				}
+			]
+			title: "Ritual of Binding"
+			x: -4.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["76E7F42F53A92906"]
+			description: ["Right-clicking a Block of Mana Diamond with Warp Flux will transfrom it into a Block of Dragonstone."]
+			icon: "botania:dragonstone"
+			id: "0361D2B79875B653"
+			rewards: [{
+				id: "035B978D69E91F20"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oIs this how the Elves do it?"
+			tasks: [
+				{
+					id: "494E866750FEAB3F"
+					item: "botania:mana_diamond_block"
+					type: "item"
+				}
+				{
+					id: "3C72B00AEF478386"
+					item: "malum:warp_flux"
+					type: "item"
+				}
+				{
+					id: "5D1E2E906268BBEA"
+					item: "botania:dragonstone_block"
+					type: "item"
+				}
+			]
+			title: "Transmuting into a Dragonstone"
+			x: 8.0d
+			y: 31.0d
+		}
+		{
+			dependencies: ["76E7F42F53A92906"]
+			description: [
+				"Using Warp Flux you can now transmute blocks of metals that have been placed by Right-Clicking Warp Flux on them."
+				""
+				"You can now:"
+				""
+				"&lo&r Transmute Lead into Tin"
+				"&lo&r Transmute Tin into Copper"
+				"&lo&r Transmute Copper into Iron"
+				"&lo&r Transmute Iron into Silver"
+				"&lo&r Transmute Silver into Gold"
+			]
+			icon: "malum:cthonic_gold_fragment"
+			id: "53536FA9268ECC39"
+			subtitle: "&oFull Metal Alchemist"
+			tasks: [
+				{
+					id: "2D3F02B65C161739"
+					item: "malum:warp_flux"
+					type: "item"
+				}
+				{
+					id: "494308F9F876BBF4"
+					item: "thermal:lead_block"
+					type: "item"
+				}
+				{
+					id: "0AD7DB91E4E97EA4"
+					item: "minecraft:gold_block"
+					type: "item"
+				}
+				{
+					id: "22CC59931842C17F"
+					title: "I am a Alchemist now"
+					type: "checkmark"
+				}
+			]
+			title: "Lead into Gold"
+			x: 6.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["2E44834F6BA2F4C0"]
+			id: "748EE2D19B13F8BA"
+			tasks: [{
+				id: "4693EDB07EB29112"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["23B11C5E9631918A"]
+			description: ["You can fill a Bottle with Ender Air by Right-clicking it anywhere in the Lavender Fields"]
+			icon: "botania:ender_air_bottle"
+			id: "736B7720A9B289FC"
+			rewards: [{
+				id: "50B69FF56FD08EE7"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "&oBottle of Nothing"
+			tasks: [
+				{
+					id: "244D10215D54D571"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "626A9B0070465D6C"
+					item: "botania:ender_air_bottle"
+					type: "item"
+				}
+				{
+					id: "1D6AEEBD070BE88A"
+					item: "untagged_mobs:nothing"
+					type: "item"
+				}
+			]
+			title: "Ender Air Bottle"
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["23B11C5E9631918A"]
+			description: ["Since Dreamwood grows naturally in the Lavender Fields, no portal is needed to trade for it."]
+			id: "41DD32EB5E41B666"
+			rewards: [{
+				id: "1002638BD1CD5424"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E740ADEF62850D4"
+				item: "botania:dreamwood_log"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"0361D2B79875B653"
+				"4F8D72BB37D8D92E"
+				"5A06D773028BC9D2"
+			]
+			description: ["The Occult Gem can be made with a Spirit Infusion Altar."]
+			id: "3F4EC0FB4D799F62"
+			rewards: [{
+				id: "5F7BFA50AA53EC9A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24C7E1FF20611FCB"
+				item: "alexscaves:occult_gem"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 36.5d
+		}
+		{
+			dependencies: ["3F4EC0FB4D799F62"]
+			description: [
+				"Forsaken Idols are not cheap, but they can be fully automated."
+				""
+				"Make sure you have its components properly automated before proper production."
+			]
+			id: "043C4D3D34A0BD56"
+			rewards: [{
+				id: "3CA934A885C92AE8"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			subtitle: "&oThe Words Become Flesh"
+			tasks: [{
+				id: "0995CC766946E503"
+				item: "alexscaves:forsaken_idol"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 44.0d
+		}
+		{
+			dependencies: [
+				"7508558D7BE9594A"
+				"5A06D773028BC9D2"
+			]
+			description: [
+				"Supercomputers are one of the final items."
+				""
+				"Make sure you have its components properly automated before proper production."
+			]
+			id: "39CD55C645EF2F8E"
+			rewards: [{
+				id: "7A8553CFA241F1EB"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			subtitle: "&oIs Anyone There?"
+			tasks: [{
+				id: "35A43F2DEF132338"
+				item: "kubejs:supercomputer"
+				type: "item"
+			}]
+			title: "Supercomputer"
+			x: 0.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["394A9F2BBF941C4E"]
+			description: [
+				"In Carrion-485 the occasional Carrion Maw can be found in the ground."
+				""
+				"Feeding it Chocolate Cake will make it spit out a Sweet Tooth."
+				""
+				"{image:kubejs:textures/questbook/book_images/floor_maw.png width:192 height:108 align:center}"
+			]
+			icon: "alexscaves:sweet_tooth"
+			id: "06170C731F74C2A1"
+			rewards: [
+				{
+					id: "3F21D30F92F7AB1E"
+					item: "neapolitan:chocolate_cake"
+					type: "item"
+				}
+				{
+					id: "6A46B8CBBEE153A7"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+			]
+			subtitle: "&oWe are the Music Makers, and we are the Dreamers of Dreams"
+			tasks: [
+				{
+					id: "135F31A7B882A62E"
+					item: "neapolitan:chocolate_cake"
+					type: "item"
+				}
+				{
+					id: "7D47CCA6D5FAEF13"
+					item: "alexscaves:sweet_tooth"
+					type: "item"
+				}
+			]
+			title: "Obtaining a Sweet Tooth"
+			x: -14.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"773644DBBADB3907"
+				"52154BA08802DE96"
+			]
+			description: ["These three machines will be needed to make the Modular Reactor."]
+			icon: "mekanism:isotopic_centrifuge"
+			id: "7364187F70EFBB1D"
+			rewards: [{
+				id: "468203D9B91DEA6D"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1968BD2E01958FD5"
+					item: "mekanism:isotopic_centrifuge"
+					type: "item"
+				}
+				{
+					id: "10916616027D66DB"
+					item: "mekanism:chemical_dissolution_chamber"
+					type: "item"
+				}
+				{
+					id: "4A49E8B53D6550C8"
+					item: "mekanism:chemical_injection_chamber"
+					type: "item"
+				}
+			]
+			title: "Nuclear Industries"
+			x: -4.0d
+			y: 36.5d
+		}
+		{
+			dependencies: [
+				"6D3D0794A54099D0"
+				"77E7F56B8C872D13"
+			]
+			description: [
+				"You can use Error Cubes to make Antimater in the Reaction Chamber."
+				""
+				"Crystalising Antimater will result in Atomic Alloy."
+			]
+			id: "773644DBBADB3907"
+			rewards: [{
+				id: "6DF02517E668409E"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6755991457FB77C8"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["748EE2D19B13F8BA"]
+			id: "6D3D0794A54099D0"
+			rewards: [{
+				id: "33DBE957DC2FFF7B"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "3A0905051CDDA7A4"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["7364187F70EFBB1D"]
+			description: ["Constructing Modular Reactors will not be easy. Make sure you have its components properly automated before proper production."]
+			icon: "kubejs:modular_reactor"
+			id: "4D120E3BFAD52367"
+			rewards: [{
+				id: "201111BDC2E86D40"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			subtitle: "&oSuper Powerful Kettle"
+			tasks: [
+				{
+					id: "14E4CB9BA5C6C8FC"
+					item: "kubejs:modular_reactor_empty"
+					type: "item"
+				}
+				{
+					id: "09851EC422774B79"
+					item: "kubejs:modular_reactor"
+					type: "item"
+				}
+			]
+			title: "Modular Reactor"
+			x: -4.0d
+			y: 44.0d
+		}
+		{
+			dependencies: ["6792284C323C3684"]
+			description: ["Ancient Scrap can be found all over the Forsaken Planes. Combined with Gold you can now make Netherite."]
+			id: "390F0E7876ACC11A"
+			rewards: [{
+				id: "6C891E135A55C2BF"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "31367C9629408D8B"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			x: -22.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["23B11C5E9631918A"]
+			description: ["Ender Dust can obtained by crushing End Stone."]
+			icon: "ae2:ender_dust"
+			id: "00F0B2F7923BBDAD"
+			rewards: [{
+				id: "7AE5975392900476"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [
+				{
+					id: "0B10DC99989ED7C8"
+					item: "minecraft:end_stone"
+					type: "item"
+				}
+				{
+					id: "63D2B4C1789DC624"
+					item: "ae2:ender_dust"
+					type: "item"
+				}
+			]
+			title: "Ender Dust"
+			x: 11.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["657795D12BDBF335"]
+			id: "4426317F108F88EE"
+			rewards: [{
+				id: "1E1DFF81CE544611"
+				item: "untagged_mobs:music_disc_detonate"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "18B21F7C828E4113"
+				item: "untagged_mobs:alpha_cobblestone"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"4426317F108F88EE"
+				"33166A16A7F37C34"
+			]
+			description: ["You can Centrifuge Inverted Sand to Obtain Fluorite Dust."]
+			icon: "untagged_mobs:inverse_sand"
+			id: "518F46AD732A3102"
+			rewards: [{
+				id: "2F21A8D2F59D234A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oDans"
+			tasks: [
+				{
+					id: "4E9A3D5D6336DFB3"
+					item: "untagged_mobs:inverse_sand"
+					type: "item"
+				}
+				{
+					id: "52DE8C61B5C6FE52"
+					item: "thermal:machine_centrifuge"
+					type: "item"
+				}
+				{
+					id: "0154C4915BA8886F"
+					item: "mekanism:dust_fluorite"
+					type: "item"
+				}
+			]
+			x: 17.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["39199FC922CE2D82"]
+			description: ["Both eyes are renewable in the Spirit Altar."]
+			icon: "incision:congealed_acid"
+			id: "0AFC4BD8DFC8A929"
+			subtitle: "&oEye Spy"
+			tasks: [
+				{
+					id: "5CBA73A116F15E77"
+					item: "kubejs:crimson_eye"
+					type: "item"
+				}
+				{
+					id: "532C6F4C4811AEF3"
+					item: "incision:congealed_acid"
+					type: "item"
+				}
+			]
+			title: "Renewable Eyeballs"
+			x: -6.5d
+			y: 20.0d
+		}
+	]
+	title: "Chapter 6"
+}

@@ -1,0 +1,373 @@
+{
+	autofocus_id: "4ECF2636146E906D"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1"
+	group: ""
+	icon: "kubejs:vector_operator_charged"
+	id: "714A4E9760055C1C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["10992C2F23A96C79"]
+			id: "5110C1666ECEC9A1"
+			rewards: [{
+				id: "3F8D313CB8B1D762"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "457E5028739DD01E"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4ECF2636146E906D"]
+			icon: "biomesoplenty:sea_oats"
+			id: "10992C2F23A96C79"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:dry_ocean"
+				id: "330B64BD6367720B"
+				title: "Enter dimension 1: &lStranded-233"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 1: &lStranded-233"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4ECF2636146E906D"]
+			icon: "minecraft:red_sand"
+			id: "6F744E3EB34D5ED7"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:copper_remains"
+				id: "2A94A3461D1CF3D5"
+				title: "Enter dimension 3: &lCopper Graveyard"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 3: &lCopper Graveyard"
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4ECF2636146E906D"]
+			icon: "minecraft:mossy_cobblestone"
+			id: "03F601F6C4B86B5C"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:stacked_rocks"
+				id: "05CC9EA5DC9AF5B9"
+				title: "Enter dimension 2: &lThe Fenspire Deep"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 2: &lThe Fenspire Deep"
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"5110C1666ECEC9A1"
+				"03F601F6C4B86B5C"
+			]
+			description: [
+				"Digging up the huge columns of cobblestone can provide you with the stone to make some basic tools and a furnace."
+				""
+				"Remember that there is Veinminer in this pack, which allows you to collect a lot of cobble quickly."
+			]
+			icon: "minecraft:cobblestone"
+			id: "6C140B16BB0A73A8"
+			rewards: [{
+				id: "350DD37085FE34A2"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "&oThis is my Rock Collection"
+			tasks: [
+				{
+					count: 8L
+					id: "2D2288EDB19EAB4A"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "540C3295E6C2F782"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					id: "165B3A03186F6AD6"
+					item: {
+						Count: 1
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Collecting Rocks"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["72A11E4DE0439CFD"]
+			description: ["Using your generated power you can now charge up Empty Vector Operators to create Charged Vector Operators."]
+			id: "660475C0C9A71E8E"
+			rewards: [{
+				id: "41FF5D4FBF83E979"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oI've got the Power"
+			tasks: [{
+				id: "53B4C28A824BC23E"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"6F744E3EB34D5ED7"
+				"6C140B16BB0A73A8"
+			]
+			description: [
+				"Cut Copper can be smelted into Copper Ingots."
+				""
+				"You will need to scrape the oxidation off first before smelting it."
+			]
+			icon: "minecraft:copper_ingot"
+			id: "331319E9F6BD173A"
+			rewards: [{
+				id: "296EE1E9606B7E35"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "&oVisiting the Scrap Yard"
+			tasks: [
+				{
+					id: "2FCDB62081CE9D3D"
+					item: "minecraft:cut_copper"
+					type: "item"
+				}
+				{
+					id: "44D6DB0747E5111B"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"5F45EF4EDED9B5EA"
+				"331319E9F6BD173A"
+				"6C140B16BB0A73A8"
+			]
+			description: [
+				"The Peat Fired Engine will allow you to generate your first bit of power."
+				""
+				"Simply provide it with peat and a redstone signal."
+				""
+				"Do note that this generator can only burn peat and nothing else."
+			]
+			icon: "forestry:engine_peat"
+			id: "72A11E4DE0439CFD"
+			rewards: [{
+				id: "3DF11B2EF658F49B"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "&oFiring up the Engines"
+			tasks: [
+				{
+					id: "66E129C03C037F2E"
+					item: "forestry:engine_peat"
+					type: "item"
+				}
+				{
+					id: "620483677E850DAA"
+					item: "minecraft:lever"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["03F601F6C4B86B5C"]
+			description: ["Peat is a powerful natural fuel source that allows you to conserve wood since you can now burn this stuff instead."]
+			id: "5F45EF4EDED9B5EA"
+			rewards: [{
+				id: "58BE8FBA1914D053"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oBurning Dead Things"
+			tasks: [{
+				id: "56FD1E6BFF61217D"
+				item: "forestry:peat"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["03F601F6C4B86B5C"]
+			description: [
+				"Droopfruit in its raw state isn't the greatest food source. But it can keep you alive."
+				""
+				"Consider making Droop Soup in order to improve its nutritional value."
+				""
+				"New berries can only appear when the plant grows downwards."
+			]
+			id: "4BDF72AE9BF4F899"
+			rewards: [{
+				id: "2217EE54A650E28B"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "&oThe Fruit Would Droop"
+			tasks: [{
+				id: "5F9F2532F5C66DE0"
+				item: "undergarden:droopvine_item"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4BDF72AE9BF4F899"]
+			icon: "miners_delight:weird_caviar"
+			id: "049D0B3AB51A2493"
+			rewards: [
+				{
+					id: "794A545D1E99C608"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Open: 0b
+								SelectedSlot: 0b
+								Size: 6
+							}
+						}
+						id: "supplementaries:lunch_basket"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "36F5A34B2A4876B0"
+					item: "miners_delight:weird_caviar"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "55099248135A46F0"
+					item: "miners_delight:copper_pot"
+					type: "item"
+				}
+				{
+					id: "65E54A8CBD071557"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					id: "1CDB5EBD0D198062"
+					item: "miners_delight:weird_caviar"
+					type: "item"
+				}
+			]
+			title: "Droop Soup"
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["660475C0C9A71E8E"]
+			id: "2DEB532E51F9410C"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "21A8E0C8D4EC7284"
+				item: "kubejs:vector_operator_charged"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["5110C1666ECEC9A1"]
+			icon: "exposure_polaroid:instant_camera"
+			id: "567345FAFE9D5DAE"
+			rewards: [
+				{
+					id: "778C7F35B6A297F6"
+					item: "exposure_polaroid:instant_camera"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5427CAB96322A94C"
+					item: "exposure_polaroid:instant_color_slide"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3EDBD94BD029B44E"
+					item: "exposure:photograph_frame"
+					type: "item"
+				}
+			]
+			subtitle: "&oTake a Polaroid Picture"
+			tasks: [{
+				id: "098C52F3DDF01CD9"
+				item: "exposure:camera_stand"
+				type: "item"
+			}]
+			title: "Dimensional Tourist"
+			x: -1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["30A0ACC1C6D738A8"]
+			id: "4ECF2636146E906D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "31C2F4C2F69AB4FC"
+				item: "kubejs:vector_operator_basic"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["331319E9F6BD173A"]
+			id: "39401DE3C32F95EC"
+			shape: "gear"
+			subtitle: "&oAlmost Autocrafting"
+			tasks: [{
+				id: "2A402D5C1A9C5C35"
+				item: "forestry:worktable"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 14.0d
+		}
+	]
+	title: "Chapter 1"
+}

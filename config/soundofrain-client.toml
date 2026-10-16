@@ -1,0 +1,72 @@
+
+#Sound of Rain Configuration
+#20 ticks = 1 second = 1000ms
+["sound behaviour"]
+	#The radius in blocks that gets checked for blocks.
+	#Range: 1 ~ 32
+	soundRadius = 15
+	#Interval in ticks for checking for blocks, starts at the player and goes out in an expanding circle.
+	#Range: 1 ~ 200
+	soundInterval = 2
+	#Amount of blocks that will be playing rain sounds per layer.
+	#Range: 1 ~ 64
+	maxSoundsPerCycle = 2
+	#shows which blocks get scanned, play a sound and provides logs for debugging.
+	debugShowSoundBlock = false
+	#Config version - do not modify
+	configVersion = "0.5.0"
+
+	["sound behaviour"."sound chances"]
+		#Chance for amethyst and lava blocks to chime or sizzle.
+		#Range: 0.0 ~ 1.0
+		amethystChance = 0.1
+		#Range: 0.0 ~ 1.0
+		lavaChance = 0.1
+
+	["sound behaviour"."sound options"]
+		#Enable or disable sounds. Sand sounds awfull, so its disabled by default
+		EnableThunderSounds = true
+		EnableAmethystRain = true
+		EnableFabricRain = true
+		EnableFoliageRain = true
+		EnableGlassRain = true
+		EnableMetalRain = true
+		EnableSandRain = false
+		EnableWoodRain = true
+		EnableWaterRain = true
+		EnableLavaRain = true
+
+	["sound behaviour"."material rain sound blocks"]
+		#you can add block id's and tags here. Some blocks are backed by their sound types
+		#Tags/Id's for Amethyst like blocks
+		amethystTags = [""]
+		amethystBlocks = [""]
+		#Tags/Id's for Fabric blocks
+		fabricTags = ["#minecraft:wool", "#minecraft:wool_carpet", "#minecraft:beds", "#minecraft:banners"]
+		fabricBlocks = [""]
+		#Tags/Id's for Foliage blocks
+		foliageTags = ["#minecraft:leaves", "#minecraft:flowers"]
+		foliageBlocks = [""]
+		#Tags/Id's for Glass blocks
+		glassTags = ["#forge:glass", "#forge:glass_panes"]
+		glassBlocks = [""]
+		#Tags/Id's for Metal blocks
+		metalTags = ["#minecraft:beacon_base_blocks", "#minecraft:anvil"]
+		metalBlocks = ["minecraft:cauldron", "minecraft:hopper"]
+		#Tags/Id's for Sand blocks
+		sandTags = ["#minecraft:sand"]
+		sandBlocks = [""]
+		#Tags/Id's for Wood blocks
+		woodTags = ["#minecraft:logs", "#minecraft:wooden_stairs", "#minecraft:planks", "#minecraft:wooden_slabs", "#minecraft:wooden_fences", "#minecraft:wooden_doors", "#minecraft:wooden_trapdoors", "#minecraft:wooden_pressure_plates", "#minecraft:wooden_buttons"]
+		woodBlocks = [""]
+
+	["sound behaviour"."The blacklist"]
+		#Blacklist entire mods by their namespace (e.g., "modname")
+		blacklistedMods = ["copycats"]
+		#Blacklist entire tags by their ID (e.g., "#minecraft:leaves")
+		blacklistedTags = [""]
+		#Blacklist specific block IDs (e.g., "minecraft:dirt"
+		blacklistedBlocks = [""]
+		#Blacklist blocks by name pattern - blocks containing these strings will be skipped (e.g., "terracotta"
+		blacklistedBlockNamePatterns = ["Copycat"]
+

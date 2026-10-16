@@ -1,0 +1,7 @@
+
+["Command Executor Block Settings"]
+	#Enable dev mode to prevent command execution
+	devMode = false
+	#Render the block with its texture (false = render as air)
+	renderBlock = false
+

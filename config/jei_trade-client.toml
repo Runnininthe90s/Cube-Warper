@@ -1,0 +1,5 @@
+#Show Just Enough Resources' villager trade recipe category in JEI.
+showJerVillagerTrades = false
+#Show Advanced Loot Info's villager trade recipe category in JEI.
+showAdvancedLootInfoVillagerTrades = false
+

@@ -1,0 +1,262 @@
+{
+	autofocus_id: "3A0E442DF5C70BAE"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_6"
+	group: ""
+	icon: "kubejs:vector_operator_infinite"
+	id: "2425A8353B43CFB5"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "kubejs:vector_operator_eye"
+			id: "3A0E442DF5C70BAE"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "56B90F831238147F"
+				item: "kubejs:vector_operator_eye"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A0E442DF5C70BAE"]
+			icon: "untagged_mobs:nothing"
+			id: "57121F1DD7739B2D"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:the_edge_of_reality"
+				id: "2ED5ED791A2C45B0"
+				title: "Enter: &lThe Edge of Reality"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension &k999&r: &lThe Edge of Reality"
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6483A804AEE2CFED"]
+			icon: "kubejs:vector_operator_infinite"
+			id: "430D259FB92B7E62"
+			rewards: [
+				{
+					id: "340D08224618AAB8"
+					item: "kubejs:tiny_party_popper"
+					type: "item"
+				}
+				{
+					id: "2446568581F2C693"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					id: "650FF8F4B6F1F7A0"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "48B71A3035F4A9F0"
+					item: {
+						Count: 1
+						id: "untagged_mobs:confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7384438DB2399D35"
+					item: {
+						Count: 1
+						id: "untagged_mobs:nonnac_ittefnoc_repyh"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FAD5AD0B4D8D872"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 5.0d
+			tasks: [
+				{
+					id: "64D68B345510B77F"
+					item: "kubejs:vector_operator_infinite"
+					type: "item"
+				}
+				{
+					dimension: "hexahedron:overworld"
+					id: "5B072252D95428A0"
+					title: "Enter the final destination: &lThe Overworld"
+					type: "dimension"
+				}
+			]
+			x: -5.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["57121F1DD7739B2D"]
+			description: ["In a abandonned Hexahedron there sits a Broken Vector Operator..."]
+			hide_until_deps_complete: true
+			id: "5B67DE1C52A6C4AD"
+			size: 2.0d
+			subtitle: "&oParallel Cowboy Universe"
+			tasks: [{
+				id: "043A62FF5C123A3A"
+				item: "kubejs:vector_operator_infinite_empty"
+				type: "item"
+			}]
+			title: "The Infinity Vector"
+			x: -5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5B67DE1C52A6C4AD"]
+			description: [
+				"The Broken Vector Operator can be repaired, but this process needs to be executed fast and properly planned beforehand."
+				""
+				"There are twelve total recipe steps that need to happen in order."
+				""
+				"The twelfth and final step is to place the Broken Vector Operator back on the Vector Tuner &lwithin 10 minutes&r."
+				""
+				"At any point you can place the unfinished Vector back on the Vector Tuner to reset the time and start over at step one."
+				""
+				"This will not be easy, but you made it this far. Plan ahead and you will be more than capable of doing this."
+				""
+				"You got this, best of luck!"
+			]
+			icon: "ae2:singularity"
+			id: "6483A804AEE2CFED"
+			rewards: [{
+				id: "3A7F87FD116A39A9"
+				item: {
+					Count: 1
+					id: "untagged_mobs:hyper_confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "1D2B658191E5A68D"
+					item: "kubejs:vector_operator_infinite_empty"
+					type: "item"
+				}
+				{
+					id: "70FA1855D14E6E08"
+					item: "kubejs:vector_operator_step2"
+					type: "item"
+				}
+				{
+					id: "44C0DA96017B5C03"
+					item: "kubejs:vector_operator_step3"
+					type: "item"
+				}
+				{
+					id: "6EC273C30D58BE88"
+					item: "kubejs:vector_operator_step4"
+					type: "item"
+				}
+				{
+					id: "28F2C09078447525"
+					item: "kubejs:vector_operator_step5"
+					type: "item"
+				}
+				{
+					id: "6CF0034C64A6AF9A"
+					item: "kubejs:vector_operator_step6"
+					type: "item"
+				}
+				{
+					id: "7F27E466BF733EE4"
+					item: "kubejs:vector_operator_step7"
+					type: "item"
+				}
+				{
+					id: "4FD68E976E86384F"
+					item: "kubejs:vector_operator_step8"
+					type: "item"
+				}
+				{
+					id: "5D667B0D940C60B7"
+					item: "kubejs:vector_operator_step9"
+					type: "item"
+				}
+				{
+					id: "0F2F264B806F3AC0"
+					item: "kubejs:vector_operator_step10"
+					type: "item"
+				}
+				{
+					id: "71C1A26E39886E20"
+					item: "kubejs:vector_operator_step11"
+					type: "item"
+				}
+				{
+					id: "13DAE6CBA30297DB"
+					item: "kubejs:vector_operator_step12"
+					type: "item"
+				}
+			]
+			title: "The Final Process"
+			x: -5.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["6483A804AEE2CFED"]
+			description: [
+				"If you would somehow lose the Broken Vector in any way, you can use the following command while standing next to the Vector Tuner to reset the Broken Vector:"
+				""
+				"/function hexahedron:vector_restore"
+			]
+			icon: "kubejs:warping_interface_cracked"
+			id: "66E6BFE29C256D20"
+			size: 0.5d
+			tasks: [{
+				id: "397F12AA87C8F81B"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "Lost Vector Reset"
+			x: -4.0d
+			y: 20.25d
+		}
+		{
+			description: [
+				"The true nature of the Edge of Reality is undocumented."
+				""
+				"You will only know what there is to do here once you visit this destination..."
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "6C52C4A4BFFE9BF0"
+			subtitle: "&oVenture out into the Unknown"
+			tasks: [{
+				id: "78A678777FF97159"
+				title: "I must Investigate this Further"
+				type: "checkmark"
+			}]
+			title: "The Edge of Reality"
+			x: -5.0d
+			y: 8.0d
+		}
+	]
+	title: "Chapter 7"
+}

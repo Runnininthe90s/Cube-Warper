@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "failed_reloads_per_session": 5,
+
+  "default_packs": [
+    "vanilla",
+    "mod_resources",
+    "Moonlight Mods Dynamic Assets",
+    "file/FreshAnimations_v1.10.4.zip",
+    "file/AETexturesBackport1.20-1.1.zip",
+    "file/Mahi's Connected V1.2.0 (1.20.0).zip",
+    "file/Midnighttiggers-F-BGS_1.14_V2.zip"
+  ],
+
+  "default_overrides": {
+    "force_compatible": true
+  },
+
+  "pack_overrides": {
+    "locked_group": [
+      "file/Midnighttiggers-F-BGS_1.14_V2.zip",
+      "file/Mahi's Connected V1.2.0 (1.20.0).zip",
+      "file/AETexturesBackport1.20-1.1.zip",
+      "file/FreshAnimations_v1.10.4.zip",
+      "Moonlight Mods Dynamic Assets",
+      "mod_resources",
+      "vanilla"
+    ],
+    "$$locked_group": {
+      "fixed_position": true
+    },
+
+    "file/Midnighttiggers-F-BGS_1.14_V2.zip": {
+      "default_position": "TOP",
+      "required": true,
+      "force_compatible": true,
+      "hidden": true
+    }
+  }
+}

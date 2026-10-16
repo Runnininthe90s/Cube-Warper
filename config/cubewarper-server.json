@@ -1,0 +1,8 @@
+{
+  "outsidePlayersOnWarp": "leave_behind",
+  "_options": [
+    "leave_behind",
+    "teleport_inside"
+  ],
+  "_comment": "Controls what happens to players outside the Hexahedron when the Launch Button is pressed. 'leave_behind' (default) safely severs the outer portals so outside players don't crash and stay in that dimension. 'teleport_inside' pulls all outside players back into the Hexahedron when the warp starts."
+}

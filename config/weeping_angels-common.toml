@@ -1,0 +1,28 @@
+
+[behaviour]
+	#This section determines the behaviour of the Weeping Angels.
+	#Range for player visibility check.
+	#Range: 1 ~ 100
+	stalk_range = 65
+	#Allow angels to break light-emitting blocks?
+	block_breaking = true
+
+[damage]
+	#Type of hurt inflicted by angels.
+	#Allowed Values: PICKAXE, PICKAXE_AND_GENERATOR, NONE, GENERATOR, ANYTHING
+	hurt_type = "PICKAXE_AND_GENERATOR"
+
+[teleporting]
+	#Range for teleportation.
+	#Range: > 1
+	teleport_range = 400
+	#Allow teleporting across dimensions?
+	interdimensional_teleporting = true
+	#Allow Angel theft?
+	angel_theft = true
+	#Chance of teleportation occurring.
+	#Range: 1 ~ 100
+	teleport_chance = 50
+	#Dimensions where teleportation is banned.
+	banned_dimensions = ["minecraft:the_end"]
+

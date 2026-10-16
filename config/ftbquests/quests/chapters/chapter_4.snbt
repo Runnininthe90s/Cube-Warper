@@ -1,0 +1,1401 @@
+{
+	autofocus_id: "5C0624D353B7302D"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_4"
+	group: ""
+	icon: "kubejs:vector_operator_blaze"
+	id: "3B77EFD909575A58"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["59B914C684A5EE4C"]
+			id: "5C0624D353B7302D"
+			rewards: [{
+				id: "14E3FEDCAACE4DD3"
+				item: "alexscaves:music_disc_fusion"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7840E13E09D2BA50"
+				item: "kubejs:vector_operator_nuclear"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68774479098E8235"]
+			description: ["The Flamethrower is a powerful weapon that deals direct AOE burning damage to your targets."]
+			icon: {
+				Count: 1
+				id: "clanginghowl:flamethrower"
+				tag: {
+					Fuel: 1600
+					"Max Fuel": 1600
+				}
+			}
+			id: "13A90A5B0A9984F6"
+			rewards: [{
+				id: "546894F10F78E2E5"
+				item: "clanginghowl:blaze_fuel_cylinder"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "39ABA42E7AF0D819"
+					item: {
+						Count: 1
+						id: "clanginghowl:flamethrower"
+						tag: {
+							Fuel: 0
+							"Max Fuel": 1600
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6514B9A26D2930AC"
+					item: "clanginghowl:blaze_fuel_cylinder"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 31.0d
+		}
+		{
+			dependencies: ["1F2CA8F24F6AFB93"]
+			description: ["The shrine in the brimwood planes will erupt and spew out a Blaze if a ignited TNT is dropped into the central hole."]
+			id: "743EC92ABFF82A3E"
+			rewards: [{
+				id: "1BBA55D5C7FA6270"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "&oMay all your Bacon Burn"
+			tasks: [
+				{
+					id: "336A07B79810CB73"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "6B23F1E1C0642E75"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "Catching a Blaze"
+			x: -11.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"320232D5783A0652"
+				"3CDFB7634E1757EC"
+			]
+			id: "7711DF44C46FDA64"
+			tasks: [{
+				id: "04A2338CC8916630"
+				item: "clanginghowl:cryogenic_fuel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 21.5d
+		}
+		{
+			dependencies: [
+				"5F9D8874286DFFA0"
+				"0921248B4773650A"
+			]
+			description: ["The Magma Crucible will be able to smelt any Glowstone into Energized Glowstone."]
+			id: "22452FEA02C38183"
+			rewards: [{
+				id: "2D16CDEA905C617F"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "3591ED20E161491A"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["41914B292526CC00"]
+			description: [
+				"The Gourmaryllis can eat anything eatable to generate mana."
+				""
+				"The Kekimurus will convert any cakes placed next to it into mana."
+				""
+				"Both these flowers can be found in dimension 24."
+			]
+			id: "1E41EDAFE5271147"
+			rewards: [{
+				id: "5C7FFF2A710B2C1C"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oAn Endoflame, what is that?"
+			tasks: [
+				{
+					id: "15B6ACE5F8B04605"
+					item: "botania:kekimurus"
+					type: "item"
+				}
+				{
+					id: "05963F4DE612042D"
+					item: "botania:gourmaryllis"
+					type: "item"
+				}
+			]
+			title: "Feed Your Flowers"
+			x: 4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"1E41EDAFE5271147"
+				"317E3C5A72FC4D2E"
+				"40236AE18FD2B000"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Runes can be made from Mystical Petals in combination with mana."
+				"You will just need to find flowers in the right colours."
+			]
+			icon: "botania:runic_altar"
+			id: "0921248B4773650A"
+			rewards: [{
+				id: "555467C95E1AF4AD"
+				item: {
+					Count: 1
+					id: "untagged_mobs:hyper_confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "5CCA611E40056CE4"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+				{
+					id: "313E89BEF818FB96"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "50CD695C60A8DF57"
+					item: "botania:runic_altar"
+					type: "item"
+				}
+			]
+			title: "Runic Altar"
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["5369027A022EB46D"]
+			id: "320232D5783A0652"
+			shape: "gear"
+			tasks: [{
+				id: "2D911D73D672A1D1"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["5C0624D353B7302D"]
+			icon: "regions_unexplored:brimwood_sapling"
+			id: "1F2CA8F24F6AFB93"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:brimstone_veil"
+				id: "1FA82804FB168091"
+				title: "Enter dimension 10: &lThe Brimwood Planes"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 10: &lThe Brimwood Planes"
+			x: -13.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5C0624D353B7302D"]
+			icon: "supplementaries:candy"
+			id: "41914B292526CC00"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:the_sugarscape"
+				id: "59E1D4EF1603E70F"
+				title: "Enter dimension 24: &lThe Sugarscape"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 24: &lThe Sugarscape"
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"22452FEA02C38183"
+				"5FADC584E46C9392"
+			]
+			description: [
+				"Glowstone can be created in the Spirit Crucible and melted in the Magma Crucible for liquid Energised Glowstone."
+				""
+				"Energised Glowstone is a major component in the creation of Blaze Fuel."
+			]
+			icon: "thermal:glowstone_bucket"
+			id: "4555E52C2484D80A"
+			rewards: [{
+				id: "44EFA60F3BEE78E9"
+				item: {
+					Count: 1
+					id: "untagged_mobs:nonnac_ittefnoc_repyh"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "516D16C9178554DE"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					id: "6A4C0CB631BA70B1"
+					item: "thermal:glowstone_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Energized Glowstone"
+			x: 4.0d
+			y: 29.0d
+		}
+		{
+			dependencies: [
+				"3CDFB7634E1757EC"
+				"0A96A6A3F883A86B"
+			]
+			description: ["Molten Steel can be made in a Basin using a Basin Lid. After that it can be poured into the right mold."]
+			icon: "create:basin"
+			id: "2D69B59AE399754E"
+			rewards: [{
+				id: "6EA5D7C5D7F2A697"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oPour it While its Hot"
+			tasks: [
+				{
+					count: 2L
+					id: "25DC59BC429BCD36"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "4BBC7D9CB47D72A3"
+					item: "createdieselgenerators:basin_lid"
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "tconstruct:molten_steel"
+					id: "0D758B586BD11A2F"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "4D2957609DA3F63C"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "6DB211C579F3B5A3"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:mold"
+						tag: {
+							Mold: "createdieselgenerators:bar"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "634C46BBFDC65CD7"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+			]
+			title: "Building a Foundry"
+			x: -13.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["7A7CCA02D1D6DE9D"]
+			description: [
+				"Crushing Wheels are not only able to Crush Blaze burners into Blaze Dust. But they are also extremely efficient at crushing down rocks quickly."
+				""
+				"A set of Crushing Wheels at full speed can go through stacks of stone in a matter of seconds."
+				""
+				"This should allow you to crush the different stone types from the different dimensions extremely quickly."
+			]
+			id: "3CDFB7634E1757EC"
+			rewards: [{
+				id: "4D4679E44D8FAB88"
+				item: {
+					Count: 1
+					id: "untagged_mobs:hyper_confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oCrushing It"
+			tasks: [{
+				count: 2L
+				id: "7369DEE9BE9C2A24"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "Crushing Wheels"
+			x: -4.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["5C0624D353B7302D"]
+			icon: "regions_unexplored:enchanted_birch_sapling"
+			id: "585121A406995B35"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:the_azurewood"
+				id: "5F6951ED75A4A1E5"
+				title: "Enter dimension 32: &lThe Azurewood"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 32: &lThe Azurewood"
+			x: 14.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["585121A406995B35"]
+			description: ["You can find the occasional Runewood Tree in this dimension. Make sure you keep some alive to harvest their sap."]
+			id: "3566CE49C98A4730"
+			rewards: [{
+				id: "457894353EAB5716"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70A2550C73210CB9"
+				item: "malum:runewood_log"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["585121A406995B35"]
+			description: ["Runic trees can be tapped for runic sap by right-clicking with a bottle on the stripped log where the sap is coming out of the tree."]
+			icon: "malum:runic_sapball"
+			id: "4F05D057277AA7FE"
+			rewards: [{
+				id: "0527F4AE8682DF4D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oTree Juice"
+			tasks: [
+				{
+					id: "20718A62F0A2B2B5"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "4404E4EBCE7B80EA"
+					item: "malum:runic_sap"
+					type: "item"
+				}
+				{
+					id: "5B09C4FD50A3D04F"
+					item: "malum:runic_sapball"
+					type: "item"
+				}
+			]
+			title: "Runic Sap"
+			x: 11.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["743EC92ABFF82A3E"]
+			icon: "create:brass_ingot"
+			id: "1143F172BCE0BC82"
+			rewards: [{
+				id: "580841B13DF79639"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "228A2EC5C7BCA7FF"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["50FD9623DE826974"]
+			description: [
+				"Blood combined with any Quartz Dust in the Crystallizer "
+				"will result in Blood Quartz."
+			]
+			icon: "create:rose_quartz"
+			id: "69E8E5DC69DEBAB1"
+			rewards: [{
+				id: "418941864CF1D3BE"
+				item: "brewinandchewin:bloody_mary"
+				type: "item"
+			}]
+			subtitle: "&oEvil Create"
+			tasks: [
+				{
+					id: "7CA0416F545CFFAD"
+					item: "create:rose_quartz"
+					type: "item"
+				}
+				{
+					id: "0535289466B40F8D"
+					item: "create:electron_tube"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"69E8E5DC69DEBAB1"
+				"1143F172BCE0BC82"
+			]
+			description: ["Mechanical Crafting is needed in order to make the Crushing Wheels."]
+			id: "7A7CCA02D1D6DE9D"
+			rewards: [{
+				id: "7222765EB3AD42C4"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				count: 21L
+				id: "77BD657F39E76C93"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Mechanical Crafting"
+			x: -4.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["41914B292526CC00"]
+			description: ["Pepermint powder and Frostmint will be needed to construct the Blast Chiller and catalyse reactions within the machine."]
+			icon: "alexscaves:frostmint"
+			id: "5369027A022EB46D"
+			rewards: [{
+				id: "44A7A0C5D3963F20"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "76DB57843FF0DE1E"
+					item: { Count: 8, id: "alexscaves:peppermint_powder" }
+					type: "item"
+				}
+				{
+					id: "1D5D07B29D26F3ED"
+					item: "alexscaves:frostmint"
+					type: "item"
+				}
+			]
+			title: "Take a Mint"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"3566CE49C98A4730"
+				"7439B5ABC770B23D"
+				"0921248B4773650A"
+			]
+			description: [
+				"The Spirit Altar can be used to create many items of magical nature."
+				""
+				"When crafting, it uses item components from the pedestals."
+				""
+				"Spirits are also needed for the crafting process. The Spirits can be put directly on the Spirit Altar itself."
+				""
+				"The Altar can hold more Spirits than it needs. The leftover spirits will stay on the Altar for your next craft."
+			]
+			icon: "malum:spirit_altar"
+			id: "497247820F413C0E"
+			rewards: [{
+				id: "51158CDA3A1464AB"
+				item: {
+					Count: 1
+					id: "untagged_mobs:hyper_confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oMight and Magic"
+			tasks: [
+				{
+					id: "4A454ED07D7036C1"
+					item: "malum:spirit_altar"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "27744A5829549685"
+					item: { Count: 4, id: "malum:runewood_item_pedestal" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["0A174D0B3636117B"]
+			description: ["Using the Spirit Crucible you can generate a whole assortment of resources using different &oimpetuses&r."]
+			id: "5FADC584E46C9392"
+			rewards: [{
+				id: "44925CE1A1433041"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&o\"I Didn't Enjoy Eidolon\""
+			tasks: [{
+				id: "4DEF6B201AD59501"
+				item: "malum:spirit_crucible"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["497247820F413C0E"]
+			description: ["You can create spirits by crushing runes on a cutting board or by pulverizing them."]
+			icon: "malum:infernal_spirit"
+			id: "0A174D0B3636117B"
+			rewards: [{
+				id: "68734D2D826743EE"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "621B9B03829969C5"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "2525D48C70CFEF07"
+					item: "malum:infernal_spirit"
+					type: "item"
+				}
+				{
+					id: "7D19E01E4DA3CBDF"
+					item: "malum:earthen_spirit"
+					type: "item"
+				}
+				{
+					id: "54C1D2300EB86A77"
+					item: "malum:arcane_spirit"
+					type: "item"
+				}
+			]
+			title: "Smashing Runes"
+			x: 11.5d
+			y: 24.5d
+		}
+		{
+			dependencies: ["41914B292526CC00"]
+			description: ["All four Gummy Rings can be found in dimension 24. In a Cooking Pot they can be turned into the highly flamable Lumisene."]
+			icon: "supplementaries:lumisene_bucket"
+			id: "40236AE18FD2B000"
+			rewards: [
+				{
+					id: "321E472DB49179F6"
+					item: {
+						Count: 1
+						id: "untagged_mobs:confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13731DDE9B2840D5"
+					item: "alexscaves:music_disc_tasty"
+					type: "item"
+				}
+			]
+			subtitle: "&oRings of Power"
+			tasks: [
+				{
+					id: "3E78273575929EE4"
+					item: "alexscaves:gummy_ring_red"
+					type: "item"
+				}
+				{
+					id: "57FD48A9AAB4DED1"
+					item: "alexscaves:gummy_ring_yellow"
+					type: "item"
+				}
+				{
+					id: "2BF036AD547A0FAF"
+					item: "alexscaves:gummy_ring_green"
+					type: "item"
+				}
+				{
+					id: "06EBD0E67D65B116"
+					item: "alexscaves:gummy_ring_blue"
+					type: "item"
+				}
+				{
+					id: "422FD42B2A088F4D"
+					item: "supplementaries:lumisene_bottle"
+					type: "item"
+				}
+			]
+			title: "Collecting all the Rings"
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["40236AE18FD2B000"]
+			description: [
+				"Gummy Rings can be duplicated by spouting them with a small amount of Lumisene."
+				""
+				"This should allow you to create infinite Lumisene with the right setup."
+			]
+			icon: "alexscaves:gumball_pile"
+			id: "2C8A8C043BF486A1"
+			tasks: [{
+				id: "2A4274ED9EE69CB0"
+				title: "I have cycled the gummies"
+				type: "checkmark"
+			}]
+			title: "The Infinite Gummy Cycle"
+			x: 8.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["3566CE49C98A4730"]
+			id: "317E3C5A72FC4D2E"
+			rewards: [{
+				id: "54146B0C91A060FF"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4607F54AA6D22581"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["4F05D057277AA7FE"]
+			icon: "malum:alchemical_calx"
+			id: "7439B5ABC770B23D"
+			rewards: [{
+				id: "74B591345EFC742D"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "28A54F445DA84793"
+					item: "malum:alchemical_calx"
+					type: "item"
+				}
+				{
+					id: "76300AB2FE96C301"
+					item: {
+						Count: 1
+						id: "malum:alchemical_impetus"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"4555E52C2484D80A"
+				"4949402D803E7D7C"
+				"68774479098E8235"
+			]
+			id: "6C40EAFCAB0D7260"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2EFA8D232C3DF6F6"
+				item: "kubejs:vector_operator_blaze"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 37.0d
+		}
+		{
+			dependencies: ["2BBB2BCBE8E363B8"]
+			description: ["With the Metallurgic Infuser you will be able to make Control Circuits."]
+			id: "16D1607818EA293D"
+			rewards: [{
+				id: "65149E5CC6918543"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "4438EE0C0A9B8AE8"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["320232D5783A0652"]
+			description: [
+				"Chocolate Chips can be made by chilling molten chocolate with the right press."
+				""
+				"Chocolate does not have to be created from scratch. Existing chocolate items can be melted down in a heated basin."
+			]
+			id: "5F9D8874286DFFA0"
+			rewards: [{
+				id: "33BA7140203EDC7D"
+				item: {
+					Count: 1
+					id: "supplementaries:jar"
+					tag: {
+						BlockEntityTag: {
+							FluidHolder: {
+								count: 0b
+								id: "moonlight:empty"
+							}
+							ForgeCaps: { }
+							Items: [
+								{
+									Count: 1b
+									Slot: 0b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 1b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 2b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 3b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 4b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 5b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 6b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 7b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 8b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 9b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 10b
+									id: "minecraft:cookie"
+								}
+								{
+									Count: 1b
+									Slot: 11b
+									id: "minecraft:cookie"
+								}
+							]
+							id: "supplementaries:jar"
+						}
+						display: {
+							Lore: ["\"(+NBT)\""]
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "&oSafe for Consumption"
+			tasks: [{
+				id: "54DA22EFFBE3FC8E"
+				item: "kubejs:chocolate_chip"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 21.5d
+		}
+		{
+			dependencies: [
+				"5F9D8874286DFFA0"
+				"7711DF44C46FDA64"
+				"2D69B59AE399754E"
+			]
+			id: "2BBB2BCBE8E363B8"
+			rewards: [
+				{
+					id: "32A730795DF92D74"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "2C4240A4CA5B066E"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "4206A6DFBE49B945"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["16D1607818EA293D"]
+			id: "68774479098E8235"
+			rewards: [{
+				id: "12BD8BAB29AD0708"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "049DE0FA87E7BF59"
+				item: "mekanism:combiner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"3CDFB7634E1757EC"
+				"17CECFF839894492"
+			]
+			description: [
+				"Coke Bricks can be made from Limestone, Cinder Flour and Ash."
+				"Ash can be obtained by shovelling it up after anything that can burn has fully burned down."
+			]
+			icon: "immersiveengineering:coke_oven"
+			id: "0A96A6A3F883A86B"
+			rewards: [{
+				id: "37575E98465DA5CD"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oBig Furnace"
+			tasks: [
+				{
+					id: "7C4A693305F1365B"
+					item: "supplementaries:ash"
+					type: "item"
+				}
+				{
+					id: "7630D742CEF46B4A"
+					item: "supplementaries:ash_brick"
+					type: "item"
+				}
+				{
+					id: "71C3A99B7EBDD66D"
+					item: "create:cinder_flour"
+					type: "item"
+				}
+				{
+					id: "194281186886224D"
+					item: "alexscaves:limestone"
+					type: "item"
+				}
+				{
+					id: "2566D803C394273E"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					id: "5B994BB7B6BAEC3C"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Coke Oven"
+			x: -13.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"2D69B59AE399754E"
+				"5EF27D3655B2D23D"
+			]
+			description: [
+				"By placing Bulk Fermenters in a column and heating them from below, you can make Blaze Fuel."
+				""
+				"Items must be pushed into the structure by hoppers."
+			]
+			icon: "createdieselgenerators:bulk_fermenter"
+			id: "4949402D803E7D7C"
+			rewards: [{
+				id: "2E43196987F227F6"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oFermenting in Bulk"
+			tasks: [
+				{
+					id: "3EBCE9617DF4EB6D"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0D6439FB135832FD"
+					item: { Count: 5, id: "createdieselgenerators:bulk_fermenter" }
+					type: "item"
+				}
+				{
+					id: "283070AC7DE0667F"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "17FB8C659C3A8C68"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "3E49B8CACC67B4DC"
+					item: "clanginghowl:blaze_fuel"
+					type: "item"
+				}
+			]
+			title: "Bulk Fermenter"
+			x: -4.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["1F2CA8F24F6AFB93"]
+			id: "17CECFF839894492"
+			rewards: [{
+				id: "24670C49C3234FFB"
+				item: "untagged_mobs:cassette_tape_pigstep_remix"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7467A137D7BF8260"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3CDFB7634E1757EC"]
+			description: ["Blaze Burners can be crushed using Crushing Wheels to yield Blaze Powder and Blaze Rods."]
+			icon: "minecraft:blaze_rod"
+			id: "5EF27D3655B2D23D"
+			tasks: [
+				{
+					id: "55B8C209E043D2DD"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "467A5B5A2A32246B"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "72E249461DFDA9AE"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+			]
+			title: "Sacrificing Blazes"
+			x: -4.0d
+			y: 25.0d
+		}
+		{
+			dependencies: [
+				"50FD9623DE826974"
+				"743EC92ABFF82A3E"
+			]
+			description: [
+				"With Blaze Burners it is possible to extract the iron from the endless blood ocean located in dimension 16."
+				""
+				"Where this blood came from does not seem to concern you..."
+			]
+			icon: "thermal:iron_dust"
+			id: "17D1A9962C519245"
+			rewards: [{
+				id: "767AAEA4CB7BEA6C"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oHell is Full, Blood is Fuel"
+			tasks: [
+				{
+					id: "0869763966918BAF"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "0203F7F00FEB0254"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "6DC9504C4F9D934D"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "untagged_mobs:fluid_blood"
+					id: "3BE268B34D359B29"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "6B8FC0F08434E370"
+					item: "thermal:iron_dust"
+					type: "item"
+				}
+				{
+					id: "465F161BABF7BAD7"
+					item: "create:hose_pulley"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Renewable Iron"
+			x: -5.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5C0624D353B7302D"]
+			icon: "biomesoplenty:blood_bucket"
+			id: "50FD9623DE826974"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:blood_ocean"
+				id: "212DA0E6DAE6F629"
+				title: "Enter dimension 16: &lBlood Ocean"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 16: &lBlood Ocean"
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5FADC584E46C9392"]
+			id: "5365C73338877F22"
+			tasks: [{
+				id: "33AFE6EEF6D500B3"
+				item: {
+					Count: 1
+					id: "malum:lead_impetus"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["5F9D8874286DFFA0"]
+			icon: "ae2:wireless_crafting_terminal"
+			id: "219FE0DD9D5470C8"
+			rewards: [{
+				id: "79495397B7DF494C"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			subtitle: "&oThere are no Strings on me"
+			tasks: [
+				{
+					id: "5FBC56DCE14617A0"
+					item: "ae2:wireless_access_point"
+					type: "item"
+				}
+				{
+					id: "2BEE71ACF9E33660"
+					item: "ae2:wireless_crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "0C66182AF47890C3"
+					item: "aeinfinitybooster:dimension_card"
+					type: "item"
+				}
+			]
+			title: "Wireless Terminal"
+			x: 0.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["5FADC584E46C9392"]
+			id: "4F434DAC41F72E1C"
+			tasks: [{
+				id: "04B8D7076654D317"
+				item: {
+					Count: 1
+					id: "malum:copper_impetus"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 29.0d
+		}
+		{
+			dependencies: ["5FADC584E46C9392"]
+			id: "1DA1C1EA00F5FDF1"
+			tasks: [{
+				id: "49A2E690BA7A86E5"
+				item: {
+					Count: 1
+					id: "malum:cobalt_impetus"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 29.0d
+		}
+		{
+			dependencies: ["1F2CA8F24F6AFB93"]
+			description: [
+				"A stone generator in this dimension will generate Brimstone."
+				""
+				"Crushing it will yeild Netherrack, Sulfur and a tiny amount of Cobalt."
+			]
+			icon: "biomesoplenty:brimstone"
+			id: "38561DF4074FA9DC"
+			rewards: [{
+				id: "44FAD3CB20149428"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [
+				{
+					id: "485D99BE75B9B207"
+					item: "biomesoplenty:brimstone"
+					type: "item"
+				}
+				{
+					id: "1958FDA91B6AB01A"
+					item: "minecraft:netherrack"
+					type: "item"
+				}
+				{
+					id: "3807DAF4C57EBFD4"
+					item: "alexscaves:sulfur_dust"
+					type: "item"
+				}
+				{
+					id: "77EF8295A142B08E"
+					item: "tconstruct:cobalt_nugget"
+					type: "item"
+				}
+			]
+			title: "Brimstone Generator"
+			x: -14.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1E41EDAFE5271147"]
+			icon: "mekanism:canteen"
+			id: "784B8EF51673E330"
+			rewards: [
+				{
+					count: 4
+					id: "20F954168B95CCE5"
+					item: "mekanism:upgrade_muffling"
+					type: "item"
+				}
+				{
+					id: "1EFB9028BCBA0BBB"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+			]
+			subtitle: "&oLiquifying a Dimension"
+			tasks: [
+				{
+					id: "4403381AEF86B586"
+					item: "mekanism:nutritional_liquifier"
+					type: "item"
+				}
+				{
+					id: "361D65EB6176EC96"
+					item: "mekanism:canteen"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4F05D057277AA7FE"]
+			description: ["You can extract endless sap from a tree by placing an Extruder on a log and placing lava and a block of Alchemical Calx next to the machine."]
+			icon: "thermal:device_rock_gen"
+			id: "7A7024EDC415AAB8"
+			rewards: [{
+				id: "3466CCFE1A7D5872"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "37B142A318959E5D"
+					item: "thermal:device_rock_gen"
+					type: "item"
+				}
+				{
+					id: "060DD78CF8D11409"
+					item: "malum:block_of_alchemical_calx"
+					type: "item"
+				}
+			]
+			title: "Infinite Sap Extraction"
+			x: 10.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0A96A6A3F883A86B"]
+			description: ["Using the Centrifuge you can turn Metal Swarf into lead."]
+			icon: "thermal:lead_dust"
+			id: "5F442664FA982CEF"
+			tasks: [
+				{
+					id: "6CC4F279E74A94A3"
+					item: "thermal:machine_centrifuge"
+					type: "item"
+				}
+				{
+					id: "45E29003BEDF2601"
+					item: "thermal:lead_dust"
+					type: "item"
+				}
+			]
+			title: "Renewable Lead"
+			x: -11.5d
+			y: 19.5d
+		}
+	]
+	title: "Chapter 4"
+}

@@ -1,0 +1,8 @@
+version:3465
+autoJump:false
+renderDistance:10
+simulationDistance:15
+guiScale:4
+renderClouds:"false"
+lang:en_us
+tutorialStep:none

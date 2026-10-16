@@ -1,0 +1,194 @@
+{
+    "cobbleGen": [
+        {
+            "id": "minecraft:blackstone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:hexahedron_graveyard"
+            ]
+        },
+        {
+            "id": "minecraft:mossy_cobblestone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:stacked_rocks"
+            ]
+        },
+        {
+            "id": "minecraft:sandstone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:dry_ocean"
+            ]
+        },
+        {
+            "id": "minecraft:red_sandstone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:copper_remains"
+            ]
+        },
+        {
+            "id": "regions_unexplored:raw_redstone_block",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:dark_rocks"
+            ]
+        },
+        {
+            "id": "tconstruct:seared_cobble",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:magma_plateau"
+            ]
+        },
+        {
+            "id": "alexscaves:galena",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:magnetic_ceiling"
+            ]
+        },
+        {
+            "id": "alexscaves:radrock",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:toxic_caves"
+            ]
+        },
+        {
+            "id": "kubejs:coin_pile_gold",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:endless_hoard"
+            ]
+        },
+        {
+            "id": "windswept:dry_mossy_cobblestone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:pine_forrest"
+            ]
+        },
+        {
+            "id": "undergarden:shiverstone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:snowstorm"
+            ]
+        },
+        {
+            "id": "botania:livingrock",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:silver_forest"
+            ]
+        },
+        {
+            "id": "biomesoplenty:brimstone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:brimstone_veil"
+            ]
+        },
+        {
+            "id": "alexscaves:limestone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:blood_ocean"
+            ]
+        },
+        {
+            "id": "alexscaves:block_of_chocolate",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:the_sugarscape"
+            ]
+        },
+        {
+            "id": "clanginghowl:extraterrestrial_stone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:endless_rainbows"
+            ]
+        },
+        {
+            "id": "minecraft:cobblestone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:the_azurewood"
+            ]
+        },
+        {
+            "id": "regions_unexplored:chalk",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:dusk_islands"
+            ]
+        },
+        {
+            "id": "clanginghowl:extraterrestrial_stone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:endless_rainbows"
+            ]
+        },
+        {
+            "id": "create:scoria",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:soul_valley"
+            ]
+        },
+        {
+            "id": "darkerdepths:darkslate",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:the_umbral_sea"
+            ]
+        },
+        {
+            "id": "undergarden:depthrock",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:gronglegrowth"
+            ]
+        },
+        {
+            "id": "darkerdepths:duskrock",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:forsaken_planes"
+            ]
+        },
+        {
+            "id": "incision:weatherrack",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:carrion_485"
+            ]
+        },
+        {
+            "id": "minecraft:end_stone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:lavender_fields"
+            ]
+        },
+        {
+            "id": "untagged_mobs:alpha_cobblestone",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:alpha_islands"
+            ]
+        },
+        {
+            "id": "untagged_mobs:nothing",
+            "weight": 100,
+            "dimensions": [
+                "hexahedron:the_edge_of_reality"
+            ]
+        }
+    ],
+    "formatVersion": "1.0"
+}

@@ -1,0 +1,1311 @@
+{
+	autofocus_id: "3F6624FB96478C8D"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_5"
+	group: ""
+	icon: "kubejs:vector_operator_lightning"
+	id: "42E20C6D7BEA70B7"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "windswept:yellow_petals"
+			id: "243AFF85A4B9DEAC"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:endless_rainbows"
+				id: "19CDAC83434F4509"
+				title: "Enter dimension 14: &lExtraterrestrial Hills"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 14: &lExtraterrestrial Hills"
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			id: "3F6624FB96478C8D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "034B815C417C27E9"
+				item: "kubejs:vector_operator_blaze"
+				type: "item"
+			}]
+			title: "Blaze Vector Operator"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4371A7827F334251"]
+			description: [
+				"Your natural surroundings can be distorted and corrupted using totem magic."
+				""
+				"Build a totem with a Totem Base at the bottom and 5 runic logs on top."
+				"Five Arcane Spirts will need to go on the totem to perform the ritual."
+				""
+				"To start the Ritual, simply Right-click the totem base with the Totemic Staff. Soulwood Growth has a high chance to spawn but is not guaranteed. Bonemeal can be used to make it grow faster."
+				""
+				"{image:kubejs:textures/questbook/book_images/totem_magic.png width:208 height:140 align:center}"
+			]
+			icon: "malum:totemic_staff"
+			id: "02EA6FCB8A583675"
+			rewards: [{
+				id: "4E3DBC036E1112F7"
+				item: {
+					Count: 1
+					id: "untagged_mobs:nonnac_ittefnoc_repyh"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&oTwisting Trees"
+			tasks: [
+				{
+					id: "66541FA46604E4DD"
+					item: "malum:runewood_totem_base"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6B29DD69DB0C4A54"
+					item: "malum:runewood_log"
+					type: "item"
+				}
+				{
+					id: "00AA2230D8D1450B"
+					item: "malum:totemic_staff"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6742EC457DB21326"
+					item: { Count: 5, id: "malum:arcane_spirit" }
+					type: "item"
+				}
+				{
+					id: "28198E7346575B97"
+					item: "malum:soulwood_growth"
+					type: "item"
+				}
+			]
+			title: "Totem Magic"
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["65865592B7FBB1CC"]
+			description: [
+				"Using the shrine in the Storm Islands, you can harness the power of the local weather to empower certain items."
+				""
+				"A small lightning rod structure should be constructed on top as depicted in the image below."
+				""
+				""
+				"{image:kubejs:textures/questbook/book_images/lightning_shrine.png width:190 height:108 align:center}"
+				""
+				"The item that you want to transform should be placed on the pedestal located at the lower part of the structure. "
+				""
+				"&lThe button at the base of the structure will only start the conversion if the accumulator in the lightning rod is fully charged.&r"
+			]
+			icon: "kubejs:bottled_lightning"
+			id: "3362A3145B9D5745"
+			rewards: [
+				{
+					id: "15E7B512A299D022"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7FA84A49D0FC912C"
+					item: "windswept:music_disc_rain"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "&oRide the Lightning"
+			tasks: [
+				{
+					id: "24183FCBB64EF1F2"
+					item: "immersiveengineering:capacitor_lv"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "18E4F5626262884B"
+					item: { Count: 5, id: "immersiveengineering:coil_lv" }
+					type: "item"
+				}
+				{
+					id: "7C1AF3F5B6B074DD"
+					item: "minecraft:lightning_rod"
+					type: "item"
+				}
+				{
+					id: "477BB3BCACDD6A82"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "7710C9867F89CF38"
+					item: "kubejs:bottled_lightning"
+					type: "item"
+				}
+			]
+			title: "Lightning in a Bottle"
+			x: -15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00A78310B2AA5365"]
+			description: ["Using the Empowerer Infused Alloy can now be created."]
+			icon: "mekanism:alloy_infused"
+			id: "28FB9EDAB196A3BC"
+			rewards: [{
+				id: "34838F04B598C39A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					id: "3660ED0A1DC22BF1"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+				{
+					id: "44FB39E397918A8A"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "thermal:crude_oil_bucket"
+			id: "6291AD460BD9EA70"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:the_umbral_sea"
+				id: "0D079CF1C15D332F"
+				title: "Enter dimension 48: &lThe Umbral Sea"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 48: &lThe Umbral Sea"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6291AD460BD9EA70"]
+			icon: "thermal:crude_oil_bucket"
+			id: "0E609FF5BCBBEA88"
+			rewards: [{
+				id: "2843E7D3217BA5D2"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D9538DC003F3D35"
+				item: "createdieselgenerators:crude_oil_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "minecraft:soul_soil"
+			id: "179AB6E02372A596"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:soul_valley"
+				id: "65E04DCA1BB15A66"
+				title: "Enter dimension 36: &lThe Lost Valley"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 36: &lThe Lost Valley"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3362A3145B9D5745"]
+			description: [
+				"The Lightning Rod multiblock has been slightly improved."
+				""
+				"It now also generates power when artificial lightnig like from a lightning charge hits one of the steel fences."
+				""
+				"&lThe Lightning Shrine can convert Copper Dust into a Lightning Charge.&r"
+				""
+				"Using this method you will need power to make power. But each lightning strike should yeild a net positive of ~200.000 RF depending on how fast you can drain the Lighting Rod."
+			]
+			icon: "thermal:lightning_charge"
+			id: "500C36B667B15D5C"
+			rewards: [{
+				id: "578E428CECC7FC32"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oRaw Unlimited Power"
+			tasks: [
+				{
+					id: "18438E85E0DF817A"
+					item: "immersiveengineering:lightning_rod"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "53392A7CD1FBDF44"
+					item: { Count: 3, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					id: "2FF8E1D7383E99FA"
+					item: "thermal:copper_dust"
+					type: "item"
+				}
+				{
+					id: "4698C6AFB3C1B923"
+					item: "thermal:lightning_charge"
+					type: "item"
+				}
+			]
+			title: "Harnessing the Power of the Gods"
+			x: -15.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["562B1530139F8AEA"]
+			description: ["A Refinery can be made to produce Sulfuric Acid from Sulfur Trioxide and Water."]
+			icon: "immersiveengineering:refinery"
+			id: "003736C6E3EF0118"
+			rewards: [{
+				id: "325344995CB72F34"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "111864E195E78111"
+					item: "immersiveengineering:refinery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0DB3B1F9C23669F9"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "095B1EEC93C62DA1"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["562B1530139F8AEA"]
+			description: [
+				"This ridiculously loud construction will be able to melt and alloy almost anything in existence."
+				""
+				"Make sure you wear the right ear protection though."
+			]
+			icon: "immersiveengineering:arc_furnace"
+			id: "02C145CB0410E42F"
+			rewards: [
+				{
+					id: "0C349CE5BEE90BC2"
+					item: "immersiveengineering:earmuffs"
+					type: "item"
+				}
+				{
+					id: "5A264073C6FB7D22"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oBvvzzzzzzzt"
+			tasks: [
+				{
+					id: "471E1C7DB77CA228"
+					item: "immersiveengineering:arc_furnace"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7D435C55F063DECE"
+					item: {
+						Count: 3
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							graphDmg: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["7F2977D3C91BEA05"]
+			icon: "immersiveengineering:fermenter"
+			id: "1735ADAACB96DC07"
+			rewards: [{
+				id: "528364CE8F31EB38"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "6F92AACAEB8D3277"
+					item: "immersiveengineering:fermenter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "22D9ED361D26A2AC"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "36F5CBE5E2E243D3"
+					item: { Count: 4, id: "minecraft:cauldron" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["562B1530139F8AEA"]
+			description: [
+				"This 16 block high multiblock can fraction Crude Oil for further processing."
+				""
+				"Remember that you can use a Projector to make sure you build it properly."
+			]
+			icon: "immersivepetroleum:distillation_tower"
+			id: "71A24C101C595EEF"
+			rewards: [
+				{
+					id: "6861656B81B8B17E"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "76B0CBBDDB8CD0C6"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oThis Will Make the Biters Angry"
+			tasks: [
+				{
+					id: "4DAA0DDF94741CF8"
+					item: "immersivepetroleum:distillation_tower"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1C0EE43D57CAEFA8"
+					item: { Count: 4, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "regions_unexplored:chalk_grass_block"
+			id: "65865592B7FBB1CC"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:dusk_islands"
+				id: "5DEAAE647D9C7F6B"
+				title: "Enter dimension 13: &lStorm Islands"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 13: &lStorm Islands"
+			x: -15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["71A24C101C595EEF"]
+			description: [
+				"The High Pressure Refinery Unit can be used to create Plastic and Circuit Boards depending on if you feed it Heavy or Light Oil."
+				""
+				"It might be a good idea to make a dedicated machine for both recipes."
+			]
+			icon: "immersivepetroleum:hydrotreater"
+			id: "3C0C5BE247CF991A"
+			rewards: [{
+				id: "5F97BBF7B3795BCE"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oWhat am I Supposed to do \\nwith Heavy Oil Residue?"
+			tasks: [
+				{
+					id: "12D6D698AA83A996"
+					item: "immersivepetroleum:hydrotreater"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4F629A8B2921ADFC"
+					item: { Count: 4, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0C539DA3A9B4FED1"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["243AFF85A4B9DEAC"]
+			description: [
+				"The strange structures in the Extraterrestrial Hills can be shot with a Large Arrow using either a bow or a dispenser."
+				""
+				"Hitting the structure will reveal its hidden Extraterrestrial Crystals."
+				""
+				"You have to mine these crystals quickly since they will disappear again after only a few seconds."
+				""
+				"Of course, if you would automate the breaking, you could get a lot more crystals per arrow."
+			]
+			icon: "clanginghowl:extraterrestrial_energy_crystal"
+			id: "130D8C347C0B0AB6"
+			rewards: [{
+				id: "0D97AD98F8A81A69"
+				item: "caverns_and_chasms:large_arrow"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "51AAD86BA625A874"
+					item: "caverns_and_chasms:large_arrow"
+					type: "item"
+				}
+				{
+					id: "7DF015EE5B85396D"
+					item: "clanginghowl:extraterrestrial_energy_crystal"
+					type: "item"
+				}
+			]
+			title: "Generating Extraterrestrial Crystals"
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3C0C5BE247CF991A"
+				"1B9BD40F42E3D0A5"
+				"003736C6E3EF0118"
+			]
+			description: ["The High-Tech Circuit Board is an important base component for the final machines."]
+			id: "013DA58608406C7D"
+			rewards: [{
+				id: "7FBC5DD6FA40A545"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CCE4993819E57A8"
+				item: "kubejs:circuitboard"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 26.0d
+		}
+		{
+			dependencies: [
+				"013DA58608406C7D"
+				"61EBAB9F6E904FE8"
+			]
+			id: "73E39C4EDCB47CEF"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "069D6A6DDE2A3575"
+				item: "kubejs:vector_operator_lightning"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 34.0d
+		}
+		{
+			dependencies: ["304389322101F300"]
+			description: ["You can now make Light Engineering Blocks. This will allow you to setup an industrial fermenter."]
+			id: "7F2977D3C91BEA05"
+			rewards: [{
+				id: "4FBFD525E151F42B"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "1F8FD69CF6C86AF8"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3BFBC00147BE58DF"]
+			description: [
+				"The heavy Engineering Block will allow you to make multiblocks that are a lot more complex."
+				""
+				"If you are ever unsure on how to build a multiblock make sure to use the handy Projector."
+			]
+			id: "562B1530139F8AEA"
+			rewards: [
+				{
+					id: "521CBCC36C171EDD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 0
+							}
+						}
+						id: "immersivepetroleum:projector"
+					}
+					type: "item"
+				}
+				{
+					id: "08766209BB033836"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "2581189CB20B99B4"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"5FB02F53EA532C75"
+				"01A551720FDD9F68"
+			]
+			description: [
+				"Using the Soldering Machine, you can start making basic components."
+				""
+				"Because this machine needs a pre-configured recipe, it might be a good idea to make more than one."
+			]
+			id: "304389322101F300"
+			rewards: [{
+				id: "19D5A5706547B4B6"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "&oMaking a Rock do the Thinking"
+			tasks: [{
+				id: "454A3254EDB8D08A"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1735ADAACB96DC07"
+				"13CB5998266B8B4B"
+			]
+			description: [
+				"Phenolic Resin can be made using ethanol and a superheated mixer."
+				""
+				"Blaze Cakes should be a lot easier to make since you can go to a dimension that is almost entirely made up of layers of cake."
+			]
+			icon: "immersiveengineering:component_electronic_adv"
+			id: "3BFBC00147BE58DF"
+			rewards: [{
+				id: "737CE6EC41C34CD2"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oSmarter Thinking Component"
+			tasks: [
+				{
+					id: "1BC2B9031B39E4BB"
+					item: "create:blaze_cake"
+					type: "item"
+				}
+				{
+					id: "3360E82440649ECA"
+					item: "immersiveengineering:component_electronic_adv"
+					type: "item"
+				}
+			]
+			title: "Advanced Electronic Component"
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"304389322101F300"
+				"28EC0CE38E4640DE"
+			]
+			id: "13CB5998266B8B4B"
+			rewards: [{
+				id: "3D525DE09878BCEF"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oThe Sun is a Deadly Lazer"
+			tasks: [{
+				id: "7C7AA41B34536970"
+				item: "actuallyadditions:atomic_reconstructor"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"13CB5998266B8B4B"
+				"3BFBC00147BE58DF"
+			]
+			id: "00A78310B2AA5365"
+			rewards: [{
+				id: "343DCA491820DE7A"
+				item: {
+					Count: 1
+					id: "untagged_mobs:hyper_confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "01DD6AA385AACC0F"
+				item: "actuallyadditions:empowerer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["179AB6E02372A596"]
+			description: [
+				"Nether Quartz can be obtained by washing Soul Sand."
+				""
+				"Scoria can be generated using water and lava in this dimension and can be crushed into infinite Soul Sand."
+			]
+			id: "5FB02F53EA532C75"
+			rewards: [{
+				id: "2AF07C1EC4CDE690"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1509F0DBAFB9C41D"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6291AD460BD9EA70"]
+			description: ["Crushing Darkslate has a slight chance to produce a Soul Stone."]
+			id: "4371A7827F334251"
+			rewards: [{
+				id: "055AEA2089F24F8D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11F08139DAFEDBD3"
+				item: "malum:raw_soulstone"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"179AB6E02372A596"
+				"4371A7827F334251"
+			]
+			description: [
+				"The Soul Cube can be found in The Lost Valley."
+				""
+				"When a Soul Stone is Right-clicked on it, it will bring forth an undead army and consume the Soul Stone."
+				""
+				"This might not seem super useful since these undead will attack you on sight, but they are wearing Necronium Armour."
+				""
+				"The recipe for Necronium has been lost to time. Melting down their armour in an Arc Frunace might be the only way to get your hands on some Necronium Ingots."
+			]
+			icon: "kubejs:soul_cube"
+			id: "07F2D5A7CCA1A58B"
+			rewards: [{
+				id: "4EEE3E16AFD32333"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "&oDance with the Dead"
+			tasks: [{
+				id: "3D4C779DC7ADBC70"
+				item: "malum:processed_soulstone"
+				type: "item"
+			}]
+			title: "The Soul Cube"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "untagged_mobs:very_rusted_heavy_metal_grate"
+			id: "0123B7152870D571"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:gronglegrowth"
+				id: "270A2E83FA005BCA"
+				title: "Enter dimension 72: &lThe Gronglegrowth"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 72: &lThe Gronglegrowth"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0123B7152870D571"]
+			description: [
+				"The Groglets native to the Gronglegrowth can be quite useful."
+				""
+				"Feeding them different items makes them produce the following valuable resources:"
+				""
+				"&lo&r Runic Sap -> Gunpowder"
+				"&lo&r Cursed Sap -> Grains of Infinity"
+			]
+			icon: "undergarden:gronglet"
+			id: "394C0194156AAE7C"
+			rewards: [{
+				id: "41B0382CF7BF796A"
+				item: {
+					Count: 1
+					id: "undergarden:slingshot"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "&oI Got a Pet"
+			tasks: [{
+				id: "0DE7FBA6919CAAA8"
+				item: "undergarden:gronglet"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"394C0194156AAE7C"
+				"02EA6FCB8A583675"
+			]
+			description: [
+				"Right-clicking stripped Soulwood with any axe it will reveal the Cursed Sap within the tree."
+				""
+				"When Cursed Sap is Fed to a Gronglet it will poop out Grains of Infinity."
+			]
+			icon: "kubejs:grains_of_infinity"
+			id: "5F390AE1F113B848"
+			rewards: [{
+				id: "1B5F6AD3A9F1F419"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4C793098A35B6DE5"
+					item: "malum:cursed_sapball"
+					type: "item"
+				}
+				{
+					id: "3853D789D59FE700"
+					item: "kubejs:grains_of_infinity"
+					type: "item"
+				}
+			]
+			title: "Grains of Inifinity"
+			x: 9.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["28FB9EDAB196A3BC"]
+			description: [
+				"With the Chemical Oxidizer you can make Sulfur Trioxide."
+				""
+				"Sulfur Trioxide will be produced as a gas but can be turned into a liquid with the Rotary Condensentrator."
+			]
+			icon: "mekanism:chemical_oxidizer"
+			id: "1B9BD40F42E3D0A5"
+			rewards: [{
+				id: "1AFF74C58D55DE7E"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oBeep-Beep, Oxygen, 30 Seconds"
+			tasks: [
+				{
+					id: "48D11FBBC90869A8"
+					item: "mekanism:chemical_oxidizer"
+					type: "item"
+				}
+				{
+					id: "350A2BF7B008B8E8"
+					item: "mekanism:rotary_condensentrator"
+					type: "item"
+				}
+			]
+			title: "Infusing with Oxygen"
+			x: -8.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"5F390AE1F113B848"
+				"02C145CB0410E42F"
+				"07F2D5A7CCA1A58B"
+			]
+			description: ["By recycling the Necronium armor left behind by the undead you can make a Void Chassis."]
+			icon: "enderio:void_chassis"
+			id: "547C18CF2C6FA3D6"
+			rewards: [{
+				id: "5B0408987B064A44"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "6F3336EFC9381470"
+					item: "caverns_and_chasms:necromium_nugget"
+					type: "item"
+				}
+				{
+					id: "533AFF7A8C3DC476"
+					item: "caverns_and_chasms:necromium_ingot"
+					type: "item"
+				}
+				{
+					id: "1FFB230CC0532ACC"
+					item: "enderio:void_chassis"
+					type: "item"
+				}
+			]
+			title: "Void Chassis"
+			x: 4.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"02C145CB0410E42F"
+				"3AEDF7B7730CA73D"
+			]
+			description: ["Fireproof Steel Coating can be made with the Netherrack Shavings produced from Netherrack with the SAG Mill."]
+			id: "61EBAB9F6E904FE8"
+			rewards: [{
+				id: "2E8F17159F7EA32C"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "703D610DB6238F3C"
+				item: "clanginghowl:fireproof_steel_coating"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["547C18CF2C6FA3D6"]
+			description: [
+				"The SAG Mill will be your first EnderIO machine."
+				""
+				"EnderIO machines will need a capacitor inside in order to function properly. "
+			]
+			icon: "enderio:sag_mill"
+			id: "3AEDF7B7730CA73D"
+			rewards: [{
+				id: "7F22D50C9308DDF1"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "7FF9DE545A7A1C8C"
+					item: "enderio:sag_mill"
+					type: "item"
+				}
+				{
+					id: "492618484AB5B0AA"
+					item: "enderio:basic_capacitor"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["0123B7152870D571"]
+			icon: "minecraft:diamond"
+			id: "7D0109AE975E49BE"
+			shape: "octagon"
+			tasks: [
+				{
+					id: "5C7DAB56B199D649"
+					item: "undergarden:depthrock"
+					type: "item"
+				}
+				{
+					id: "5EA67E0C95B52B0E"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Renewable Diamonds"
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"130D8C347C0B0AB6"
+				"3362A3145B9D5745"
+			]
+			description: ["Power Casing can be used to make most of the Actually Additions machines."]
+			id: "28EC0CE38E4640DE"
+			size: 1.0d
+			tasks: [{
+				id: "5FDAA07F5C9933B4"
+				item: "actuallyadditions:lava_factory_casing"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["394C0194156AAE7C"]
+			description: ["When Runic Sap is Fed to a Gronglet it will poop out Gunpowder."]
+			icon: "minecraft:gunpowder"
+			id: "4EDB043848C115B1"
+			tasks: [
+				{
+					id: "1326373F3353A35B"
+					item: "malum:runic_sapball"
+					type: "item"
+				}
+				{
+					id: "4BE968B9163DFCC0"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+			]
+			title: "Renewable Gunpowder"
+			x: 12.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["65865592B7FBB1CC"]
+			description: [
+				"The chalk in this dimension can be crushed into Bauxite."
+				""
+				"In addition to that, stone generators on the Storm Islands will generate Chalk."
+			]
+			id: "61CB35448C2C96A5"
+			shape: "octagon"
+			tasks: [{
+				id: "654C3EBB2BEC1CD3"
+				item: "immersiveengineering:raw_aluminum"
+				type: "item"
+			}]
+			title: "Renewable Aluminium"
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"130D8C347C0B0AB6"
+				"135F7CA45A2CE98C"
+			]
+			description: [
+				"The Soldering Machine can create all kinds of electronics."
+				""
+				"It will need to be supplied with Soldering Alloy which is made from molten Lead and molten Tin."
+			]
+			id: "01A551720FDD9F68"
+			rewards: [{
+				id: "18C790FE1A57656D"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "46BF0EB3FA0287ED"
+				item: "forestry:carpenter"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["130D8C347C0B0AB6"]
+			description: ["The Stationary Charging Station uses Extraterrestial Crystal technology to charge advanced tools for free over time."]
+			id: "7901F7F30F475BE1"
+			rewards: [{
+				id: "5ECD2ECC530D7667"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "66F5C9F8621FABE7"
+				item: "clanginghowl:stationary_charging_station"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7901F7F30F475BE1"]
+			icon: {
+				Count: 1
+				id: "clanginghowl:advanced_chainsword"
+				tag: {
+					Energy: 1500
+					"Max Energy": 1500
+				}
+			}
+			id: "0C755E69C5A7DD79"
+			subtitle: "For the God Emperor"
+			tasks: [{
+				id: "4FA7B6CA7429D947"
+				item: {
+					Count: 1
+					id: "clanginghowl:advanced_chainsword"
+					tag: {
+						Energy: 1500
+						"Max Energy": 1500
+					}
+				}
+				type: "item"
+			}]
+			x: -12.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7901F7F30F475BE1"]
+			icon: {
+				Count: 1
+				id: "clanginghowl:advanced_chainsaw"
+				tag: {
+					Energy: 3000
+					"Max Energy": 3000
+				}
+			}
+			id: "3B1E003F392F39B0"
+			subtitle: "Conceptual Erasure"
+			tasks: [
+				{
+					id: "31DA68B1A04AF740"
+					item: {
+						Count: 1
+						id: "clanginghowl:advanced_chainsaw"
+						tag: {
+							Energy: 3000
+							"Max Energy": 3000
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "341A12293011DF90"
+					item: {
+						Count: 1
+						id: "clanginghowl:advanced_hand_drill"
+						tag: {
+							Energy: 3000
+							"Max Energy": 3000
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6291AD460BD9EA70"]
+			description: [
+				"The Darkslate in this dimension can be crushed into Raw Nickel."
+				""
+				"In addition to that, stone generators in the Umbral Sea will generate Darkslate."
+			]
+			id: "365A0560F237D1FC"
+			shape: "octagon"
+			tasks: [{
+				id: "536D4B12677F0D58"
+				item: "thermal:raw_nickel"
+				type: "item"
+			}]
+			title: "Renewable Nickel"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["243AFF85A4B9DEAC"]
+			description: [
+				"Tin can be obtained from crushing Extraterrestrial Stone."
+				""
+				"Extraterrestrial Stone does not spawn naturally and only generates from stone generators in the Extraterrestrial Hills."
+			]
+			id: "135F7CA45A2CE98C"
+			shape: "octagon"
+			tasks: [{
+				id: "5C8D9B518693163C"
+				item: "thermal:raw_tin"
+				type: "item"
+			}]
+			title: "Renewable Tin"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"013DA58608406C7D"
+				"61EBAB9F6E904FE8"
+			]
+			description: [
+				"The Railgun can shoot almost any rod, which will deal a high amount of damage on impact."
+				""
+				"You can charge the railgun in the Charging Station."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 3
+					}
+				}
+				id: "immersiveengineering:railgun"
+			}
+			id: "0CBFA3982D725C91"
+			rewards: [
+				{
+					count: 4
+					id: "11FA4F83AD0EDF56"
+					item: "immersiveengineering:stick_steel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "022E8C08FD4EDEBC"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "264C7B79734AA545"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 3
+							}
+						}
+						id: "immersiveengineering:railgun"
+					}
+					type: "item"
+				}
+				{
+					id: "2B777885C28C005C"
+					item: "immersiveengineering:charging_station"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 28.0d
+		}
+	]
+	title: "Chapter 5"
+}

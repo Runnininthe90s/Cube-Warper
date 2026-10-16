@@ -1,0 +1,234 @@
+[
+  {
+    "mob": "minecraft:wither_skeleton",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 5
+    },
+    "conditions": {
+      "dimension": "hexahedron:the_umbral_sea",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 10
+    }
+  },
+  {
+    "mob": "minecraft:magma_cube",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 5
+    },
+    "conditions": {
+      "dimension": "hexahedron:magma_plateau",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 10
+    }
+  },
+  {
+    "mob": "alexscaves:gammaroach",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "hexahedron:toxic_caves",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 10
+    }
+  },
+  {
+    "mob": "untagged_mobs:vain",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 3
+    },
+    "conditions": {
+      "dimension": "hexahedron:blood_ocean",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 10
+    }
+  },
+  {
+    "mob": "alexscaves:gingerbread_man",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 3
+    },
+    "conditions": {
+      "dimension": "hexahedron:the_sugarscape",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 10
+    }
+  },
+  {
+    "mob": "alexscaves:gumbeeper",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 3
+    },
+    "conditions": {
+      "dimension": "hexahedron:the_sugarscape",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 3
+    }
+  },
+  {
+    "mob": "windswept:chilled",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 5
+    },
+    "conditions": {
+      "dimension": "hexahedron:snowstorm",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 2
+    }
+  },
+  {
+    "mob": "minecraft:allay",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 5
+    },
+    "conditions": {
+      "dimension": "hexahedron:the_azurewood",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 10
+    }
+  },
+  {
+    "mob": "minecraft:glow_squid",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 5
+    },
+    "conditions": {
+      "dimension": "hexahedron:the_azurewood",
+      "inwater": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 25
+    }
+  },
+  {
+    "mob": "clanginghowl:extraterrestrial_reaper",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "hexahedron:carrion_485",
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 10
+    }
+  },
+  {
+    "mob": "minecraft:enderman",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "hexahedron:lavender_fields",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 10
+    }
+  },
+  {
+    "mob": "untagged_mobs:cleeper",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "hexahedron:alpha_islands",
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 5
+    }
+  },
+  {
+    "mob": "caverns_and_chasms:peeper",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "hexahedron:forsaken_planes",
+      "norestrictions": true,
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 15,
+      "maxheight": 200,
+      "maxthis": 10
+    }
+  }
+]

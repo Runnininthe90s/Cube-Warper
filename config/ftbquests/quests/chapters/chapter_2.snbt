@@ -1,0 +1,998 @@
+{
+	autofocus_id: "75DA3A7E15A0B182"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_2"
+	group: ""
+	icon: "kubejs:vector_operator_fluix"
+	id: "73E93B5BACF8D10D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["75DA3A7E15A0B182"]
+			icon: "regions_unexplored:redstone_bulb"
+			id: "21858D3EA2248A30"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:dark_rocks"
+				id: "1D4E6E0C36C15444"
+				title: "Enter to dimension 4: &lThe Redvein Expanse"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 4: &lThe Redvein Expanse"
+			x: -7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["75DA3A7E15A0B182"]
+			icon: "alexscaves:galena_spire"
+			id: "6895C817C27DBF50"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:magnetic_ceiling"
+				id: "042F7A886B94AD3D"
+				title: "Enter dimension 6: &lFerrum-6"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 6: &lFerrum-6"
+			x: 8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["75DA3A7E15A0B182"]
+			icon: "minecraft:magma_block"
+			id: "294927CF94DF28A9"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:magma_plateau"
+				id: "309419B5A56E0419"
+				title: "Enter to dimension 9: &lThe Horizon of Cinders"
+				type: "dimension"
+			}]
+			title: "Welcome to dimension 9: &lThe Horizon of Cinders"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5062CBABFE108855"]
+			id: "57972A3714FCB9BE"
+			rewards: [{
+				id: "5182F70BD3D7B66B"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "&oThe Beginning of Everything"
+			tasks: [{
+				id: "630A583F00303E69"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 24.5d
+		}
+		{
+			dependencies: ["6895C817C27DBF50"]
+			id: "27F373FB15FA7C80"
+			tasks: [{
+				id: "106CA9CC965BF078"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["141D5FA7C09C176A"]
+			description: [
+				"The Smeltery can melt cannonballs obtained from dimension 1 into molten lead."
+				""
+				"You can cast molten lead into either Lead Ingots or Blocks of Lead."
+			]
+			icon: "tconstruct:smeltery_controller"
+			id: "6A4BA7BAD1500457"
+			rewards: [
+				{
+					id: "3BAED56CCB4E9C43"
+					item: "minecraft:jukebox"
+					type: "item"
+				}
+				{
+					id: "5C3E9C93B83ECE80"
+					item: "supplementaries:music_disc_heave_ho"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&oWhat Happened to the Fridge?!"
+			tasks: [
+				{
+					id: "738B2F57E04A92DF"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "6FA391211B071A7C"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "3DE38710A754FAD5"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "1449C61077BBA398"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					id: "2D2EC996160EC328"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "58EB47657F6DFCC5"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "14CE68CE642BA38F"
+					item: "supplementaries:cannonball"
+					type: "item"
+				}
+				{
+					id: "4B536BD03F65BDAA"
+					item: "thermal:lead_ingot"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7B40E840FEA205E1"]
+			description: ["The Pulverizer can turn various materials into their dust form."]
+			id: "37942CC359146473"
+			rewards: [{
+				id: "0089CFB77DA5C961"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oBecome Dust!"
+			tasks: [{
+				id: "3CB23C61473A981A"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"27F373FB15FA7C80"
+				"6A4BA7BAD1500457"
+			]
+			description: ["You can add the two parts of a Machine Frame together by placing the bottom half into the world and then right-clicking the top half onto it."]
+			id: "7B40E840FEA205E1"
+			rewards: [
+				{
+					id: "4368DC3843E7F545"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "5D35B84E53C4EC2E"
+					item: "untagged_mobs:radio"
+					type: "item"
+				}
+				{
+					id: "7D05DD1C762D28F3"
+					item: "untagged_mobs:cassette_tape_verify_your_integrity"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "&oNeeds Flex Tape™"
+			tasks: [
+				{
+					id: "6C6C168E38FA90BC"
+					item: "kubejs:half_frame_bottom"
+					type: "item"
+				}
+				{
+					id: "38FE7244FC54605A"
+					item: "thermal:machine_frame"
+					type: "item"
+				}
+			]
+			title: "Machine Frame"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["29192445C9E655E1"]
+			description: ["The Crystallizer can form various crystals as long as it has a good supply of water."]
+			id: "5062CBABFE108855"
+			rewards: [{
+				id: "0F2B664B2C7E3D11"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "719A0719267FC658"
+				item: "thermal:machine_crystallizer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["7B40E840FEA205E1"]
+			description: ["The Multiservo Press can reshape your metals using pretty much any mold."]
+			id: "225FF21D6FE56470"
+			rewards: [{
+				id: "6601A72D5EEE0970"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "383BFBA53FF0E578"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["5A3080407E21CCC2"]
+			icon: "mekanism:basic_universal_cable"
+			id: "54CBDFF7F7215FC5"
+			rewards: [{
+				id: "7F2331545028DC3D"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "78803ACC397AFCB9"
+					item: "mekanism:basic_universal_cable"
+					type: "item"
+				}
+				{
+					id: "24E8B047D586E6C2"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:wire_cutters"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Universal Cable"
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["21858D3EA2248A30"]
+			description: [
+				"Mysterious cubes can be found in The Redvein Expanse."
+				"upon breaking them they will drop all five diffrent presses."
+			]
+			id: "4EF6E1518A06155D"
+			rewards: [{
+				id: "3AA78AD9D737AFD0"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5F74C2A7EBF44534"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "79414BA01B754E57"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "6F0B2C38BAA41F35"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "4DAF9D3CFAC7FC88"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+				{
+					id: "604B569A20129909"
+					item: "appflux:energy_processor_press"
+					type: "item"
+				}
+			]
+			title: "Alien Tech"
+			x: -7.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"4EF6E1518A06155D"
+				"225FF21D6FE56470"
+				"70563D25C851EDE2"
+			]
+			icon: "ae2:calculation_processor"
+			id: "29192445C9E655E1"
+			rewards: [{
+				id: "79AE2D144D8CFAEE"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D6B11CB90086E59"
+				item: "ae2:calculation_processor"
+				type: "item"
+			}]
+			title: "Inscribing"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["57972A3714FCB9BE"]
+			description: [
+				"You can now store your items on a Storage Cell. "
+				""
+				"The biggest part of AE2 is quite cheap so that you have the tools to automate things early."
+			]
+			icon: {
+				Count: 1
+				id: "ae2:item_storage_cell_1k"
+				tag: { }
+			}
+			id: "7FD33D4C061B4802"
+			rewards: [{
+				id: "49C5BEDEB967B1EA"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oYour items on a Disk"
+			tasks: [
+				{
+					id: "727FACB18A22A652"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+				{
+					id: "33A4C69DDCAC431C"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "12D18C7A3ED23677"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "18E3E8B7FD35870C"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "Digital Storage"
+			x: -1.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["6895C817C27DBF50"]
+			description: ["There are Certus Quartz Crystals growing on the Ceiling of Ferrum-6."]
+			id: "1C48F58D90ECDFA4"
+			rewards: [{
+				count: 10
+				id: "781A4871D81A30B0"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			subtitle: "&oWhy is it Blue?"
+			tasks: [{
+				id: "691F4F7F23B8C6C8"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"6A4BA7BAD1500457"
+				"5A3080407E21CCC2"
+			]
+			description: [
+				"The Magmatic Dynamo can generate energy using lava."
+				""
+				"For now you will have to bucket the lava in yourself. But you will be able to automatically pump endless magma lakes from this dimension into the hexahedron in the next chapter."
+			]
+			id: "67DA5464418D95A8"
+			rewards: [
+				{
+					id: "3135E236119EE476"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					id: "347CDA40C990FFE0"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "&oPowered by a Magma Ocean"
+			tasks: [{
+				id: "5659E7CF585539EA"
+				item: "thermal:dynamo_magmatic"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["21858D3EA2248A30"]
+			id: "6425F9E49FF8149B"
+			tasks: [{
+				id: "6DEDC343B2DDA238"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["37942CC359146473"]
+			description: [
+				"Galena can be pulverised into Silicon using the pulverizer."
+				""
+				"Do note that stone generators in Ferrum-6 generate Galena."
+			]
+			icon: "ae2:silicon"
+			id: "70563D25C851EDE2"
+			rewards: [{
+				id: "0F98EE6C52FFE9A4"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "&oMagnetic Rock"
+			tasks: [
+				{
+					count: 10L
+					id: "66DFDB7364DD9FD3"
+					item: "alexscaves:galena"
+					type: "item"
+				}
+				{
+					id: "5725F552B64AD020"
+					item: "ae2:silicon"
+					type: "item"
+				}
+			]
+			title: "Silicon"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"025727EB1207A20C"
+				"5A3062A00E9E98F9"
+			]
+			description: [
+				"With Copper and a bit of Iron you can make a passive Steam Engine."
+				""
+				"You can use Fluiducts and a servo to supply the boiler with water."
+				""
+				"This will create a basic constant source of rotation."
+				""
+				"{image:kubejs:textures/questbook/book_images/steam_engine.png width:192 height:108 align:center}"
+			]
+			icon: "create:steam_engine"
+			id: "6C931B0EC40E1417"
+			rewards: [
+				{
+					id: "6037CF657EC0FF59"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					id: "682A343BD23654DD"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "25CE81D465C0CD0B"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5B59B61FB3DDD0F3"
+					item: { Count: 4, id: "create:fluid_tank" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "123C506D165C7834"
+					item: { Count: 4, id: "minecraft:campfire" }
+					type: "item"
+				}
+				{
+					id: "66D92B08FD7748A2"
+					item: "thermal:device_water_gen"
+					type: "item"
+				}
+				{
+					id: "76B515812FC34D05"
+					item: "thermal:fluid_duct"
+					type: "item"
+				}
+				{
+					id: "59634931A5A86DA5"
+					item: "thermal:servo_attachment"
+					type: "item"
+				}
+				{
+					id: "648DF3876D83C26C"
+					item: "create:shaft"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["660475C0C9A71E8E"]
+			id: "75DA3A7E15A0B182"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7682E5FB345AC045"
+				item: "kubejs:vector_operator_charged"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["57972A3714FCB9BE"]
+			id: "7A6E6F53A53B8B1B"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "108F4AA897AC54BD"
+				item: "kubejs:vector_operator_fluix"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["294927CF94DF28A9"]
+			description: ["Gilded Blackstone can be mined for its gold."]
+			id: "025727EB1207A20C"
+			rewards: [{
+				id: "7CF7C939A6B01336"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "&oThey Call it a Mine"
+			tasks: [{
+				id: "0C4138E3529C1698"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6C931B0EC40E1417"]
+			description: ["Using the Mechanical Press you can now recreate Hydraullic Press videos by crushing things very slowly."]
+			id: "141D5FA7C09C176A"
+			rewards: [{
+				id: "295FA51297A011C6"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oHydaullic Press"
+			tasks: [{
+				id: "13B6BA6736F1A4D9"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21858D3EA2248A30"]
+			description: [
+				"You can soon pulverize Skystone into Skystone Dust."
+				""
+				"It might be a good idea to stock up on this to prevent having to come back to this dimension constantly."
+			]
+			icon: "ae2:sky_dust"
+			id: "498E60F53CA8DC47"
+			rewards: [{
+				id: "5175931CA73E861E"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oNot From Outer Space"
+			tasks: [
+				{
+					id: "68373716FB70D6B0"
+					item: "ae2:sky_stone_block"
+					type: "item"
+				}
+				{
+					id: "637EF63890F9869A"
+					item: "ae2:sky_dust"
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["225FF21D6FE56470"]
+			description: ["You can turn an Iron plate into almost any press using the Stonecutter."]
+			icon: "thermal:press_gear_die"
+			id: "52BADFDDBC19F479"
+			rewards: [{
+				id: "6D008D58C77C6770"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "&oIn My Talons, I Shape Clay"
+			tasks: [
+				{
+					id: "12AAEFD231CB3DEC"
+					item: "minecraft:stonecutter"
+					type: "item"
+				}
+				{
+					id: "7D7E60A699EB1398"
+					item: "thermal:iron_plate"
+					type: "item"
+				}
+			]
+			title: "Getting the Presses"
+			x: 4.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"294927CF94DF28A9"
+				"6425F9E49FF8149B"
+			]
+			description: [
+				"You can turn Redstone into Energized Redstone using the first shrine located in the Redvein Expanse."
+				""
+				"Right-clicking Redstone onto the Ancient Redstone Core will convert it into Energized Redstone."
+				""
+				"This will have a slight cooldown. Do note however that any automated systems like deployers do not suffer from this cooldown."
+				""
+				"{image:kubejs:textures/questbook/book_images/first_shrine.png width:192 height:108 align:center}"
+				""
+				"It might be a good idea to setup a local passive steam engine to avoid having to come back to this dimension constantly."
+			]
+			id: "5A3080407E21CCC2"
+			rewards: [{
+				id: "4F2757C06F0C5F55"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "&oPower is Power!"
+			tasks: [{
+				id: "757E2561F7D4DC2C"
+				item: "kubejs:energized_redstone"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21858D3EA2248A30"]
+			description: [
+				"Any stone generator located in The Redvein Expanse will generate Raw Redstone instead of Cobblestone."
+				""
+				"This can soon be pulverized into renewable redstone."
+			]
+			id: "48D52434D4D010CD"
+			rewards: [{
+				id: "7FC38BF5DB95B36D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "6EBC5D35FA543C5C"
+				item: "regions_unexplored:raw_redstone_block"
+				type: "item"
+			}]
+			title: "Redstone Generator"
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["294927CF94DF28A9"]
+			description: [
+				"&lThe stone generated from stone generators is diffrent in every dimension.&r"
+				""
+				"In the Horizon of Cinders seared cobblestone will be generated."
+			]
+			id: "454DD9A7F78B055C"
+			shape: "octagon"
+			tasks: [{
+				id: "6F4E75AB14233422"
+				item: "tconstruct:seared_cobble"
+				type: "item"
+			}]
+			title: "Seared Cobblestone Generator"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7B40E840FEA205E1"]
+			icon: "thermal:device_collector"
+			id: "6B061413A7EEBC3B"
+			shape: "gear"
+			tasks: [
+				{
+					id: "5760454E7FA16A86"
+					item: "thermal:device_collector"
+					type: "item"
+				}
+				{
+					id: "6F579E51B16F328C"
+					item: "thermal:machine_crafter"
+					type: "item"
+				}
+			]
+			title: "Utility Machines"
+			x: -4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["141D5FA7C09C176A"]
+			description: ["Pressing any log will yield Rubber. You can create Cured Rubber by smelting it"]
+			icon: "thermal:cured_rubber"
+			id: "19691D3E91B00F71"
+			subtitle: "&oNot Glue"
+			tasks: [
+				{
+					id: "503F3EF203450B93"
+					item: "thermal:rubber"
+					type: "item"
+				}
+				{
+					id: "652FC7E97A579267"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+			]
+			title: "Making Rubber"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["57972A3714FCB9BE"]
+			description: ["You can import and export any item or fluid using an import or export bus."]
+			id: "7AFCECBEEE6C2FBB"
+			rewards: [{
+				id: "6E2F7CF013466418"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oThe Basics of Automation"
+			tasks: [
+				{
+					id: "5FC39893D01C8DEC"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+				{
+					id: "6BB4D5899D36A665"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["141D5FA7C09C176A"]
+			description: ["A lot of tasks can be automated with deployers. It might be a good idea to set these up in the right locations quite early."]
+			id: "6FB4B571A199E199"
+			shape: "gear"
+			subtitle: "&oWhat is my Purpose?"
+			tasks: [{
+				id: "557AE64BD170D6EA"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Busy Hands"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["27F373FB15FA7C80"]
+			description: ["The Smelter can create the Seared Alloy that is needed for Create. Later on this task can be taken over by the Mechanical Mixer."]
+			id: "5A3062A00E9E98F9"
+			rewards: [{
+				id: "7DA4C2C8289E2767"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&oElectrical Kiln"
+			tasks: [{
+				id: "1B37EA496387E69E"
+				item: "forestry:smelter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["57972A3714FCB9BE"]
+			description: [
+				"With a crafting unit multiblock, you can automate any recipe."
+				""
+				"Use the AE2 guide, or hold [G] while hovering over an item for more information."
+			]
+			icon: "ae2:crafting_unit"
+			id: "69FF98931C1012F1"
+			rewards: [{
+				id: "1775CC07516F872E"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "&oMaking Machines that Make more Machines"
+			tasks: [
+				{
+					id: "069E9048DC16F38B"
+					item: "ae2:crafting_unit"
+					type: "item"
+				}
+				{
+					id: "206F7991FFEA47C0"
+					item: "ae2:1k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "1E78DB850371B5E6"
+					item: "ae2:crafting_accelerator"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "253D0D5AC24075C6"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "0D12762AFE0EF6D9"
+					item: "ae2:pattern_encoding_terminal"
+					type: "item"
+				}
+				{
+					id: "37019AE166449A7A"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+			]
+			title: "Auto Crafting"
+			x: 3.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["57972A3714FCB9BE"]
+			description: ["With the Molecular Assembler you can automate any crafting recipe."]
+			id: "57F2E56BF5B24561"
+			rewards: [{
+				id: "6F5553FBDB50903D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5DFDD693627D6317"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["5062CBABFE108855"]
+			description: [
+				"You can create Flawed Budding Certus blocks using the Crystallizer."
+				""
+				"The Growth Accelerator will need to be hooked up to the ME-System and will speed up the growth of the crystals significantly."
+			]
+			icon: "ae2:flawed_budding_quartz"
+			id: "114FBF1B629A980D"
+			rewards: [{
+				id: "24B93F9A55034392"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4D99F47F1EF86F1B"
+					item: "ae2:growth_accelerator"
+					type: "item"
+				}
+				{
+					id: "2CE1537E3A37F3D7"
+					item: "ae2:quartz_block"
+					type: "item"
+				}
+				{
+					id: "7C2891660AB693E1"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "18A85B1D3F817076"
+					item: "ae2:damaged_budding_quartz"
+					type: "item"
+				}
+				{
+					id: "0E4425713D05D6EB"
+					item: "ae2:chipped_budding_quartz"
+					type: "item"
+				}
+				{
+					id: "56E4085091468CE8"
+					item: "ae2:flawed_budding_quartz"
+					type: "item"
+				}
+			]
+			title: "Budding Certus"
+			x: 3.0d
+			y: 22.0d
+		}
+	]
+	title: "Chapter 2"
+}

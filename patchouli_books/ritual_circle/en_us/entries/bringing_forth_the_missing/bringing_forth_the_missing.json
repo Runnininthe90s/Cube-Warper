@@ -1,0 +1,25 @@
+{
+    "name": "Bringing Forth the Missing",
+    "icon": "untagged_mobs:item_missing",
+    "category": "patchouli:ritual",
+    "sortnum": 2,
+    "pages": [
+	    {
+            "type": "patchouli:spotlight",
+            "item": "untagged_mobs:item_missing",
+			"title": "Bringing Forth the Missing",
+			"text": "The Missing or The Non-Players are strange deadly entities consisting of missing textures. $(br2)They will attack the player when provoked and drop a Missing Core uppon death. $(br2)Know that they can do any action that a normal player can do when fighting them, this makes then incredibly lethal."
+		},
+		{
+			"type": "patchouli:ritual",
+			"input1": "untagged_mobs:nothing",
+			"input2": "untagged_mobs:nothing",
+			"input3": "untagged_mobs:nothing",
+			"input4": "untagged_mobs:nothing",
+			"input5": "untagged_mobs:nothing",
+			"input6": "untagged_mobs:nothing",
+			"input7": "untagged_mobs:nothing",
+			"input8": "untagged_mobs:nothing",
+			"input9": "enderio:ensouled_chassis"
+		}
+]}
