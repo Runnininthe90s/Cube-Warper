@@ -1,12 +1,12 @@
 ServerEvents.recipes(event => {
 
-	let chiller = (Input1, Cast, Output) => {
+	let chiller = (Input1, Cast, Output, Amount) => {
 		event.custom({
 	  		"type": "thermal:chiller",
 	  		"ingredients": [
 	  		  {
 	  		    "fluid": Input1,
-	  		    "amount": 1000
+	  		    "amount": Amount
 	  		  },
 	  		  {
 	  		    "item": Cast
@@ -26,6 +26,7 @@ ServerEvents.recipes(event => {
 		"create:chocolate",
 		"ae2:engineering_processor_press",
 		"kubejs:chocolate_chip",
+		1000
 	)
 
 	event.remove({output: 'clanginghowl:cryogenic_fuel'})
@@ -33,6 +34,7 @@ ServerEvents.recipes(event => {
 		"minecraft:water",
 		"alexscaves:frostmint",
 		"clanginghowl:cryogenic_fuel",
+		1000
 	)
 
 	event.remove({output: 'immersiveengineering:plate_duroplast'})
@@ -40,6 +42,7 @@ ServerEvents.recipes(event => {
 		"immersiveengineering:phenolic_resin",
 		"immersiveengineering:mold_plate",
 		"immersiveengineering:plate_duroplast",
+		90
 	)
 
 })

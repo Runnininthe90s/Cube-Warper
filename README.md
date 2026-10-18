@@ -2,9 +2,9 @@
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-brightgreen.svg)](https://www.minecraft.net/)
 [![Forge](https://img.shields.io/badge/Forge-47.4.23-orange.svg)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)
-[![Modpack](https://img.shields.io/badge/Cube%20Warper-v1.12-blue.svg)](https://www.curseforge.com/minecraft/modpacks/cube-warper)
+[![Modpack](https://img.shields.io/badge/Cube%20Warper-v1.13-blue.svg)](https://www.curseforge.com/minecraft/modpacks/cube-warper)
 
-This repository is a community fork of [Appocryptha/Cube-Warper](https://github.com/Appocryptha/Cube-Warper). It contains the full **v1.12** modpack data and scripts (`kubejs`), critical bugfixes for multiplayer servers, and ready-to-use launch and administration tooling for both **Linux** and **Windows** dedicated servers.
+This repository is a community fork of [Appocryptha/Cube-Warper](https://github.com/Appocryptha/Cube-Warper). It contains the full **v1.13** modpack data and scripts (`kubejs`), critical bugfixes for multiplayer servers, and ready-to-use launch and administration tooling for both **Linux** and **Windows** dedicated servers.
 
 ---
 
@@ -40,7 +40,7 @@ This repository is a community fork of [Appocryptha/Cube-Warper](https://github.
 ### Prerequisites
 * **Java 17 (64-bit)** (e.g. Eclipse Adoptium Temurin 17 or OpenJDK 17).
 * 8 GB – 12 GB RAM allocated to the server.
-* An installed client instance of **Cube Warper v1.12** (via Prism Launcher, CurseForge, or ATLauncher) to copy the mod `.jar` files from.
+* An installed client instance of **Cube Warper v1.13** (via Prism Launcher, CurseForge, or ATLauncher) to copy the mod `.jar` files from.
 
 ### Installation (Linux & Windows)
 

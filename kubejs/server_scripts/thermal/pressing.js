@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
     ])
 
 	event.remove({output: 'immersiveengineering:graphite_electrode'})
-    event.recipes.thermal.press('immersiveengineering:graphite_electrode', [
+    event.recipes.thermal.press(Item.of('immersiveengineering:graphite_electrode', '{Unbreakable:1b}'), [
         '4x mekanism:enriched_carbon',
         'immersiveengineering:mold_rod'
     ])

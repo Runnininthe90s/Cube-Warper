@@ -697,6 +697,36 @@ ServerEvents.recipes(event => {
 	  	S: 'thermal:redstone_servo'
   	})
 
+	event.remove({output: 'thermal:turbo_servo_attachment'})
+	event.shaped('thermal:turbo_servo_attachment', [
+		' P ',
+	  	' S ',
+	  	'   '  
+	  	],{
+	  	P: 'immersiveengineering:fluid_pump',
+	  	S: 'thermal:redstone_servo'
+  	})
+
+	event.remove({output: 'thermal:filter_attachment'})
+	event.shaped('thermal:filter_attachment', [
+		' F ',
+	  	' S ',
+	  	'   '  
+	  	],{
+	  	F: 'create:filter',
+	  	S: 'thermal:servo_attachment'
+  	})
+
+	event.remove({output: 'thermal:energy_limiter_attachment'})
+	event.shaped('thermal:energy_limiter_attachment', [
+		' E ',
+	  	' R ',
+	  	'   '  
+	  	],{
+	  	E: 'thermal:electrum_ingot',
+	  	R: 'minecraft:redstone'
+  	})
+
 	event.remove({output: 'create:steam_engine'})
 	event.shaped('create:steam_engine', [
 		' G ',

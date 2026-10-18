@@ -1154,6 +1154,37 @@
 			x: -6.5d
 			y: 20.0d
 		}
+		{
+			dependencies: ["7391519637010467"]
+			description: [
+				"A Deployer can also kickstart the ritual automatically if it clicks on a Block of Living Flesh while it is holding the Desolate Dagger."
+				""
+				"The Block of Living Flesh will not be consumed during this process."
+			]
+			icon: "create:deployer"
+			id: "5013895EE10C5D81"
+			subtitle: "&oFrom the Moment I Understood the Weakness of my Flesh, it Disgusted me..."
+			tasks: [
+				{
+					id: "3806031C95468F24"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "1B89B0AFDEE9A0D0"
+					item: "malum:block_of_living_flesh"
+					type: "item"
+				}
+				{
+					id: "2F23F8317A4C63BD"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Mechanical Sacrifice"
+			x: 0.0d
+			y: 19.0d
+		}
 	]
 	title: "Chapter 6"
 }

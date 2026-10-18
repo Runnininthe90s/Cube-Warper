@@ -804,7 +804,7 @@
 				""
 				"This might not seem super useful since these undead will attack you on sight, but they are wearing Necronium Armour."
 				""
-				"The recipe for Necronium has been lost to time. Melting down their armour in an Arc Frunace might be the only way to get your hands on some Necronium Ingots."
+				"The recipe for Necronium has been lost to time. Melting down their armour in an Arc Furnace might be the only way to get your hands on some Necronium Ingots."
 			]
 			icon: "kubejs:soul_cube"
 			id: "07F2D5A7CCA1A58B"
@@ -1153,7 +1153,7 @@
 				}
 			}
 			id: "0C755E69C5A7DD79"
-			subtitle: "For the God Emperor"
+			subtitle: "&oFor the God Emperor"
 			tasks: [{
 				id: "4FA7B6CA7429D947"
 				item: {
@@ -1180,7 +1180,7 @@
 				}
 			}
 			id: "3B1E003F392F39B0"
-			subtitle: "Conceptual Erasure"
+			subtitle: "&oConceptual Erasure"
 			tasks: [
 				{
 					id: "31DA68B1A04AF740"

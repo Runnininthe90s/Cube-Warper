@@ -213,6 +213,7 @@ let eye = (id) => {
 		.material("stone")
 		.soundType("stone")
 		.unbreakable()
+		.noDrops()
 		.property(BlockProperties.FACING)
 		.placementState(c =>{
 			  c.set(BlockProperties.FACING, c.nearestLookingDirection.opposite)}

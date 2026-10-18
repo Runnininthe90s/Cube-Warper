@@ -56,8 +56,21 @@ ItemEvents.rightClicked('kubejs:party_popper', event => {
 
 })
 
+BlockEvents.rightClicked(event => {
+    if (event.item.id != 'alexscaves:desolate_dagger') return
+    if (!event.player.isFake()) return
+    if (event.block.id != 'malum:block_of_living_flesh') return
+
+    let e = event.entity
+    let at = `execute in ${e.level.dimension} positioned ${e.x} ${e.y} ${e.z} run`
+
+    event.server.runCommandSilent(`${at} playsound minecraft:block.honey_block.place master @a ~ ~ ~ 1 0`)
+    event.server.runCommandSilent(`${at} particle untagged_mobs:blood ~ ~ ~ 0 0 0 0.2 1000`)
+    event.server.runCommandSilent(`${at} execute as @e[type=marker,tag=ritual_marker,distance=..5,limit=1,sort=nearest] at @s unless entity @e[tag=active_ritual] run function hexahedron:machines/shrine_ritual`)
+})
+	
 ItemEvents.rightClicked('alexscaves:desolate_dagger', event => {
-		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run damage @a[limit=1,sort=nearest] 10 minecraft:player_attack by @a[limit=1,sort=nearest]`)
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run damage @a[limit=1,sort=nearest,distance=..1] 10 minecraft:player_attack by @a[limit=1,sort=nearest,distance=..1]`)
 		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run playsound minecraft:block.honey_block.place master @a ~ ~ ~ 1 0`)
 		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run particle untagged_mobs:blood ~ ~ ~ 0 0 0 0.2 1000`)
 		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run execute as @e[type=marker,tag=ritual_marker,distance=..5,limit=1,sort=nearest] at @s unless entity @e[tag=active_ritual] run function hexahedron:machines/shrine_ritual`)

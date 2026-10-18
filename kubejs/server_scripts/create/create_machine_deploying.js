@@ -58,7 +58,7 @@ let create = (block, item, result) => {
 	create("create:andesite_casing", 		"minecraft:chain",					"create:encased_chain_drive")
 	create("create:andesite_casing", 		"create:brass_hand",				"create:deployer")
 	create("create:andesite_casing", 		"create:crushing_wheel",			"create:mechanical_roller")
-	create("create:andesite_casing", 		"supplementaries:rope",				"create:rope_pulley")
+	create("create:andesite_casing", 		"farmersdelight:rope",				"create:rope_pulley")
 	create("create:andesite_casing", 		"minecraft:piston",					"create:mechanical_piston")
 	create("create:andesite_casing", 		"minecraft:cobblestone_slab",		"create:depot")
 	create("create:andesite_casing", 		"create:cogwheel",					"create:millstone")

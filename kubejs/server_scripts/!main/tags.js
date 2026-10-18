@@ -31,6 +31,7 @@ ServerEvents.tags('block', event => {
   event.add('kubejs:crimson_eye', 'kubejs:eye_stage_4')
   event.add('kubejs:crimson_eye', 'kubejs:eye_open')
 
+  event.add('ftbultimine:excluded_blocks', 'clanginghowl:extraterrestrial_energy_crystal_block')
   event.add('ftbultimine:excluded_blocks', 'clanginghowl:extraterrestrial_energy_cluster')
   event.add('ftbultimine:excluded_blocks', 'clanginghowl:huge_extraterrestrial_energy_cluster')
 
@@ -73,6 +74,14 @@ ServerEvents.tags('block', event => {
   event.add('kubejs:final_vector', 'kubejs:vector_operator_step9')
   event.add('kubejs:final_vector', 'kubejs:vector_operator_step10')
   event.add('kubejs:final_vector', 'kubejs:vector_operator_step11')
+
+  event.add('minecraft:wither_immune', '#minecraft:hexahedron_frame')
+  event.add('minecraft:wither_immune', '#kubejs:crimson_eye')
+  event.add('minecraft:wither_immune', 'kubejs:eye_pillar')
+  event.add('minecraft:wither_immune', 'kubejs:ancient_runes')
+  event.add('minecraft:wither_immune', 'kubejs:chiseled_ancient_bricks')
+  event.add('minecraft:wither_immune', 'kubejs:ancient_bricks')
+  event.add('minecraft:wither_immune', 'kubejs:ancient_bricks_stairs')
 
 })
 
