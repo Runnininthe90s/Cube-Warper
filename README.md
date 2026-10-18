@@ -38,7 +38,7 @@ This repository is a community fork of [Appocryptha/Cube-Warper](https://github.
 ## 🚀 Setting Up a Dedicated Server
 
 ### Prerequisites
-* **Java 17 (64-bit)** (e.g. Eclipse Adoptium Temurin 17 or OpenJDK 17).
+* **Java 17 (64-bit)** (e.g. Eclipse Adoptium Temurin 17 or OpenJDK 17 / JRE 17 or newer).
 * 8 GB – 12 GB RAM allocated to the server.
 * An installed client instance of **Cube Warper v1.13** (via Prism Launcher, CurseForge, or ATLauncher) to copy the mod `.jar` files from.
 
