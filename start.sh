@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 JAVA_BIN=""
 
 if command -v java >/dev/null 2>&1; then
-    JAVA_VERSION="$(java -version 2>&1 | head -n1 | grep -oP '(?<=version ")[^"]+')"
+    JAVA_VERSION="$(java -version 2>&1 | awk -F '"' '/version/ {print $2}')"
     JAVA_MAJOR="${JAVA_VERSION%%.*}"
 
     if [ "$JAVA_MAJOR" -ge 17 ]; then
