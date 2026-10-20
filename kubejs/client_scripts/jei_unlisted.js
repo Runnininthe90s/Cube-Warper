@@ -41,3 +41,6 @@ let jei_show = (Item) => {
 jei_show('thermal:iron_plate')
 jei_show('thermal:copper_plate')
 jei_show('thermal:gold_plate')
+
+jei_remove('malum:block_of_void_salts')
+jei_show('malum:block_of_void_salts')

@@ -39,31 +39,31 @@ ServerEvents.recipes(event => {
 	basic_runes("botania:rune_water",
 		"botania:blue_petal",
 		"botania:cyan_petal",
-		20000
+		10000
 	)
 
 	basic_runes("botania:rune_earth",
 		"botania:green_petal",
 		"botania:lime_petal",
-		20000
+		10000
 	)
 
 	basic_runes("botania:rune_fire",
 		"botania:red_petal",
 		"botania:orange_petal",
-		20000
+		10000
 	)
 
 	basic_runes("botania:rune_air",
 		"botania:white_petal",
 		"botania:light_blue_petal",
-		20000
+		10000
 	)
 
 	basic_runes("botania:rune_mana",
 		"botania:purple_petal",
 		"botania:magenta_petal",
-		20000
+		10000
 	)
 
 	advanced_runes("botania:rune_spring",

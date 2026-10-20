@@ -213,7 +213,7 @@ let eye = (id) => {
 		.material("stone")
 		.soundType("stone")
 		.unbreakable()
-		.noDrops()
+
 		.property(BlockProperties.FACING)
 		.placementState(c =>{
 			  c.set(BlockProperties.FACING, c.nearestLookingDirection.opposite)}
@@ -404,6 +404,7 @@ let eye = (id) => {
 		.lightLevel(1.0)
 		.unbreakable()
 		.box(4, 4, 4, 12, 12, 12, true)
+		.waterlogged()
 
 	event.create('ancient_core').displayName('Ancient Redstone Core')
 		.material('stone')

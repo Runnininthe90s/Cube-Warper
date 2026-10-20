@@ -5,5 +5,10 @@ ServerEvents.recipes(event => {
 	  'enderio:cake_base',
 	  Fluid.of('create:chocolate', 250)
 	])
+
+	event.recipes.createFilling('supplementaries:lumisene_bottle', [
+	  'minecraft:glass_bottle',
+	  Fluid.of('supplementaries:lumisene', 250)
+	])
 	
 })

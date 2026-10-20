@@ -33,6 +33,11 @@ ServerEvents.recipes(event => {
 	event.shapeless('malum:block_of_living_flesh', ['9x malum:living_flesh'])
 	event.shapeless('9x malum:living_flesh', ['malum:block_of_living_flesh'])
 
+	event.shapeless('immersiveengineering:gunpart_barrel', ['immersiveengineering:stick_steel'])
+
+	event.remove({id: 'untagged_mobs:alpha_clay_recipe'})
+	event.shapeless('untagged_mobs:alpha_clay', ['9x untagged_mobs:alpha_clay_ball'])
+
 	event.remove({id: 'alexscaves:uranium_from_block'})
 	event.remove({id: 'immersiveengineering:crafting/storage_uranium_to_ingot_uranium'})
 	event.remove({id: 'immersiveengineering:crafting/raw_uranium_to_raw_block_uranium'})

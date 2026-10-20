@@ -229,7 +229,7 @@ ServerEvents.recipes(event => {
 	  	'ICG',
 	  	' RG'  
 	  	],{
-	  	G: 'minecraft:glass',
+	  	G: '#forge:glass',
 	  	R: 'clanginghowl:redstone_wire',
 	  	C: 'ae2:calculation_processor',
 	  	I: 'thermal:iron_plate'
@@ -409,7 +409,7 @@ ServerEvents.recipes(event => {
 
 	event.replaceInput({input: 'ae2:quartz_glass' }, 
 		'ae2:quartz_glass', 
-		'minecraft:glass'        
+		'#forge:glass'       
 	)
 
     event.remove({output: 'actuallyadditions:lava_factory_casing'})
@@ -1096,7 +1096,7 @@ ServerEvents.recipes(event => {
 	  	],{
 	  	I: 'minecraft:iron_ingot',
 	  	P: 'thermal:iron_plate',
-	  	G: 'minecraft:glass'			
+	  	G: '#forge:glass'			
   	})
 
 	event.remove({output: 'mekanism:nutritional_liquifier'})
@@ -1173,7 +1173,7 @@ ServerEvents.recipes(event => {
 	  	'IGI'  
 	  	],{
 	  	I: 'minecraft:iron_ingot',
-	  	G: 'minecraft:glass',
+	  	G: '#forge:glass',
 	  	R: 'appflux:charged_redstone'
   	})
 
@@ -1213,7 +1213,7 @@ ServerEvents.recipes(event => {
 	  	'RCR',
 	  	'III'  
 	  	],{
-	  	G: 'minecraft:glass',
+	  	G: '#forge:glass',
 	  	R: 'minecraft:redstone',
 	  	C: '#ae2:all_certus_quartz',
 	  	I: 'minecraft:iron_ingot'
@@ -1278,6 +1278,17 @@ ServerEvents.recipes(event => {
 	  	C: 'ae2:fluix_smart_dense_cable'
   	})
 
+	event.remove({id: 'alexscaves:nuclear_bomb'})
+	event.shaped('alexscaves:nuclear_bomb', [
+		'SPS',
+	  	'SFS',
+	  	'SPS'  
+	  	],{
+	  	F: 'alexscaves:fissile_core',
+	  	S: 'immersiveengineering:ingot_steel',
+	  	P: 'alexscaves:polymer_plate'
+  	})
+
 	event.replaceInput({output:'immersiveengineering:railgun'}, 'immersiveengineering:ingot_steel', 'clanginghowl:fireproof_steel_coating')
 	event.replaceInput({output:'immersiveengineering:railgun'}, 'immersiveengineering:component_electronic_adv', 'kubejs:circuitboard')
 
@@ -1289,7 +1300,7 @@ ServerEvents.recipes(event => {
 	event.replaceInput({output:'minecraft:observer'}, 'minecraft:quartz', '#ae2:all_quartz')
 	event.replaceInput({output:'minecraft:comparator'}, 'minecraft:quartz', '#ae2:all_quartz')
 
-	event.replaceInput({input:'ae2:quartz_vibrant_glass'}, 'ae2:quartz_vibrant_glass', 'minecraft:glass')
+	event.replaceInput({input:'ae2:quartz_vibrant_glass'}, 'ae2:quartz_vibrant_glass', '#forge:glass')
 
 	event.replaceInput({output:'botania:natura_pylon'}, 'minecraft:ender_eye', 'botania:rune_greed')
 })

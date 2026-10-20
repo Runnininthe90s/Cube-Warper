@@ -9,6 +9,7 @@ execute as @e[tag=core] at @s run tag @e[distance=..30,type=windswept:chilled] a
 execute as @e[tag=core] at @s run tag @e[distance=..30,type=untagged_mobs:cleeper] add hex_target
 execute as @e[tag=core] at @s run tag @e[distance=..30,type=alexscaves:gumbeeper] add hex_target
 execute as @e[tag=core] at @s run tag @e[distance=..30,type=caverns_and_chasms:peeper] add hex_target
+execute as @e[tag=core] at @s run tag @e[distance=..30,type=minecraft:enderman] add hex_target
 
 execute as @e[tag=outer_core] at @s run tag @e[distance=..30,type=magma_cube] add hex_target
 execute as @e[tag=outer_core] at @s run tag @e[distance=..30,type=untagged_mobs:vain] add hex_target
@@ -21,5 +22,6 @@ execute as @e[tag=outer_core] at @s run tag @e[distance=..30,type=windswept:chil
 execute as @e[tag=outer_core] at @s run tag @e[distance=..30,type=untagged_mobs:cleeper] add hex_target
 execute as @e[tag=outer_core] at @s run tag @e[distance=..30,type=alexscaves:gumbeeper] add hex_target
 execute as @e[tag=outer_core] at @s run tag @e[distance=..30,type=caverns_and_chasms:peeper] add hex_target
+execute as @e[tag=outer_core] at @s run tag @e[distance=..30,type=minecraft:enderman] add hex_target
 
 execute as @e[tag=outer_core] at @s as @e[distance=..15,tag=hex_target] at @s if block ~ ~ ~ kubejs:hexahedron_filling run tp @s ~ ~-500 ~

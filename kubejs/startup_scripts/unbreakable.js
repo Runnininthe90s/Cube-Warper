@@ -7,4 +7,4 @@ let unbreakable_block = (unbreakable_block) => {
 	})
 }
 
-unbreakable_block('clanginghowl:extraterrestrial_energy_crystal_block')
+//unbreakable_block('clanginghowl:extraterrestrial_energy_crystal_block')

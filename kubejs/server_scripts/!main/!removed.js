@@ -39,7 +39,6 @@ ServerEvents.recipes(event => {
         event.remove({id: 'mechanism:sawing/torch'})
         event.remove({id: 'tconstruct:smeltery/melting/metal/molten_debris/ore'})
         event.remove({id: 'tconstruct:smeltery/melting/metal/netherite/lodestone'})
-        event.remove({output: 'alexscaves:nuclear_bomb'})
         event.remove({output: 'ae2:crank'})
         event.remove({output: 'thermal:lightning_charge'})
         event.remove({output: 'botania:fertilizer'})
@@ -70,6 +69,7 @@ ServerEvents.recipes(event => {
 	    event.remove({id: 'create_alexscaves_compat:crushing/scrap_metal_recycling' })
 	    event.remove({id: 'actuallyadditions:lens_of_the_miner' })
         event.remove({id: 'alexscaves:hot_chocolate_bottle'})
+        event.remove({id: 'tconstruct:smeltery/melting/metal/iron/chain'})
 
 	    event.remove({id: 'thermal:machines/pulverizer/pulverizer_andesite' })
 	    event.remove({id: 'thermal:machines/pulverizer/pulverizer_granite' })

@@ -74,7 +74,7 @@ let create = (block, item, result) => {
 	create("create:copper_casing",			"create:chute", 					"create:portable_fluid_interface")
 	create("create:copper_casing",			"thermal:cured_rubber_block", 		"create:hose_pulley")
 	create("create:copper_casing",			"minecraft:iron_bars", 				"create:item_drain")
-	create("create:copper_casing",			"create:sand_paper", 				"create_enchantment_industry:disenchanter")
+	//create("create:copper_casing",			"create:sand_paper", 				"create_enchantment_industry:disenchanter")
 	create("create:copper_casing",			"caverns_and_chasms:copper_grate", 	"thermal:device_water_gen")
 
 //Brass Casing
