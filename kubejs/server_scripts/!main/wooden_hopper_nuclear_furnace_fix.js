@@ -19,6 +19,17 @@
 
     const scannedLevels = {}
 
+    function isClientSideLevel(level) {
+        if (!level) return true
+        if (typeof level.isClientSide === 'function') {
+            return Boolean(level.isClientSide())
+        }
+        if (typeof level.m_5776_ === 'function') {
+            return Boolean(level.m_5776_())
+        }
+        return Boolean(level.f_46443_)
+    }
+
     function isNullContainerHolderServer(level, pos) {
         if (!level || !pos) return false
         const state = level.getBlockState ? level.getBlockState(pos) : level.m_8055_(pos)
@@ -45,7 +56,7 @@
         const hasLevel = hopper.hasLevel ? hopper.hasLevel() : hopper.m_58898_()
         if (!hasLevel) return true
         const level = hopper.getLevel ? hopper.getLevel() : hopper.m_58904_()
-        if (!level || level.isClientSide) return true
+        if (isClientSideLevel(level)) return true
 
         const pos = hopper.getBlockPos ? hopper.getBlockPos() : hopper.m_58899_()
         const state = hopper.getBlockState ? hopper.getBlockState() : hopper.m_58900_()
@@ -57,13 +68,33 @@
             return true
         }
 
-        const facingProp = $HopperBlock.FACING || $HopperBlock.f_54021_
-        const facing = state.getValue ? state.getValue(facingProp) : state.m_61143_(facingProp)
+        let facing = null
+        try {
+            const facingProp = $HopperBlock.FACING || $HopperBlock.f_54021_
+            if (facingProp) {
+                facing = state.getValue ? state.getValue(facingProp) : state.m_61143_(facingProp)
+            }
+        } catch (e) {}
+
         if (facing) {
             const targetPos = pos.relative ? pos.relative(facing) : pos.m_121945_(facing)
             if (isNullContainerHolderServer(level, targetPos)) {
                 hopper.setTransferCooldown(20)
                 return true
+            }
+        } else {
+            const neighbors = [
+                pos.below ? pos.below() : pos.m_7495_(),
+                pos.north ? pos.north() : pos.m_122012_(),
+                pos.south ? pos.south() : pos.m_122019_(),
+                pos.west ? pos.west() : pos.m_122024_(),
+                pos.east ? pos.east() : pos.m_122029_()
+            ]
+            for (let i = 0; i < neighbors.length; i++) {
+                if (isNullContainerHolderServer(level, neighbors[i])) {
+                    hopper.setTransferCooldown(20)
+                    return true
+                }
             }
         }
 
@@ -76,6 +107,7 @@
             return
         }
         if (be instanceof $WoodenHopperBlockEntity) {
+            be.setTransferCooldown(20)
             if (global.trackedWoodenHoppers.indexOf(be) === -1) {
                 global.trackedWoodenHoppers.push(be)
             }
@@ -101,10 +133,10 @@
 
     LevelEvents.tick(event => {
         const level = event.level
-        if (!level || level.isClientSide) return
+        if (isClientSideLevel(level)) return
 
         // Discover any existing Wooden Hoppers in loaded chunks (e.g. after /reload)
-        const dimKey = String(level.dimension)
+        const dimKey = typeof level.dimension === 'function' ? String(level.dimension()) : String(level.dimension)
         if (!scannedLevels[dimKey] && blockEntityTickersField) {
             scannedLevels[dimKey] = true
             try {
