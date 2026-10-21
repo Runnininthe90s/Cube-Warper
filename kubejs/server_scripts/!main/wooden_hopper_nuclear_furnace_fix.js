@@ -6,7 +6,6 @@
 (() => {
     const $WoodenHopperBlockEntity = Java.loadClass('cech12.woodenhopper.tileentity.WoodenHopperBlockEntity')
     const $WorldlyContainerHolder = Java.loadClass('net.minecraft.world.WorldlyContainerHolder')
-    const $HopperBlock = Java.loadClass('net.minecraft.world.level.block.HopperBlock')
     const $Level = Java.loadClass('net.minecraft.world.level.Level')
 
     global.trackedWoodenHoppers = global.trackedWoodenHoppers || []
@@ -32,80 +31,54 @@
 
     function isNullContainerHolderServer(level, pos) {
         if (!level || !pos) return false
-        const state = level.getBlockState ? level.getBlockState(pos) : level.m_8055_(pos)
-        if (!state) return false
-        const hasBE = state.hasBlockEntity ? state.hasBlockEntity() : state.m_155947_()
-        if (hasBE) return false
-        const block = state.getBlock ? state.getBlock() : state.m_60734_()
-        if (block instanceof $WorldlyContainerHolder) {
-            const container = block.getContainer
-                ? block.getContainer(state, level, pos)
-                : block.m_5840_(state, level, pos)
-            return container == null
-        }
+        try {
+            const state = level.getBlockState ? level.getBlockState(pos) : level.m_8055_(pos)
+            if (!state) return false
+            const block = state.getBlock ? state.getBlock() : state.m_60734_()
+            if (block instanceof $WorldlyContainerHolder) {
+                const container = block.getContainer
+                    ? block.getContainer(state, level, pos)
+                    : block.m_5840_(state, level, pos)
+                return container == null
+            }
+        } catch (e) {}
         return false
     }
 
     function guardWoodenHopperServer(hopper) {
-        if (global.guardWoodenHopper) {
-            return global.guardWoodenHopper(hopper)
-        }
         if (!hopper) return false
-        const removed = hopper.isRemoved ? hopper.isRemoved() : hopper.m_58901_()
-        if (removed) return false
-        const hasLevel = hopper.hasLevel ? hopper.hasLevel() : hopper.m_58898_()
-        if (!hasLevel) return true
-        const level = hopper.getLevel ? hopper.getLevel() : hopper.m_58904_()
-        if (isClientSideLevel(level)) return true
-
-        const pos = hopper.getBlockPos ? hopper.getBlockPos() : hopper.m_58899_()
-        const state = hopper.getBlockState ? hopper.getBlockState() : hopper.m_58900_()
-        if (!pos || !state) return true
-
-        const abovePos = pos.above ? pos.above() : pos.m_7494_()
-        if (isNullContainerHolderServer(level, abovePos)) {
-            hopper.setTransferCooldown(20)
-            return true
-        }
-
-        let facing = null
         try {
-            const facingProp = $HopperBlock.FACING || $HopperBlock.f_54021_
-            if (facingProp) {
-                facing = state.getValue ? state.getValue(facingProp) : state.m_61143_(facingProp)
-            }
-        } catch (e) {}
+            const removed = hopper.isRemoved ? hopper.isRemoved() : hopper.m_58901_()
+            if (removed) return false
+            const hasLevel = hopper.hasLevel ? hopper.hasLevel() : hopper.m_58898_()
+            if (!hasLevel) return true
+            const level = hopper.getLevel ? hopper.getLevel() : hopper.m_58904_()
+            if (isClientSideLevel(level)) return true
 
-        if (facing) {
-            const targetPos = pos.relative ? pos.relative(facing) : pos.m_121945_(facing)
-            if (isNullContainerHolderServer(level, targetPos)) {
-                hopper.setTransferCooldown(20)
-                return true
-            }
-        } else {
+            const pos = hopper.getBlockPos ? hopper.getBlockPos() : hopper.m_58899_()
+            if (!pos) return true
+
             const neighbors = [
+                pos.above ? pos.above() : pos.m_7494_(),
                 pos.below ? pos.below() : pos.m_7495_(),
                 pos.north ? pos.north() : pos.m_122012_(),
                 pos.south ? pos.south() : pos.m_122019_(),
                 pos.west ? pos.west() : pos.m_122024_(),
                 pos.east ? pos.east() : pos.m_122029_()
             ]
+
             for (let i = 0; i < neighbors.length; i++) {
                 if (isNullContainerHolderServer(level, neighbors[i])) {
                     hopper.setTransferCooldown(20)
                     return true
                 }
             }
-        }
+        } catch (e) {}
 
         return true
     }
 
     function trackWoodenHopperServer(be) {
-        if (global.trackWoodenHopper) {
-            global.trackWoodenHopper(be)
-            return
-        }
         if (be instanceof $WoodenHopperBlockEntity) {
             be.setTransferCooldown(20)
             if (global.trackedWoodenHoppers.indexOf(be) === -1) {
@@ -114,6 +87,10 @@
             guardWoodenHopperServer(be)
         }
     }
+
+    // Overwrite globals to ensure server-side updates take effect immediately
+    global.guardWoodenHopper = guardWoodenHopperServer
+    global.trackWoodenHopper = trackWoodenHopperServer
 
     BlockEvents.placed('woodenhopper:wooden_hopper', event => {
         const be = event.block.entity
