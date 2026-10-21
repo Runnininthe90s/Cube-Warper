@@ -12,17 +12,27 @@
 //   it throws NullPointerException ("this.inv" is null) every time the chunk ticks.
 //
 // Fix:
-// Tracks loaded WoodenHopperBlockEntity instances and keeps their transferCooldown > 0
-// before each level tick (and on neighbor block updates) whenever any adjacent block
-// is a WorldlyContainerHolder that currently returns a null container. Once the Nuclear
-// Furnace multiblock is completed (active=true), getContainer() returns the valid
-// NuclearFurnaceBlockEntity and the Wooden Hopper automatically resumes transferring items.
+// Discovers Wooden Hoppers via ChunkEvent$Load, level ticker lists (active & pending),
+// block placement, and neighbor updates, and keeps their transferCooldown > 0 whenever
+// any adjacent block is an unformed WorldlyContainerHolder returning a null container.
 
 (() => {
     const $WoodenHopperBlockEntity = Java.loadClass('cech12.woodenhopper.tileentity.WoodenHopperBlockEntity')
     const $WorldlyContainerHolder = Java.loadClass('net.minecraft.world.WorldlyContainerHolder')
+    const $Level = Java.loadClass('net.minecraft.world.level.Level')
 
     global.trackedWoodenHoppers = global.trackedWoodenHoppers || []
+
+    let blockEntityTickersField = null
+    let pendingTickersField = null
+    try {
+        blockEntityTickersField = $Level.getDeclaredField('f_151512_') // blockEntityTickers
+        blockEntityTickersField.setAccessible(true)
+    } catch (e) {}
+    try {
+        pendingTickersField = $Level.getDeclaredField('f_151503_') // pendingBlockEntityTickers
+        pendingTickersField.setAccessible(true)
+    } catch (e) {}
 
     function isClientSideLevel(level) {
         if (!level) return true
@@ -64,7 +74,6 @@
             const pos = hopper.getBlockPos ? hopper.getBlockPos() : hopper.m_58899_()
             if (!pos) return true
 
-            // Check all 6 adjacent positions (above for pull, sides/below for push)
             const neighbors = [
                 pos.above ? pos.above() : pos.m_7494_(),
                 pos.below ? pos.below() : pos.m_7495_(),
@@ -87,52 +96,108 @@
 
     function trackWoodenHopper(be) {
         if (be instanceof $WoodenHopperBlockEntity) {
-            be.setTransferCooldown(20)
-            if (global.trackedWoodenHoppers.indexOf(be) === -1) {
-                global.trackedWoodenHoppers.push(be)
+            try {
+                be.setTransferCooldown(20)
+                if (global.trackedWoodenHoppers.indexOf(be) === -1) {
+                    global.trackedWoodenHoppers.push(be)
+                    const pos = be.getBlockPos ? be.getBlockPos() : be.m_58899_()
+                    console.info('[WoodenHopperFix] Successfully tracked Wooden Hopper at ' + pos)
+                }
+                guardWoodenHopper(be)
+            } catch (e) {}
+        }
+    }
+
+    function scanLevelTickers(level) {
+        if (!level) return
+        const lists = []
+        if (blockEntityTickersField) {
+            try {
+                const active = blockEntityTickersField.get(level)
+                if (active) lists.push(active)
+            } catch (e) {}
+        }
+        if (pendingTickersField) {
+            try {
+                const pending = pendingTickersField.get(level)
+                if (pending) lists.push(pending)
+            } catch (e) {}
+        }
+
+        for (let l = 0; l < lists.length; l++) {
+            const list = lists[l]
+            const size = list.size ? list.size() : 0
+            for (let i = 0; i < size; i++) {
+                const ticker = list.get(i)
+                if (!ticker) continue
+                try {
+                    const pos = ticker.getPos ? ticker.getPos() : ticker.m_142689_()
+                    if (pos) {
+                        const be = level.getBlockEntity ? level.getBlockEntity(pos) : level.m_7702_(pos)
+                        if (be instanceof $WoodenHopperBlockEntity) {
+                            trackWoodenHopper(be)
+                        }
+                    }
+                } catch (e) {}
             }
-            guardWoodenHopper(be)
         }
     }
 
     global.guardWoodenHopper = guardWoodenHopper
     global.trackWoodenHopper = trackWoodenHopper
 
-    // 1. Hook block entity capability attachment (fires when block entity is instantiated / loaded)
-    ForgeEvents.onGenericEvent(
-        'net.minecraftforge.event.AttachCapabilitiesEvent',
-        'net.minecraft.world.level.block.entity.BlockEntity',
-        event => {
-            trackWoodenHopper(event.getObject())
-        }
-    )
+    // 1. Chunk load hook (discovers hoppers when chunks load from disk)
+    ForgeEvents.onEvent('net.minecraftforge.event.level.ChunkEvent$Load', event => {
+        try {
+            const chunk = event.chunk || (event.getChunk ? event.getChunk() : null)
+            if (!chunk) return
+            const level = event.level || (event.getLevel ? event.getLevel() : null)
+            if (isClientSideLevel(level)) return
 
-    // 2. Hook Fabric ServerBlockEntityEvents.BLOCK_ENTITY_LOAD if available
-    try {
-        const $UtilsJS = Java.loadClass('dev.latvian.mods.kubejs.util.UtilsJS')
-        const $ServerBlockEntityEvents = Java.loadClass('net.fabricmc.fabric.api.event.lifecycle.v1.ServerBlockEntityEvents')
-        const $ServerBlockEntity$Load = Java.loadClass('net.fabricmc.fabric.api.event.lifecycle.v1.ServerBlockEntityEvents$Load')
-        if ($ServerBlockEntityEvents && $ServerBlockEntityEvents.BLOCK_ENTITY_LOAD) {
-            const serverLoadHandler = $UtilsJS.makeFunctionProxy('STARTUP', $ServerBlockEntity$Load, (blockEntity, world) => {
-                trackWoodenHopper(blockEntity)
-            })
-            $ServerBlockEntityEvents.BLOCK_ENTITY_LOAD.register(serverLoadHandler)
-        }
-    } catch (e) {}
-
-    // 3. Keep cooldown refreshed every level tick
-    ForgeEvents.onEvent('net.minecraftforge.event.TickEvent$LevelTickEvent', event => {
-        const list = global.trackedWoodenHoppers
-        if (!list || list.length === 0) return
-        if (isClientSideLevel(event.level)) return
-        for (let i = list.length - 1; i >= 0; i--) {
-            if (!guardWoodenHopper(list[i])) {
-                list.splice(i, 1)
+            // Check chunk block entities map
+            if (chunk.m_62954_) {
+                const beMap = chunk.m_62954_()
+                if (beMap && beMap.values) {
+                    const values = beMap.values().toArray()
+                    for (let i = 0; i < values.length; i++) {
+                        trackWoodenHopper(values[i])
+                    }
+                }
             }
-        }
+            // Check chunk block entity positions set
+            if (chunk.m_5928_ && level) {
+                const posSet = chunk.m_5928_()
+                if (posSet && posSet.toArray) {
+                    const posArr = posSet.toArray()
+                    for (let i = 0; i < posArr.length; i++) {
+                        const pos = posArr[i]
+                        const be = level.getBlockEntity ? level.getBlockEntity(pos) : level.m_7702_(pos)
+                        trackWoodenHopper(be)
+                    }
+                }
+            }
+        } catch (e) {}
     })
 
-    // 4. Check on block neighbor updates
+    // 2. Keep cooldown refreshed every level tick and scan for pending tickers
+    ForgeEvents.onEvent('net.minecraftforge.event.TickEvent$LevelTickEvent', event => {
+        try {
+            const level = event.level
+            if (isClientSideLevel(level)) return
+
+            scanLevelTickers(level)
+
+            const list = global.trackedWoodenHoppers
+            if (!list || list.length === 0) return
+            for (let i = list.length - 1; i >= 0; i--) {
+                if (!guardWoodenHopper(list[i])) {
+                    list.splice(i, 1)
+                }
+            }
+        } catch (e) {}
+    })
+
+    // 3. Block neighbor notification
     ForgeEvents.onEvent('net.minecraftforge.event.level.BlockEvent$NeighborNotifyEvent', event => {
         const list = global.trackedWoodenHoppers
         if (!list || list.length === 0) return
