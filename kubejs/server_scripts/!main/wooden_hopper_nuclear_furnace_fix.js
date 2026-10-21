@@ -11,12 +11,15 @@
     global.trackedWoodenHoppers = global.trackedWoodenHoppers || []
 
     let blockEntityTickersField = null
+    let pendingTickersField = null
     try {
         blockEntityTickersField = $Level.getDeclaredField('f_151512_') // blockEntityTickers
         blockEntityTickersField.setAccessible(true)
     } catch (e) {}
-
-    const scannedLevels = {}
+    try {
+        pendingTickersField = $Level.getDeclaredField('f_151503_') // pendingBlockEntityTickers
+        pendingTickersField.setAccessible(true)
+    } catch (e) {}
 
     function isClientSideLevel(level) {
         if (!level) return true
@@ -80,15 +83,53 @@
 
     function trackWoodenHopperServer(be) {
         if (be instanceof $WoodenHopperBlockEntity) {
-            be.setTransferCooldown(20)
-            if (global.trackedWoodenHoppers.indexOf(be) === -1) {
-                global.trackedWoodenHoppers.push(be)
-            }
-            guardWoodenHopperServer(be)
+            try {
+                be.setTransferCooldown(20)
+                if (global.trackedWoodenHoppers.indexOf(be) === -1) {
+                    global.trackedWoodenHoppers.push(be)
+                    const pos = be.getBlockPos ? be.getBlockPos() : be.m_58899_()
+                    console.info('[WoodenHopperFix-Server] Successfully tracked Wooden Hopper at ' + pos)
+                }
+                guardWoodenHopperServer(be)
+            } catch (e) {}
         }
     }
 
-    // Overwrite globals to ensure server-side updates take effect immediately
+    function scanLevelTickersServer(level) {
+        if (!level) return
+        const lists = []
+        if (blockEntityTickersField) {
+            try {
+                const active = blockEntityTickersField.get(level)
+                if (active) lists.push(active)
+            } catch (e) {}
+        }
+        if (pendingTickersField) {
+            try {
+                const pending = pendingTickersField.get(level)
+                if (pending) lists.push(pending)
+            } catch (e) {}
+        }
+
+        for (let l = 0; l < lists.length; l++) {
+            const list = lists[l]
+            const size = list.size ? list.size() : 0
+            for (let i = 0; i < size; i++) {
+                const ticker = list.get(i)
+                if (!ticker) continue
+                try {
+                    const pos = ticker.getPos ? ticker.getPos() : ticker.m_142689_()
+                    if (pos) {
+                        const be = level.getBlockEntity ? level.getBlockEntity(pos) : level.m_7702_(pos)
+                        if (be instanceof $WoodenHopperBlockEntity) {
+                            trackWoodenHopperServer(be)
+                        }
+                    }
+                } catch (e) {}
+            }
+        }
+    }
+
     global.guardWoodenHopper = guardWoodenHopperServer
     global.trackWoodenHopper = trackWoodenHopperServer
 
@@ -112,28 +153,7 @@
         const level = event.level
         if (isClientSideLevel(level)) return
 
-        // Discover any existing Wooden Hoppers in loaded chunks (e.g. after /reload)
-        const dimKey = typeof level.dimension === 'function' ? String(level.dimension()) : String(level.dimension)
-        if (!scannedLevels[dimKey] && blockEntityTickersField) {
-            scannedLevels[dimKey] = true
-            try {
-                const tickers = blockEntityTickersField.get(level)
-                if (tickers) {
-                    for (let i = 0; i < tickers.size(); i++) {
-                        const ticker = tickers.get(i)
-                        if (!ticker) continue
-                        const typeStr = ticker.getType ? ticker.getType() : ticker.m_142280_()
-                        if (String(typeStr) === 'woodenhopper:wooden_hopper') {
-                            const pos = ticker.getPos ? ticker.getPos() : ticker.m_142689_()
-                            if (pos) {
-                                const be = level.getBlockEntity ? level.getBlockEntity(pos) : level.m_7702_(pos)
-                                if (be) trackWoodenHopperServer(be)
-                            }
-                        }
-                    }
-                }
-            } catch (e) {}
-        }
+        scanLevelTickersServer(level)
 
         const list = global.trackedWoodenHoppers
         if (!list || list.length === 0) return
