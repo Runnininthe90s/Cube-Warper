@@ -111,19 +111,30 @@ ServerEvents.recipes(event => {
 
 })
 
-;[
-	'immersiveengineering:component_electronic',
-	'immersiveengineering:component_electronic_adv',
-	'kubejs:vector_operator_lightning',
-	'kubejs:peeking_circuit',
-	'kubejs:seeking_circuit'
-].forEach(id => {
-	PlayerEvents.inventoryChanged(id, event => {
-		if (event.item.nbt && event.item.nbt.contains('T')) {
-			event.item.nbt.remove('T')
-			if (event.item.nbt.isEmpty()) {
-				event.item.nbt = null
+const SOLDERING_OUTPUTS = {
+	'immersiveengineering:component_electronic': true,
+	'immersiveengineering:component_electronic_adv': true,
+	'kubejs:vector_operator_lightning': true,
+	'kubejs:peeking_circuit': true,
+	'kubejs:seeking_circuit': true
+}
+
+PlayerEvents.tick(event => {
+	if (event.player.age % 20 !== 0) return
+	let inv = event.player.inventory
+	let changed = false
+	for (let i = 0; i < inv.slots; i++) {
+		let stack = inv.getStackInSlot(i)
+		if (!stack.empty && SOLDERING_OUTPUTS[stack.id] && stack.nbt && stack.nbt.contains('T')) {
+			stack.nbt.remove('T')
+			if (stack.nbt.isEmpty()) {
+				stack.nbt = null
 			}
+			changed = true
 		}
-	})
+	}
+	if (changed) {
+		inv.setChanged()
+		event.player.sendInventoryUpdate()
+	}
 })
