@@ -33,13 +33,6 @@ ServerEvents.recipes(event => {
   			  },
   			  "show_notification": true
   			},
-  			"result": {
-  			  "Count": 1,
-  			  "id": output,
-  			  "tag": {
-  			    "T": 0
-  			  }
-  			},
   			"time": 20
 		})
 	}
