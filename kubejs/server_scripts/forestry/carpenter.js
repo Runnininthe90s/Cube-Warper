@@ -110,3 +110,20 @@ ServerEvents.recipes(event => {
 	)
 
 })
+
+;[
+	'immersiveengineering:component_electronic',
+	'immersiveengineering:component_electronic_adv',
+	'kubejs:vector_operator_lightning',
+	'kubejs:peeking_circuit',
+	'kubejs:seeking_circuit'
+].forEach(id => {
+	PlayerEvents.inventoryChanged(id, event => {
+		if (event.item.nbt && event.item.nbt.contains('T')) {
+			event.item.nbt.remove('T')
+			if (event.item.nbt.isEmpty()) {
+				event.item.nbt = null
+			}
+		}
+	})
+})
