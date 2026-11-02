@@ -119,18 +119,48 @@ const SOLDERING_OUTPUTS = {
 	'kubejs:seeking_circuit': true
 }
 
+function cleanPatternEntry(entry) {
+	if (!entry || !entry.contains('id') || !entry.contains('tag')) return false
+	if (!SOLDERING_OUTPUTS[entry.getString('id')]) return false
+	let tag = entry.getCompound('tag')
+	if (!tag || !tag.contains('T')) return false
+	tag.remove('T')
+	if (tag.isEmpty()) {
+		entry.remove('tag')
+	}
+	return true
+}
+
 PlayerEvents.tick(event => {
 	if (event.player.age % 20 !== 0) return
 	let inv = event.player.inventory
 	let changed = false
 	for (let i = 0; i < inv.slots; i++) {
 		let stack = inv.getStackInSlot(i)
-		if (!stack.empty && SOLDERING_OUTPUTS[stack.id] && stack.nbt && stack.nbt.contains('T')) {
+		if (stack.empty || !stack.nbt) continue
+		if (SOLDERING_OUTPUTS[stack.id] && stack.nbt.contains('T')) {
 			stack.nbt.remove('T')
 			if (stack.nbt.isEmpty()) {
 				stack.nbt = null
 			}
 			changed = true
+		} else if (stack.id === 'ae2:processing_pattern' || stack.id === 'ae2:crafting_pattern') {
+			if (stack.nbt.contains('in')) {
+				let inList = stack.nbt.getList('in', 10)
+				for (let j = 0; j < inList.size(); j++) {
+					if (cleanPatternEntry(inList.getCompound(j))) changed = true
+				}
+			}
+			if (stack.nbt.contains('out')) {
+				if (stack.id === 'ae2:processing_pattern') {
+					let outList = stack.nbt.getList('out', 10)
+					for (let j = 0; j < outList.size(); j++) {
+						if (cleanPatternEntry(outList.getCompound(j))) changed = true
+					}
+				} else {
+					if (cleanPatternEntry(stack.nbt.getCompound('out'))) changed = true
+				}
+			}
 		}
 	}
 	if (changed) {
