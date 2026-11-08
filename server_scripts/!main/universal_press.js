@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
                 event.remove({type: 'minecraft:crafting_shaped', output: output_stick})
                 press(  'immersiveengineering:mold_rod',          
                          input,                  
-                        `4x immersiveengineering:stick_${material}`
+                        `2x immersiveengineering:stick_${material}`
                 )
             }
 
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
                 event.remove({type: 'minecraft:crafting_shaped', output: output_rod})
                 press(  'immersiveengineering:mold_rod',          
                          input,                  
-                        `4x immersiveposts:stick_${material}`
+                        `2x immersiveposts:stick_${material}`
                 )
             }
 

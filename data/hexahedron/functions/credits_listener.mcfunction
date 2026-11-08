@@ -1,0 +1,2 @@
+execute as @a if entity @s[nbt={Dimension:"hexahedron:overworld"}] run function hexahedron:credits 
+execute as @a unless entity @s[nbt={Dimension:"hexahedron:overworld"}] run schedule function hexahedron:credits_listener 1s

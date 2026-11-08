@@ -21,17 +21,17 @@ ServerEvents.recipes(event => {
   			]
 		})
 	}
-	
+
 	basin_processing(
 		"minecraft:iron_ingot",
-		"infernalexp:glowcoke",
+		"immersiveengineering:coal_coke",
 		"tconstruct:molten_steel",
 		90
 	)
 
 	basin_processing(
 		"minecraft:iron_ingot",
-		"immersiveengineering:coal_coke",
+		"immersivepetroleum:petcoke",
 		"tconstruct:molten_steel",
 		90
 	)

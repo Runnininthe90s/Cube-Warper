@@ -1,20 +1,20 @@
 ServerEvents.recipes(event => {
 
-	let block_casting = (Input, Amount, Output, Cooling) => {
+	let charger = (Input, Output) => {
 		event.custom({
-		  "type": "tconstruct:casting_basin",
-		  "cooling_time": Cooling,
-		  "fluid": {
-		    "amount": Amount,
-		    "tag": Input
-		  },
-		  "result": Output
+			"type": "ae2:charger",
+			"ingredient": {
+			  "item": Input
+			},
+			"result": {
+			  "item": Output
+			}
 		})
 	}
 	
-	block_casting(
-		"tconstruct:seared_stone", 1000,
-		"tconstruct:seared_cobble", 10
+	charger(
+		"kubejs:vector_operator_empty",
+		"kubejs:vector_operator_charged"
 	)
 
 })

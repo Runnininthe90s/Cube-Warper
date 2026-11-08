@@ -2,8 +2,6 @@ summon marker ~ ~ ~ {Tags:["soul_spawn"]}
 summon marker ~ ~ ~ {Tags:["soul_spawn"]}
 summon marker ~ ~ ~ {Tags:["soul_spawn"]}
 
-#say spawn
-
 spreadplayers ~ ~ 10 10 false @e[tag=soul_spawn]
 
 execute as @e[type=marker,tag=soul_spawn] at @s run particle create:soul ~ ~0.5 ~ 1 0 1 0 3 force
@@ -23,8 +21,8 @@ execute as @e[type=marker,tag=soul_spawn] at @s run summon minecraft:wither_skel
 
 particle dust_color_transition 0 0.8 1 5 0.161 0.11 0.067 ~ ~ ~ 0.5 0.5 0.5 0.1 10 force
 particle soul ~ ~ ~ 0.5 0.5 0.5 0.1 10 force
-playsound malum:a_soul_shatters master @a ~ ~ ~ 1 0
-playsound malum:ritual_absorbs_spirit master @a ~ ~ ~ 1 0
+playsound malum:a_soul_shatters master @a[distance=..800] ~ ~ ~ 1 0
+playsound malum:ritual_absorbs_spirit master @a[distance=..800] ~ ~ ~ 1 0
 
 
 kill @e[type=marker,tag=soul_spawn]

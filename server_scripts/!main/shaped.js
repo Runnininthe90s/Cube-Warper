@@ -88,17 +88,6 @@ ServerEvents.recipes(event => {
 	  	F: 'alexscaves:fissile_core'
   	})
 
-    event.remove({output: 'clanginghowl:crystal_former'})
-	event.shaped('clanginghowl:crystal_former', [
-		' G ', 
-	  	' B ',
-	  	' F '  
-	  	],{
-	  	G: 'clanginghowl:extraterrestrial_steel_grate',
-	  	B: 'minecraft:blue_ice',
-	  	F: 'create:fluid_tank'
-  	})
-
     event.remove({output: 'forestry:fabricator'})
 	event.shaped('forestry:fabricator', [
 		'ICI', 
@@ -1278,6 +1267,7 @@ ServerEvents.recipes(event => {
 	  	C: 'ae2:fluix_smart_dense_cable'
   	})
 
+	event.remove({id: 'create_alexscaves_compat:mechanical_crafting/nuclear_bomb'})
 	event.remove({id: 'alexscaves:nuclear_bomb'})
 	event.shaped('alexscaves:nuclear_bomb', [
 		'SPS',
@@ -1287,6 +1277,48 @@ ServerEvents.recipes(event => {
 	  	F: 'alexscaves:fissile_core',
 	  	S: 'immersiveengineering:ingot_steel',
 	  	P: 'alexscaves:polymer_plate'
+  	})
+
+	event.remove({id: 'alexscaves:cake_from_cake_layer'})
+	event.shaped('minecraft:cake', [
+		'   ',
+	  	' F ',
+	  	' C '  
+	  	],{
+	  	F: '#alexscaves:frosting',
+	  	C: 'enderio:cake_base'
+  	})
+
+	event.remove({id: 'alexscaves:confection_oven'})
+	event.shaped('alexscaves:confection_oven', [
+		'FGF',
+	  	'GSG',
+	  	'FGF'  
+	  	],{
+	  	F: '#alexscaves:frosting',
+	  	G: 'alexscaves:gingerbread_crumbs',
+		S: 'minecraft:smoker'
+  	})
+
+	event.remove({id: 'storagedrawers:drawer_key'})
+	event.shaped('storagedrawers:drawer_key', [
+		'NG ',
+	  	' G ',
+	  	' G '  
+	  	],{
+	  	N: 'minecraft:gold_nugget',
+	  	G: 'minecraft:gold_ingot'
+  	})
+
+	event.remove({id: 'enderio:conduit_probe'})
+	event.shaped('enderio:conduit_probe', [
+		'S S',
+	  	'SWS',
+	  	'SBS'  
+	  	],{
+	  	S: 'kubejs:shiny_ingot',
+	  	W: 'clanginghowl:redstone_wire',
+	  	B: 'clanginghowl:energy_battery',
   	})
 
 	event.replaceInput({output:'immersiveengineering:railgun'}, 'immersiveengineering:ingot_steel', 'clanginghowl:fireproof_steel_coating')

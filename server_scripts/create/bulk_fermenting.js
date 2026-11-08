@@ -20,7 +20,8 @@ ServerEvents.recipes(event => {
 		  "processingTime": 300,
 		  "results": [
 		    {
-		      "item": Output
+		      	"item": Output,
+				"count": 4
 		    }
 		  ]
 		})

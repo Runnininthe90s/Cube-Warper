@@ -1,6 +1,6 @@
-playsound malum:ritual_forms master @a ~ ~ ~ 30 1
-playsound malum:ritual_begins master @a ~ ~ ~ 30 0
-playsound malum:ritual_evolution_ambience master @a ~ ~ ~ 0.5 1.5
+playsound malum:ritual_forms master @a[distance=..800] ~ ~ ~ 30 1
+playsound malum:ritual_begins master @a[distance=..800] ~ ~ ~ 30 0
+playsound malum:ritual_evolution_ambience master @a[distance=..800] ~ ~ ~ 0.5 1.5
 
 particle alexscaves:void_being_eye ~ ~2 ~ 0 0 0 0 1 force
 

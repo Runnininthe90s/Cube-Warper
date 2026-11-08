@@ -18,6 +18,9 @@ ServerEvents.recipes(event => {
 	event.smelting('kubejs:guano_blast_brick', 
 		'kubejs:unbaked_guano_blast_brick')
 
+	event.smelting('supplementaries:ash_brick', 
+		'forestry:ash')
+
 
 
 })

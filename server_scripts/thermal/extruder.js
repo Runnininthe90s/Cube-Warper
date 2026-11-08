@@ -27,4 +27,9 @@ ServerEvents.recipes(event => {
         'malum:revealed_soulwood_log'
     )
 
+    rock_gen('alexscaves:cake_layer', 
+        'minecraft:water', 
+        'alexscaves:confection_oven'
+    )
+
 })

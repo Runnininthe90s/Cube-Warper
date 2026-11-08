@@ -20,16 +20,7 @@
       "probability": 0.002
     }
   },
-  "spawners": {
-    "water_ambient": [
-      {
-        "type": "minecraft:glow_squid",
-        "weight": 10,
-        "minCount": 2,
-        "maxCount": 4
-      }
-    ]
-  },
+  "spawners": {},
   "spawn_costs": {},
   "carvers": {},
   "features": [

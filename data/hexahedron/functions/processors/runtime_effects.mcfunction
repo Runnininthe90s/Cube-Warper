@@ -1,7 +1,7 @@
 ### PROCESSOR DETECTION
 execute if block ~ ~ ~ #kubejs:vector run playsound block.end_portal_frame.fill master @a ~ ~ ~ 1 1
-execute unless block ~ ~ ~ #kubejs:vector run playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 1 2
-execute unless block ~ ~ ~ #kubejs:vector run playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 1 2
+execute unless block ~ ~ ~ #kubejs:vector unless block ~ ~ ~ kubejs:vector_operator_infinite run playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 1 2
+execute unless block ~ ~ ~ #kubejs:vector unless block ~ ~ ~ kubejs:vector_operator_infinite run playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 1 2
 function hexahedron:processors/processor_calculation
 
 ### EFFECT
@@ -14,6 +14,11 @@ execute if block ~ ~ ~ kubejs:vector_operator_nuclear run particle dust_color_tr
 execute if block ~ ~ ~ kubejs:vector_operator_blaze run particle dust_color_transition 1 0.451 0 3 0.706 0.224 0 ~ ~ ~ 0.2 0.2 0.2 0.1 10 force
 execute if block ~ ~ ~ kubejs:vector_operator_lightning run particle dust_color_transition 0 0.969 1 3 0 0.373 0.62 ~ ~ ~ 0.2 0.2 0.2 0.1 10 force
 execute if block ~ ~ ~ kubejs:vector_operator_eye run particle dust_color_transition 1 0 0 3 0.373 0 0 ~ ~ ~ 0.2 0.2 0.2 0.1 10 force
+
+execute if block ~ ~ ~ kubejs:vector_operator_infinite run particle dust_color_transition 10 10 10 3 10 10 10 ~ ~ ~ 0.2 0.2 0.2 0.1 10 force
+execute if block ~ ~ ~ kubejs:vector_operator_infinite run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1 1
+execute if block ~ ~ ~ kubejs:vector_operator_infinite run playsound minecraft:entity.warden.death master @a ~ ~ ~ 1 0
+execute if block ~ ~ ~ kubejs:vector_operator_infinite run playsound block.end_portal_frame.fill master @a ~ ~ ~ 1 2
 
 ### CONSUME
 execute if block ~ ~ ~ #kubejs:vector run setblock ~ ~ ~ kubejs:vector_operator_empty

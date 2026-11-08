@@ -35,10 +35,7 @@ ServerEvents.recipes(event => {
   			},
   			"result": {
   			  "Count": 1,
-  			  "id": output,
-  			  "tag": {
-  			    "T": 0
-  			  }
+  			  "id": output
   			},
   			"time": 20
 		})

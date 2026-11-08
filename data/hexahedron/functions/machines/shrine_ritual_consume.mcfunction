@@ -1,5 +1,5 @@
 
-playsound malum:ritual_absorbs_item master @a ~ ~ ~ 10 1
+playsound malum:ritual_absorbs_item master @a[distance=..800] ~ ~ ~ 10 1
 particle dust_color_transition 1 0 0 5 0 0 0 ~ ~ ~ 0.5 0.5 0.5 0 20 force
 particle alexscaves:void_being_eye ~ ~1 ~ 0 0 0 0 1 force
 
