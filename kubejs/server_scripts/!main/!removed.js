@@ -45,6 +45,7 @@ ServerEvents.recipes(event => {
         event.remove({output: 'botania:orechid'})
         event.remove({output: 'botania:orechid_ignem'})
         event.remove({output: 'immersiveengineering:blastbrick_reinforced'})
+        event.remove({input: 'thermal:earth_charge'})
 
         event.remove({id: 'ae2:crank'})
         event.remove({id: 'supplementaries:crank'})
@@ -70,6 +71,14 @@ ServerEvents.recipes(event => {
 	    event.remove({id: 'actuallyadditions:lens_of_the_miner' })
         event.remove({id: 'alexscaves:hot_chocolate_bottle'})
         event.remove({id: 'tconstruct:smeltery/melting/metal/iron/chain'})
+        event.remove({id: 'create:crushing/tuff_recycling'})
+        event.remove({id: 'forestry:ash'})
+
+        event.remove({id: 'caverns_and_chasms:waxed_copper_block'})
+        event.remove({id: 'caverns_and_chasms:waxed_lightning_rod'})
+        event.remove({id: 'caverns_and_chasms:waxed_copper_trapdoor'})
+        event.remove({id: 'caverns_and_chasms:waxed_copper_door'})
+        event.remove({id: 'caverns_and_chasms:waxed_floodlight'})
 
 	    event.remove({id: 'thermal:machines/pulverizer/pulverizer_andesite' })
 	    event.remove({id: 'thermal:machines/pulverizer/pulverizer_granite' })
@@ -92,6 +101,7 @@ ServerEvents.recipes(event => {
         event.remove({id: `mekanism:infusion_conversion/carbon/from_charcoal`})
         event.remove({id: `mekanism:infusion_conversion/carbon/from_coal_block`})
         event.remove({id: `mekanism:infusion_conversion/carbon/from_charcoal_block`})
+        
         let chemical_nuke = (chemical) => {
         	event.remove({id: `mekanism:infusion_conversion/${chemical}/from_dust`})
         }
@@ -116,9 +126,17 @@ ServerEvents.recipes(event => {
         event.remove({input: '#forestry:combs'})
         event.remove({output: '#forestry:combs'})
         event.remove({output: 'untagged_mobs:television'})
-        //event.remove({output: 'botania:alfheim_portal'})
         event.remove({output: 'untagged_mobs:camera'})
         event.remove({output: 'miners_delight:copper_cup'})
+        event.remove({output: 'clanginghowl:crystal_former'})
+        event.remove({output: 'untagged_mobs:clay_mine'})
+        event.remove({output: 'untagged_mobs:clay_bomb'})
+
+        event.remove({output: 'ae2:spatial_io_port'})
+        event.remove({output: 'ae2:spatial_pylon'})
+        event.remove({output: 'ae2:spatial_storage_cell_2'})
+        event.remove({output: 'ae2:spatial_storage_cell_16'})
+        event.remove({output: 'ae2:spatial_storage_cell_128'})
 
         let impetus_nuke = (material) => {
             event.remove({id: `malum:node_focusing${material}`})
@@ -138,6 +156,5 @@ ServerEvents.recipes(event => {
         event.replaceInput({input:'clanginghowl:extraterrestrial_steel_plate'}, 'clanginghowl:extraterrestrial_steel_plate', 'immersiveengineering:plate_steel'
 
 )
-
 
 })

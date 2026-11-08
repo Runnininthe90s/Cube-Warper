@@ -101,8 +101,8 @@ ServerEvents.recipes(event => {
     )
 
     spirit_infusion(
-        "alexscaves:occult_gem", 1,
-        "botania:dragonstone", 1,
+        "alexscaves:occult_gem", 3,
+        "botania:dragonstone", 3,
         [
             {
                 count: 16,

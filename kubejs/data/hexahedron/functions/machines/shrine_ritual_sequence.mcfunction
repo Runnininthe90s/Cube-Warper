@@ -12,8 +12,8 @@ execute as @e[tag=active_ritual,scores={time=8}] at @s positioned ~-15 ~-2 ~ run
 execute as @e[tag=active_ritual,scores={time=9}] at @s positioned ~-11 ~-2 ~-11 run function hexahedron:machines/shrine_ritual_consume
 
 
-execute as @e[tag=active_ritual,scores={time=10}] at @s run playsound malum:ritual_completed master @a ~ ~ ~ 30 0
-execute as @e[tag=active_ritual,scores={time=10}] at @s run playsound untagged_mobs:misc.mutate master @a ~ ~ ~ 1 0
+execute as @e[tag=active_ritual,scores={time=10}] at @s run playsound malum:ritual_completed master @a[distance=..800] ~ ~ ~ 30 0
+execute as @e[tag=active_ritual,scores={time=10}] at @s run playsound untagged_mobs:misc.mutate master @a[distance=..800] ~ ~ ~ 1 0
 execute as @e[tag=active_ritual,scores={time=10}] at @s run particle dust_color_transition 1 0 0 5 0 0 0 ~ ~ ~ 0.5 0.5 0.5 0 20 force
 
 ## RECIPES

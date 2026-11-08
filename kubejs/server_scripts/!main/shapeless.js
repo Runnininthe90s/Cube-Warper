@@ -38,6 +38,13 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'untagged_mobs:alpha_clay_recipe'})
 	event.shapeless('untagged_mobs:alpha_clay', ['9x untagged_mobs:alpha_clay_ball'])
 
+	event.remove({id: 'supplementaries:antique_ink'})
+	event.shapeless('supplementaries:antique_ink', [Item.of('minecraft:potion', '{Potion:"minecraft:water"}').strongNBT(), 'minecraft:charcoal'])
+	event.remove({id: 'minecraft:writable_book'})
+	event.shapeless('minecraft:writable_book', ['3x minecraft:paper', 'supplementaries:antique_ink'])
+	event.remove({id: 'exposure:album'})
+	event.shapeless('exposure:album', ['minecraft:writable_book'])
+
 	event.remove({id: 'alexscaves:uranium_from_block'})
 	event.remove({id: 'immersiveengineering:crafting/storage_uranium_to_ingot_uranium'})
 	event.remove({id: 'immersiveengineering:crafting/raw_uranium_to_raw_block_uranium'})

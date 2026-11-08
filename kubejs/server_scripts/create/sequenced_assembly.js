@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(	'mekanism:steel_casing', ['mekanism:steel_casing', 'minecraft:netherite_ingot']),
 		event.recipes.createDeploying(	'mekanism:steel_casing', ['mekanism:steel_casing', 'alexscaves:polymer_plate']),
 		event.recipes.createDeploying(	'mekanism:steel_casing', ['mekanism:steel_casing', 'alexscaves:fissile_core']),
-	]).transitionalItem('mekanism:steel_casing').loops(20)
+	]).transitionalItem('mekanism:steel_casing').loops(5)
 
 	event.recipes.createSequencedAssembly([
 		'kubejs:supercomputer'
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(	'kubejs:recaptured_consciousness', ['kubejs:recaptured_consciousness', 'kubejs:seeking_circuit']),
 		event.recipes.createDeploying(	'kubejs:recaptured_consciousness', ['kubejs:recaptured_consciousness', 'kubejs:computer']),
 		event.recipes.createDeploying(	'kubejs:recaptured_consciousness', ['kubejs:recaptured_consciousness', 'mekanism:alloy_atomic']),
-	]).transitionalItem('kubejs:recaptured_consciousness').loops(20)
+	]).transitionalItem('kubejs:recaptured_consciousness').loops(5)
 
 
     event.recipes.create.sequenced_assembly([
@@ -42,6 +42,6 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:cogwheel']),
         event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:large_cogwheel']),
         event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'minecraft:iron_nugget'])
-    ]).transitionalItem('create:incomplete_precision_mechanism').loops(5)
+    ]).transitionalItem('create:incomplete_precision_mechanism').loops(1)
 
 })

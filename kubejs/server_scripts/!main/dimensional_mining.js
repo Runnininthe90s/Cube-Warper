@@ -40,8 +40,15 @@ ServerEvents.recipes(event => {
 	)
 
 	event.remove({output: 'ae2:silicon'})
-	dimensional_mining("alexscaves:galena", 
-		"ae2:silicon", 0.2
+	//dimensional_mining("alexscaves:galena", 
+	//	"ae2:silicon", 0.2
+	//)
+	event.recipes.createCrushing([
+		Item.of("minecraft:gravel").withChance(0.5),
+		Item.of("alexscaves:metal_swarf").withChance(0.5),
+		Item.of("ae2:silicon").withChance(0.5)
+	], 
+		["alexscaves:galena"]
 	)
 
 	dimensional_mining("clanginghowl:extraterrestrial_stone", 

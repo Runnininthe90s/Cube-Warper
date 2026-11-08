@@ -32,7 +32,25 @@
         "erosion": 0.0,
         "depth": 0.0,
         "ridges": 0.0,
-        "final_density": {
+    "final_density": {
+        "type": "max",
+        "argument1": {
+            "type": "y_clamped_gradient",
+            "from_y": 50,
+            "to_y": 55,
+            "from_value": 64,
+            "to_value": -64
+        },
+        "argument2": {
+            "type": "min",
+            "argument1": {
+                "type": "y_clamped_gradient",
+                "from_y": 90,
+                "to_y": 100,
+                "from_value": 64,
+                "to_value": -64
+            },
+            "argument2": {
             "type": "minecraft:mul",
             "argument1": {
                 "type": "minecraft:add",
@@ -58,6 +76,8 @@
                     "to_value": 1
             }
         }
+    }
+}
     },
   "surface_rule": {
     "type": "minecraft:sequence",
@@ -68,10 +88,10 @@
               "type": "vertical_gradient",
               "random_name": "minecraft:bedrock_floor",
               "true_at_and_below": {
-                  "above_bottom": 0
+                  "above_bottom": 10
               },
               "false_at_and_above": {
-                  "above_bottom": 5
+                  "above_bottom": 15
               }
           },
           "then_run": {

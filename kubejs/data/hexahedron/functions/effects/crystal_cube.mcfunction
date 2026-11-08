@@ -2,9 +2,9 @@ execute as @e[type=caverns_and_chasms:large_arrow,distance=..30] at @s run parti
 kill @e[type=caverns_and_chasms:large_arrow,distance=..30]
 tag @e[type=marker,tag=cube_marker,distance=..20] add crystalized
 
-playsound caverns_and_chasms:entity.large_arrow.hit master @a ~ ~ ~ 50 0
-playsound minecraft:block.amethyst_block.break master @a ~ ~ ~ 50 0
-playsound block.respawn_anchor.charge master @a ~ ~ ~ 50 0
+execute in hexahedron:endless_rainbows run playsound caverns_and_chasms:entity.large_arrow.hit master @a[distance=..800] ~ ~ ~ 50 0
+execute in hexahedron:endless_rainbows run playsound minecraft:block.amethyst_block.break master @a[distance=..800] ~ ~ ~ 50 0
+execute in hexahedron:endless_rainbows run playsound block.respawn_anchor.charge master @a[distance=..800] ~ ~ ~ 50 0
 
 particle neapolitan:mint_boost ~ ~ ~ 7 7 7 0 1000 force
 particle end_rod ~ ~ ~ 5 5 5 0.3 1000 force

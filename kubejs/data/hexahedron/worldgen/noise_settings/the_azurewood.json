@@ -32,7 +32,25 @@
         "erosion": 0.0,
         "depth": 0.0,
         "ridges": 0.0,
-        "final_density": {
+    "final_density": {
+        "type": "max",
+        "argument1": {
+            "type": "y_clamped_gradient",
+            "from_y": 55,
+            "to_y": 60,
+            "from_value": 64,
+            "to_value": -64
+        },
+        "argument2": {
+            "type": "min",
+            "argument1": {
+                "type": "y_clamped_gradient",
+                "from_y": 120,
+                "to_y": 130,
+                "from_value": 64,
+                "to_value": -64
+            },
+            "argument2": {
             "type": "add",
             "argument1": {
                 "type": "y_clamped_gradient",
@@ -48,6 +66,8 @@
                 "y_scale": 0
             }
         }
+    }
+}
     },
     "surface_rule": {
       "type": "minecraft:sequence",

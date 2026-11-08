@@ -1,5 +1,19 @@
 ServerEvents.recipes(event => {
 
+    //event.custom({
+    //    "type": "thermal:insolator",
+    //    "ingredient": {
+    //        "item": Input
+    //    },
+    //    "result": [
+    //        {
+    //            "item": Output,
+    //            "count": 2
+    //        }
+    //    ],
+    //    "energy": 5000
+    //})
+
 	let machine_insolator = (Input, Output) => {
         event.custom({
             "type": "thermal:insolator",

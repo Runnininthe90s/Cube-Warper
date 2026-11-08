@@ -33,6 +33,24 @@
         "depth": 0.0,
         "ridges": 0.0,
         "final_density": {
+            "type": "max",
+            "argument1": {
+                "type": "y_clamped_gradient",
+                "from_y": 55,
+                "to_y": 60,
+                "from_value": 64,
+                "to_value": -64
+            },
+            "argument2": {
+                "type": "min",
+                "argument1": {
+                    "type": "y_clamped_gradient",
+                    "from_y": 100,
+                    "to_y": 110,
+                    "from_value": 64,
+                    "to_value": -64
+                },
+        "argument2": {
             "type": "minecraft:mul",
             "argument1": {
                 "type": "minecraft:add",
@@ -58,6 +76,8 @@
                     "to_value": 1
             }
         }
+    }
+}
     },
   "surface_rule": {
     "type": "minecraft:sequence",

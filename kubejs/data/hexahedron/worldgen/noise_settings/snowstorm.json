@@ -32,22 +32,42 @@
         "erosion": 0.0,
         "depth": 0.0,
         "ridges": 0.0,
-        "final_density": {
-            "type": "add",
+    "final_density": {
+        "type": "max",
+        "argument1": {
+            "type": "y_clamped_gradient",
+            "from_y": 20,
+            "to_y": 22,
+            "from_value": 64,
+            "to_value": -64
+        },
+        "argument2": {
+            "type": "min",
             "argument1": {
                 "type": "y_clamped_gradient",
-                "from_y": 20,
-                "to_y": 70,
-                "from_value": 1.1,
-                "to_value": -2.1
+                "from_y": 45,
+                "to_y": 50,
+                "from_value": 64,
+                "to_value": -64
             },
             "argument2": {
-                "type": "noise",
-                "noise": "hexahedron:small_islands",
-                "xz_scale": 0.2,
-                "y_scale": 0
+                "type": "add",
+                "argument1": {
+                    "type": "y_clamped_gradient",
+                    "from_y": 20,
+                    "to_y": 70,
+                    "from_value": 1.1,
+                    "to_value": -2.1
+                },
+                "argument2": {
+                    "type": "noise",
+                    "noise": "hexahedron:small_islands",
+                    "xz_scale": 0.2,
+                    "y_scale": 0
+                }
             }
         }
+    }
     },
     "surface_rule": {
         "type": "minecraft:sequence",

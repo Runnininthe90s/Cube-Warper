@@ -1,11 +1,11 @@
 ### TICKING LOOP
 execute as @e[type=minecraft:marker,tag=core] if entity @s[tag=running] run scoreboard players add @s runtime 1
 
-### TRIGGER EFFECTS
-execute as @e[type=minecraft:marker,tag=core,scores={runtime=1}] at @s run playsound block.respawn_anchor.ambient master @a ~ ~ ~ 10 0
-execute as @e[type=minecraft:marker,tag=core,scores={runtime=1}] at @s run playsound minecraft:block.respawn_anchor.charge master @a ~ ~ ~ 1 1
-execute as @e[type=minecraft:marker,tag=core,scores={runtime=1}] at @s run playsound block.respawn_anchor.set_spawn master @a ~ ~ ~ 10 1
-execute as @e[type=minecraft:marker,tag=core,scores={runtime=1}] at @s run playsound minecraft:block.portal.trigger master @a ~ ~ ~ 1 0
+#### TRIGGER EFFECTS (moved to runtime)
+#execute as @e[type=minecraft:marker,tag=core,scores={runtime=1}] at @s run playsound block.respawn_anchor.ambient master @a ~ ~ ~ 10 0
+#execute as @e[type=minecraft:marker,tag=core,scores={runtime=1}] at @s run playsound minecraft:block.respawn_anchor.charge master @a ~ ~ ~ 1 1
+#execute as @e[type=minecraft:marker,tag=core,scores={runtime=1}] at @s run playsound block.respawn_anchor.set_spawn master @a ~ ~ ~ 10 1
+#execute as @e[type=minecraft:marker,tag=core,scores={runtime=1}] at @s run playsound minecraft:block.portal.trigger master @a ~ ~ ~ 1 0
 
 execute as @e[type=minecraft:marker,tag=core,scores={runtime=120}] at @s run playsound minecraft:ambient.basalt_deltas.mood master @a ~ ~ ~ 1 2
 

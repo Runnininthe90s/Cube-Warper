@@ -18,6 +18,16 @@ ServerEvents.recipes(event => {
 	arc_furnace("immersiveengineering:ingot_steel",
 		"minecraft:iron_ingot",
 		[
+			{"item":"immersivepetroleum:petcoke"}
+		],
+		"thermal:slag",
+		40,
+		30000
+	)
+
+	arc_furnace("immersiveengineering:ingot_steel",
+		"minecraft:iron_ingot",
+		[
 			{"item":"immersiveengineering:coal_coke"}
 		],
 		"thermal:slag",

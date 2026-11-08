@@ -30,7 +30,15 @@ jei_remove('enderio:grains_of_infinity')
 jei_remove('untagged_mobs:alpha_core')
 jei_remove('untagged_mobs:camera')
 jei_remove('miners_delight:copper_cup')
+jei_remove('clanginghowl:crystal_former')
+jei_remove('untagged_mobs:clay_mine')
+jei_remove('untagged_mobs:clay_bomb')
 
+jei_remove('ae2:spatial_io_port')
+jei_remove('ae2:spatial_pylon')
+jei_remove('ae2:spatial_storage_cell_2')
+jei_remove('ae2:spatial_storage_cell_16')
+jei_remove('ae2:spatial_storage_cell_128')
 
 let jei_show = (Item) => {
     JEIEvents.addItems(event => {

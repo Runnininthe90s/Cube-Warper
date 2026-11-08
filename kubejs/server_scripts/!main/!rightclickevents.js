@@ -36,11 +36,17 @@ BlockEvents.rightClicked('kubejs:ancient_core', event => {
 	}
 })
 
-ItemEvents.rightClicked('minecraft:glass_bottle', event => {
+function enderbottle(event) {
     if (event.level.dimension != "hexahedron:lavender_fields") return
-		event.item.count--
-		event.player.giveInHand('botania:ender_air_bottle')
-		event.player.level.playSound(null, event.entity.x, event.entity.y, event.entity.z, "minecraft:item.bottle.fill_dragonbreath", "blocks", 1, 1);
+    if (event.item.id != 'minecraft:glass_bottle') return
+    event.item.count--
+    event.player.giveInHand('botania:ender_air_bottle')
+    event.level.playSound(null, event.player.x, event.player.y, event.player.z,
+        "minecraft:item.bottle.fill_dragonbreath", "blocks", 1, 1)}
+ItemEvents.rightClicked('minecraft:glass_bottle', event => fillBottle(event))
+BlockEvents.rightClicked(event => {
+    if (!event.player.isFake()) return
+    enderbottle(event)
 })
 
 ItemEvents.rightClicked('kubejs:portal_lantern', event => {
