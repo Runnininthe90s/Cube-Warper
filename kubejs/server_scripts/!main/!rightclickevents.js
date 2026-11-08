@@ -43,7 +43,7 @@ function enderbottle(event) {
     event.player.giveInHand('botania:ender_air_bottle')
     event.level.playSound(null, event.player.x, event.player.y, event.player.z,
         "minecraft:item.bottle.fill_dragonbreath", "blocks", 1, 1)}
-ItemEvents.rightClicked('minecraft:glass_bottle', event => fillBottle(event))
+ItemEvents.rightClicked('minecraft:glass_bottle', event => enderbottle(event))
 BlockEvents.rightClicked(event => {
     if (!event.player.isFake()) return
     enderbottle(event)
