@@ -10,7 +10,7 @@
 
 ### For Friends (Connecting from Outside)
 1. Install **Cube Warper** via the **CurseForge App** or **Prism Launcher**.
-   - **Important:** Ensure you are using **Cube Warper v1.12** (Minecraft 1.20.1, Forge 47.4.23).
+   - **Important:** Ensure you are using **Cube Warper v1.15** (Minecraft 1.20.1, Forge 47.4.23).
 2. In your launcher settings, allocate **8 GB to 12 GB of RAM** (8192 MB – 12288 MB) to the instance.
 3. Launch the game → **Multiplayer** → **Add Server** → enter your server's domain or public IP:
    `

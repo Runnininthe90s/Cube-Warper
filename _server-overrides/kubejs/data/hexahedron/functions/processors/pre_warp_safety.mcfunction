@@ -9,6 +9,6 @@ kill @e[type=immersive_portals:portal,name=!main_cube]
 
 ### If warp_pull_players == 1 (teleport_inside), pull all players outside the Hexahedron back inside
 execute if score warp_pull_players hex_settings matches 1 in minecraft:overworld as @e[type=marker,tag=core] at @s run tag @a[distance=..50] add inside_cube
-execute if score warp_pull_players hex_settings matches 1 in minecraft:overworld as @e[type=marker,tag=core] at @s if entity @a[tag=!inside_cube,tag=init] run tp @a[tag=!inside_cube,tag=init] ~ ~-7 ~4
+execute if score warp_pull_players hex_settings matches 1 in minecraft:overworld as @e[type=marker,tag=core] at @s if entity @a[tag=!inside_cube,tag=init] run tp @a[tag=!inside_cube,tag=init,limit=1,sort=nearest] ~ ~-7 ~4
 execute if score warp_pull_players hex_settings matches 1 in minecraft:overworld as @e[type=marker,tag=core] at @s if entity @a[tag=!inside_cube,tag=init] run function hexahedron:return_portal/portal_travel
 tag @a remove inside_cube

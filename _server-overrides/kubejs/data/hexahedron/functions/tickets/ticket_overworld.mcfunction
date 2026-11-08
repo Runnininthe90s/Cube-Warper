@@ -20,3 +20,4 @@ tag @a remove inside_cube
 
 execute in overworld run time set noon
 schedule function hexahedron:fix_portals 7s
+function hexahedron:credits_listener
